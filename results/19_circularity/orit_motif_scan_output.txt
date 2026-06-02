@@ -1,0 +1,13 @@
+Sequence            : contig_11  (74,025 bp)
+Relaxase centre (bp): 5,500  (IR scan window ±3,000 bp)
+Motifs tested       : 5 (primary-reference-supported)
+
+  HIT  ICEBs1_nic_core_BACSU      fwd  pos   1,171  motif TATCATTAATAAT
+  HIT  ICEBs1_nic_core_BACSU      fwd  pos  30,570  motif TATCATTAATAAT
+  HIT  ICEBs1_nic_core_BACSU      rev  pos  30,559  motif TATCATTAATAAT
+
+Inverted-repeat search (≥ 18 bp, ≤ 200 bp spacer):
+  No inverted repeat of ≥ 18 bp detected near the relaxase candidate.
+
+NOTE: This screen is exploratory. Positive motif hits require experimental
+confirmation of nicking and conjugative transfer before being reported as an oriT.
