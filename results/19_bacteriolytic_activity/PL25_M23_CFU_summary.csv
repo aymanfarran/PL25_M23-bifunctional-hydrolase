@@ -1,9 +1,0 @@
-"Strain","Treatment","mean_cfu","sd_cfu"
-"B. subtilis","Negative control",5e+08,2e+08
-"B. subtilis","PL25_M23",433333.333333333,251661.147842358
-"S. warneri","Negative control",566666666.666667,208166599.946613
-"S. warneri","PL25_M23",466666.666666667,305505.046330389
-"MRSA","Negative control",5e+08,3e+08
-"MRSA","PL25_M23",466666666.666667,305505046.330389
-"PL25","Negative control",5e+08,2e+08
-"PL25","PL25_M23",56666.6666666667,23094.010767585
