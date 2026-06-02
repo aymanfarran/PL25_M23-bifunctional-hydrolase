@@ -26,8 +26,6 @@ This repository contains the code, intermediate files, structural models and fig
 
 ```
 .
-├── MANUSCRIPT_DRAFT.md             Main-text working draft
-├── MANUSCRIPT_DRAFT.docx           Same as Word document
 ├── SUPPLEMENTARY_TABLE_S1.{md,docx} Per-contig geNomad / Flye / GC stats
 ├── SUPPLEMENTARY_TABLE_S2.{md,docx} Structural superposition RMSDs
 ├── SUPPLEMENTARY_TABLE_S3.{md,docx} Active-site residue conservation
@@ -37,26 +35,35 @@ This repository contains the code, intermediate files, structural models and fig
 ├── .gitignore
 │
 ├── scripts/                         All analysis and plotting scripts
-│   ├── 01_*.py / 02_*.py / ...     Figure-by-figure generation
-│   ├── 04_realign_ALE1.pml         PyMOL — ALE-1 M23 superposition
-│   ├── 05_active_site_panel.py     PyMOL — Zn²⁺-site comparison
-│   ├── 05cc_M23_3way_alignment.py  PyMOL — PL25 vs CwlP vs CwlT
-│   ├── 06c_M23_bifunctional_figure_v3.py   pLDDT + domain architecture
-│   ├── 08_render_surfaces.py       PyMOL — electrostatic-style surfaces
-│   ├── 09_circular_plasmid_map.py  Circular map of contig_11
-│   ├── 10_antibacterial_activity.py CFU stats + figure
-│   └── ...
+│   ├── 03_synteny_static.py                Figure 6 — clinker static rendering
+│   ├── 04_integrated_mobile_element.py     Figure 7 — integrated mobile-element panel
+│   ├── 04_realign_ALE1.pml                 PyMOL — ALE-1 M23 superposition (S2 update)
+│   ├── 04c_render_M23_panels.py            PyMOL — Figure 4 panel rendering
+│   ├── 04c_combine_M23_panel.py            Figure 4 — 4-view 3D structure assembly
+│   ├── 05_active_site_panel.py             PyMOL — Zn²⁺-site close-ups
+│   ├── 05b_combine_panels.py               Supplementary — active-site panel assembly
+│   ├── 05cc_M23_3way_alignment.py          PyMOL — Figure 5 panel rendering
+│   ├── 05cc_combine.py                     Figure 5 — three-way alignment assembly
+│   ├── 06c_M23_bifunctional_figure_v3.py   Figure 3 — pLDDT + domain architecture
+│   ├── 08_M23_tree_v4.py                   Figure 2 — IQ-TREE phylogeny visualisation
+│   ├── 08_render_surfaces.py               PyMOL — Figure 8 surface rendering
+│   ├── 08_combine_electrostatic.py         Figure 8 — electrostatic comparison assembly
+│   ├── 09_circular_plasmid_map.py          Figure 1 — circular plasmid map
+│   ├── 10_antibacterial_activity.py        Figure 9 — antibacterial-activity stats + figure
+│   └── 11_orit_motif_scan.py               oriT consensus-motif screen (Supp. Methods S4)
 │
 ├── figures/                         Final figures (PDF / SVG / PNG)
-│   ├── 01c_contig11_circular_map.* Figure 1 — circular plasmid map
-│   ├── 01b_gc_codon_panelB.*       Figure 1B — GC / GC3 per contig
-│   ├── 02d_M23_phylogeny_v4_*      Figure 2 — M23 phylogeny (CwlT excluded)
+│   ├── 01b_gc_codon_panelB.*                   Figure 1B — GC / GC3 per contig
+│   ├── 01c_contig11_circular_map.*             Figure 1 — circular plasmid map
+│   ├── 02d_M23_phylogeny_v4_CwlT_removed.*     Figure 2 — M23 phylogeny (CwlT excluded)
 │   ├── 03d_M23_bifunctional_architecture_v3.*  Figure 3 — domain architecture
 │   ├── 04c_M23_bifunctional_panel_v2.*         Figure 4 — 3D structure panel
-│   ├── 05cc_M23_3way_alignment.*              Figure 5 — PL25 vs CwlP vs CwlT
-│   ├── 06_synteny_contig11_vs_relatives.*     Figure 6 — clinker synteny
-│   ├── 08b_electrostatic_comparison_v2.*      Figure 8 — electrostatic surfaces
-│   └── 09_antibacterial_activity.*            Figure 9 — antibacterial activity
+│   ├── 05cc_M23_3way_alignment.*               Figure 5 — PL25 vs CwlP vs CwlT
+│   ├── 06_synteny_contig11_vs_relatives.*      Figure 6 — clinker synteny
+│   ├── 07_mobile_element_integrated.*          Figure 7 — integrated mobile-element panel
+│   ├── 08b_electrostatic_comparison_v2.*       Figure 8 — electrostatic surfaces
+│   ├── 09_active_site_comparison.*             Supplementary — active-site comparison
+│   └── 09_antibacterial_activity.*             Figure 9 — antibacterial activity
 │
 ├── results/
 │   ├── 01_annotation/prokka/        Prokka genome annotation (GBK, GFF, FAA, FFN)
@@ -79,7 +86,7 @@ This repository contains the code, intermediate files, structural models and fig
 │   ├── 15_mob_suite/                MOB-suite v3.1.9 typing
 │   ├── 16_electrostatic/            pI / charge / charge-density JSON
 │   ├── 17_conjscan/                 MacSyFinder + CONJScan v2.1.0 output
-│   ├── 19_circularity/              FASTA-level circularity check (nucmer)
+│   ├── 19_circularity/              FASTA-level circularity check (nucmer + oriT scan output)
 │   └── 20_activity/                 Antibacterial assay raw data + stats
 │
 └── ibex/
@@ -87,6 +94,8 @@ This repository contains the code, intermediate files, structural models and fig
     ├── scripts/                     SLURM job scripts
     └── inputs/                      Input FASTAs sent to IBEX jobs
 ```
+
+**Note:** the manuscript text itself (`MANUSCRIPT_DRAFT.md` / `.docx`) is maintained outside this repository. The deposit holds the **code, intermediate files, models, figures and supplementary tables**, but not the manuscript prose.
 
 ---
 
