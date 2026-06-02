@@ -1,0 +1,4 @@
+# macsyfinder 2.1.6  (using MacSyLib 1.0.4 )
+# models : CONJScan-2.1.0
+# /usr/local/Caskroom/miniforge/base/envs/macsy/bin/macsyfinder --models CONJScan/Plasmids all --sequence-db /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa --db-type ordered_replicon --replicon-topology circular --hmmer /usr/local/Caskroom/miniforge/base/envs/macsy/bin/hmmsearch -o /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run -w 4 --force
+# No Multisystems found

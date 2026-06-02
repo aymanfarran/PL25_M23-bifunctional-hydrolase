@@ -1,0 +1,9 @@
+organism: Virgibacillus salarius PL25 
+contigs: 8
+bases: 4754682
+CDS: 4613
+gene: 4812
+misc_RNA: 114
+rRNA: 18
+tRNA: 66
+tmRNA: 1

@@ -1,0 +1,227 @@
+INFO     : MacSyFinder 2.1.6 
+using:
+- Python 3.14.5 | packaged by conda-forge | (main, May 20 2026, 00:50:29) [Clang 20.1.8 ]
+- MacSyLib 1.0.4 
+- NetworkX 3.6.1
+- Pandas 3.0.3
+
+MacSyFinder is distributed under the terms of the GNU General Public License (GPLv3).
+See the COPYING file for details.
+
+If you use this software please cite:
+Néron, Bertrand; Denise, Rémi; Coluzzi, Charles; Touchon, Marie; Rocha, Eduardo P.C.; Abby, Sophie S.
+MacSyFinder v2: Improved modelling and search engine to identify molecular systems in genomes.
+Peer Community Journal, Volume 3 (2023), article no. e28. doi : 10.24072/pcjournal.250.
+https://peercommunityjournal.org/articles/10.24072/pcjournal.250/
+
+and don't forget to cite the used models:
+msf_data cite <model>
+
+INFO     : command used: /usr/local/Caskroom/miniforge/base/envs/macsy/bin/macsyfinder --models CONJScan/Plasmids all --sequence-db /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa --db-type ordered_replicon --replicon-topology circular --hmmer /usr/local/Caskroom/miniforge/base/envs/macsy/bin/hmmsearch -o /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run -w 4 --force
+INFO     : 
+models used: CONJScan-2.1.0
+INFO     : 
+######################### Searching systems ##########################
+INFO     : Parsing Models: dCONJ_typeI, T4SS_typeB, T4SS_typeT, T4SS_typeC, T4SS_typeG, T4SS_typeF, dCONJ_typeFA, T4SS_typeFA, MOB, T4SS_typeFATA, T4SS_typeI, dCONJ_typeB, dCONJ_typeT, dCONJ_typeC, dCONJ_typeFATA, dCONJ_typeG, dCONJ_typeF
+INFO     : macsyfinder's results will be stored in working_dir/Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run
+INFO     : Analysis launched on /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa for model(s):
+INFO     : 	- CONJScan/Plasmids/dCONJ_typeI
+INFO     : 	- CONJScan/Plasmids/T4SS_typeB
+INFO     : 	- CONJScan/Plasmids/T4SS_typeT
+INFO     : 	- CONJScan/Plasmids/T4SS_typeC
+INFO     : 	- CONJScan/Plasmids/T4SS_typeG
+INFO     : 	- CONJScan/Plasmids/T4SS_typeF
+INFO     : 	- CONJScan/Plasmids/dCONJ_typeFA
+INFO     : 	- CONJScan/Plasmids/T4SS_typeFA
+INFO     : 	- CONJScan/Plasmids/MOB
+INFO     : 	- CONJScan/Plasmids/T4SS_typeFATA
+INFO     : 	- CONJScan/Plasmids/T4SS_typeI
+INFO     : 	- CONJScan/Plasmids/dCONJ_typeB
+INFO     : 	- CONJScan/Plasmids/dCONJ_typeT
+INFO     : 	- CONJScan/Plasmids/dCONJ_typeC
+INFO     : 	- CONJScan/Plasmids/dCONJ_typeFATA
+INFO     : 	- CONJScan/Plasmids/dCONJ_typeG
+INFO     : 	- CONJScan/Plasmids/dCONJ_typeF
+INFO     : search gene T4SS_I_traI
+INFO     : search gene T4SS_F_traH
+INFO     : search gene T4SS_MOBM
+INFO     : search gene T4SS_T_virB8
+INFO     : search gene T4SS_MOBP3
+INFO     : search gene FATA_prgIb
+INFO     : search gene FATA_prgHb
+INFO     : search gene T4SS_B_traJ
+INFO     : search gene T4SS_G_tfc17
+INFO     : search gene FA_orf15
+INFO     : search gene FA_orf23
+INFO     : search gene T4SS_T_virB5
+INFO     : search gene FA_orf17b
+INFO     : search gene T4SS_G_tfc9
+INFO     : search gene T4SS_C_alr7212
+INFO     : search gene T4SS_I_traL
+INFO     : search gene T4SS_MOBP2
+INFO     : search gene T4SS_G_tfc8
+INFO     : search gene FATA_trsC
+INFO     : search gene T4SS_G_tfc19
+INFO     : search gene FATA_gbs1365
+INFO     : search gene T4SS_I_traV
+INFO     : search gene FA_orf19
+INFO     : search gene FATA_prgIc
+INFO     : search gene T4SS_t4cp1
+INFO     : search gene FA_orf17a
+INFO     : search gene FATA_prgHa
+INFO     : search gene T4SS_B_traP
+INFO     : search gene T4SS_G_tfc23
+INFO     : search gene T4SS_C_alr7209
+INFO     : search gene T4SS_F_trbC
+INFO     : search gene T4SS_I_traK
+INFO     : search gene T4SS_MOBB
+INFO     : search gene T4SS_C_alr7210
+INFO     : search gene T4SS_B_traF
+INFO     : search gene FATA_trsF
+INFO     : search gene T4SS_T_virB2
+INFO     : search gene T4SS_I_traN
+INFO     : search gene FATA_gbs1347
+INFO     : search gene FATA_prgC
+INFO     : search gene T4SS_G_tfc11
+INFO     : search gene FA_orf13
+INFO     : search gene T4SS_G_tfc10
+INFO     : search gene FATA_trsL
+INFO     : search gene T4SS_MOBQ
+INFO     : search gene T4SS_B_traE
+INFO     : search gene T4SS_T_virB3
+INFO     : search gene T4SS_F_traF
+INFO     : search gene FATA_prgB
+INFO     : search gene T4SS_I_traO
+INFO     : search gene T4SS_T_virB9
+INFO     : search gene T4SS_G_tfc24
+INFO     : search gene T4SS_F_traK
+INFO     : search gene T4SS_B_traK
+INFO     : search gene T4SS_F_traW
+INFO     : search gene T4SS_I_traU
+INFO     : search gene T4SS_MOBC
+INFO     : search gene T4SS_virb4
+INFO     : search gene T4SS_G_tfc22
+INFO     : search gene T4SS_G_tfc14
+INFO     : search gene T4SS_I_trbB
+INFO     : search gene T4SS_G_tfc12
+INFO     : search gene T4SS_T_virB6
+INFO     : search gene FATA_cd411
+INFO     : search gene T4SS_G_tfc5
+INFO     : search gene FATA_trsG
+INFO     : search gene T4SS_I_traY
+INFO     : search gene FATA_trsD
+INFO     : search gene T4SS_t4cp2
+INFO     : search gene T4SS_I_traM
+INFO     : search gene FATA_gbs1354
+INFO     : search gene T4SS_G_tfc3
+INFO     : search gene FATA_prgL
+INFO     : search gene T4SS_I_traR
+INFO     : search gene FA_orf14
+INFO     : search gene FATA_cd424
+INFO     : search gene T4SS_G_tfc13
+INFO     : search gene T4SS_C_alr7205
+INFO     : search gene T4SS_B_traM
+INFO     : search gene T4SS_G_tfc7
+INFO     : search gene T4SS_B_traL
+INFO     : search gene T4SS_C_alr7211
+INFO     : search gene T4SS_B_traO
+INFO     : search gene T4SS_T_virB1
+INFO     : search gene T4SS_C_alr7204
+INFO     : search gene T4SS_I_traQ
+INFO     : search gene T4SS_F_traE
+INFO     : search gene T4SS_I_traW
+INFO     : search gene T4SS_F_traG
+INFO     : search gene T4SS_B_traN
+INFO     : search gene T4SS_F_traV
+INFO     : search gene T4SS_T_virB11
+INFO     : search gene T4SS_F_traB
+INFO     : search gene T4SS_B_traH
+INFO     : search gene T4SS_G_tfc18
+INFO     : search gene T4SS_I_traT
+INFO     : search gene T4SS_I_traP
+INFO     : search gene T4SS_MOBT
+INFO     : search gene FATA_gbs1369
+INFO     : search gene FATA_prgIa
+INFO     : search gene T4SS_F_traU
+INFO     : search gene FATA_prgK
+INFO     : search gene T4SS_G_tfc15
+INFO     : search gene T4SS_B_traI
+INFO     : search gene T4SS_C_alr7208
+INFO     : search gene FATA_cd419_1
+INFO     : search gene T4SS_G_tfc2
+INFO     : search gene T4SS_F_traN
+INFO     : search gene FATA_cd419b
+INFO     : search gene FATA_gbs1350
+INFO     : search gene T4SS_C_alr7207
+INFO     : search gene T4SS_T_virB10
+INFO     : search gene T4SS_MOBV
+INFO     : search gene T4SS_B_traQ
+INFO     : search gene T4SS_MOBP1
+INFO     : search gene T4SS_MOBH
+INFO     : search gene FATA_cd419a
+INFO     : search gene FATA_trsJ
+INFO     : search gene T4SS_tcpA
+INFO     : search gene T4SS_MOBF
+INFO     : search gene FATA_prgF
+INFO     : search gene T4SS_F_traL
+INFO     : search gene FATA_gbs1346
+INFO     : search gene T4SS_I_traE
+INFO     : search gene T4SS_I_trbA
+INFO     : 
+###### Hits analysis for replicon contig_11_proteome #######
+INFO     : Check model CONJScan/Plasmids/MOB
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/T4SS_typeB
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/T4SS_typeC
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/T4SS_typeF
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/T4SS_typeFA
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/T4SS_typeFATA
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/T4SS_typeG
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/T4SS_typeI
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/T4SS_typeT
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/dCONJ_typeB
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/dCONJ_typeC
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/dCONJ_typeF
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/dCONJ_typeFA
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/dCONJ_typeFATA
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/dCONJ_typeG
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/dCONJ_typeI
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : Check model CONJScan/Plasmids/dCONJ_typeT
+INFO     : Building clusters
+INFO     : Searching systems
+INFO     : 
+###################### Computing best solutions ######################
+INFO     : 
+############### Writing down results in 'contig11_run' ###############
+INFO     : END

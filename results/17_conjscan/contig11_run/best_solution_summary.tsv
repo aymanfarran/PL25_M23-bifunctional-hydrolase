@@ -1,0 +1,5 @@
+# macsyfinder 2.1.6  (using MacSyLib 1.0.4 )
+# models : CONJScan-2.1.0
+# /usr/local/Caskroom/miniforge/base/envs/macsy/bin/macsyfinder --models CONJScan/Plasmids all --sequence-db /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa --db-type ordered_replicon --replicon-topology circular --hmmer /usr/local/Caskroom/miniforge/base/envs/macsy/bin/hmmsearch -o /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run -w 4 --force
+replicon	CONJScan/Plasmids/dCONJ_typeI	CONJScan/Plasmids/T4SS_typeB	CONJScan/Plasmids/T4SS_typeT	CONJScan/Plasmids/T4SS_typeC	CONJScan/Plasmids/T4SS_typeG	CONJScan/Plasmids/T4SS_typeF	CONJScan/Plasmids/dCONJ_typeFA	CONJScan/Plasmids/T4SS_typeFA	CONJScan/Plasmids/MOB	CONJScan/Plasmids/T4SS_typeFATA	CONJScan/Plasmids/T4SS_typeI	CONJScan/Plasmids/dCONJ_typeB	CONJScan/Plasmids/dCONJ_typeT	CONJScan/Plasmids/dCONJ_typeC	CONJScan/Plasmids/dCONJ_typeFATA	CONJScan/Plasmids/dCONJ_typeG	CONJScan/Plasmids/dCONJ_typeF
+contig_11_proteome	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

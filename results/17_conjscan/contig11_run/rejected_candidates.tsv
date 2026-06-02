@@ -1,0 +1,31 @@
+# macsyfinder 2.1.6  (using MacSyLib 1.0.4 )
+# models : CONJScan-2.1.0
+# /usr/local/Caskroom/miniforge/base/envs/macsy/bin/macsyfinder --models CONJScan/Plasmids all --sequence-db /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa --db-type ordered_replicon --replicon-topology circular --hmmer /usr/local/Caskroom/miniforge/base/envs/macsy/bin/hmmsearch -o /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run -w 4 --force
+# Rejected candidates found:
+candidate_id	replicon	model_fqn	cluster_id	hit_id	hit_pos	gene_name	function	reasons
+contig_11_proteome_MOB_1	contig_11_proteome	CONJScan/Plasmids/MOB	c1	PL25_00148	77	T4SS_t4cp2	T4SS_t4cp1	The quorum of mandatory genes required (1) is not reached: 0
+
+contig_11_proteome_T4SS_typeB_2	contig_11_proteome	CONJScan/Plasmids/T4SS_typeB	c3	PL25_00148	77	T4SS_t4cp2	T4SS_t4cp1	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (4) is not reached: 1
+
+contig_11_proteome_T4SS_typeC_3	contig_11_proteome	CONJScan/Plasmids/T4SS_typeC	c5	PL25_00148	77	T4SS_t4cp2	T4SS_t4cp1	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (4) is not reached: 1
+
+contig_11_proteome_T4SS_typeF_4	contig_11_proteome	CONJScan/Plasmids/T4SS_typeF	c7	PL25_00148	77	T4SS_t4cp2	T4SS_t4cp1	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (6) is not reached: 1
+
+contig_11_proteome_T4SS_typeFA_5	contig_11_proteome	CONJScan/Plasmids/T4SS_typeFA	c8	PL25_00085	15	FA_orf13	FA_orf13	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (5) is not reached: 2
+contig_11_proteome_T4SS_typeFA_5	contig_11_proteome	CONJScan/Plasmids/T4SS_typeFA	c8	PL25_00148	77	T4SS_t4cp2	T4SS_tcpA	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (5) is not reached: 2
+
+contig_11_proteome_T4SS_typeFATA_6	contig_11_proteome	CONJScan/Plasmids/T4SS_typeFATA	c10	PL25_00148	77	T4SS_t4cp2	T4SS_t4cp1	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (4) is not reached: 1
+
+contig_11_proteome_T4SS_typeG_7	contig_11_proteome	CONJScan/Plasmids/T4SS_typeG	c12	PL25_00148	77	T4SS_t4cp2	T4SS_t4cp1	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (6) is not reached: 1
+
+contig_11_proteome_T4SS_typeI_8	contig_11_proteome	CONJScan/Plasmids/T4SS_typeI	c14	PL25_00148	77	T4SS_t4cp2	T4SS_t4cp1	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (6) is not reached: 1
+
+contig_11_proteome_T4SS_typeT_9	contig_11_proteome	CONJScan/Plasmids/T4SS_typeT	c15	PL25_00148	77	T4SS_t4cp2	T4SS_t4cp1	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (4) is not reached: 2
+contig_11_proteome_T4SS_typeT_9	contig_11_proteome	CONJScan/Plasmids/T4SS_typeT	c15	PL25_00150	79	T4SS_T_virB11	T4SS_T_virB11	The quorum of mandatory genes required (3) is not reached: 1/The quorum of genes required (4) is not reached: 2
+
+contig_11_proteome_dCONJ_typeFA_10	contig_11_proteome	CONJScan/Plasmids/dCONJ_typeFA	c22	PL25_00085	15	FA_orf13	FA_orf13	The quorum of mandatory genes required (1) is not reached: 0/The quorum of genes required (4) is not reached: 2
+contig_11_proteome_dCONJ_typeFA_10	contig_11_proteome	CONJScan/Plasmids/dCONJ_typeFA	c22	PL25_00148	77	T4SS_t4cp2	T4SS_virb4	The quorum of mandatory genes required (1) is not reached: 0/The quorum of genes required (4) is not reached: 2
+
+contig_11_proteome_dCONJ_typeT_11	contig_11_proteome	CONJScan/Plasmids/dCONJ_typeT	c29	PL25_00148	77	T4SS_t4cp2	T4SS_virb4	The quorum of mandatory genes required (1) is not reached: 0/The quorum of genes required (3) is not reached: 2
+contig_11_proteome_dCONJ_typeT_11	contig_11_proteome	CONJScan/Plasmids/dCONJ_typeT	c29	PL25_00150	79	T4SS_T_virB11	T4SS_T_virB11	The quorum of mandatory genes required (1) is not reached: 0/The quorum of genes required (3) is not reached: 2
+

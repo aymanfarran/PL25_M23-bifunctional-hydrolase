@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/farrana/.macsyfinder/models/CONJScan/profiles/T4SS_MOBF.hmm
+# target sequence database:        /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa
+# output directed to file:         /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run/hmmer_results/T4SS_MOBF.search_hmm.out
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       MOBF  [M=880]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-39  128.9   0.0    3.4e-30   97.6   0.0    2.1  1  PL25_00094  ATP-dependent RecD2 DNA helicase
+
+
+Domain annotation for each sequence (and alignments):
+>> PL25_00094  ATP-dependent RecD2 DNA helicase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   97.6   0.0   3.4e-32   3.4e-30     421     620 ..     301     506 ..      85     544 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 97.6 bits;  conditional E-value: 3.4e-32
+        MOBF 421 aileaaaagkgtvtpllsaeqaeaala.eteLtagQraavrliltsgdrfvvvqGlAGtGKTtmlkalkealea..egktviGlApthkaakeLkeeag 516
+                 +il +a++++ + ++ l+    e +l+ + +L ++Q++ +++i t +  ++v+ G  GtGKTt ++a++e+ ++  ++  +   Apt++a ++L+e ++
+  PL25_00094 301 KILMKARTKQFNNAKKLDLYVKEYQLKhGITLADEQKKVIKEIFTNN--IMVLTGNPGTGKTTVVNAIIEIYQKvfPEDLISLSAPTGRASRKLEEVTN 397
+                 444445444444444444444444444799*************9977..***********************6621344455669************** PP
+
+        MOBF 517 ieaqTvasflk........terleagkekldkntllvvDEagmvsnrdmaallelaeaagarvvlvGDtkQlqaveaGkpfellqregadtarlkeivR 607
+                 ++a+T +++l            +e ++ ++ ++ ++++DE +mv+   + all++++ +ga+++++GD +Ql +v+aG+++ +l ++g+   rl+ei+R
+  PL25_00094 398 HKANTNHRLLGfkqnkeglGAGFEYNDDNPLPHNFFIIDEMSMVDLHMVYALLQAID-RGAKILFIGDIDQLPSVNAGNVLYDLIHSGVPYIRLTEIFR 495
+                 ***********66655555555555555555***********************997.69*************************************** PP
+
+        MOBF 608 qkdpelreavell 620
+                 q   ++ ++  ++
+  PL25_00094 496 QA--QESQIITNA 506
+                 *9..333443333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (880 nodes)
+Target sequences:                         99  (19492 residues searched)
+Passed MSV filter:                         9  (0.0909091); expected 2.0 (0.02)
+Passed bias filter:                        7  (0.0707071); expected 2.0 (0.02)
+Passed Vit filter:                         4  (0.040404); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.020202); expected 0.0 (1e-05)
+Initial search space (Z):                 99  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 714.78
+//
+[ok]

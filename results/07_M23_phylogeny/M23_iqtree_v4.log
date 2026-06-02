@@ -1,0 +1,250 @@
+IQ-TREE version 3.1.1 for MacOS Intel 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    KL-22661.local (AVX2, FMA3, 16 GB RAM)
+Command: /usr/local/Caskroom/miniforge/base/envs/phylo/bin/iqtree3 -s M23_aln_v4_noCwlT.fasta -m Q.pfam+G4 -B 1000 -T AUTO --prefix M23_iqtree_v4 -redo
+Seed:    690641 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri May 22 16:35:15 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file M23_aln_v4_noCwlT.fasta ... Fasta format detected
+Reading fasta file: done in 0.000741005 secs using 90.15% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00145793 secs using 1357% CPU
+Alignment has 101 sequences with 300 columns, 300 distinct patterns
+288 parsimony-informative, 11 singleton sites, 1 constant sites
+                                                              Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000277042 secs using 1365% CPU
+   1  PL25_M23                                                        0.33%    passed     63.30%
+   2  REF_Lysostaphin_Staphylococcus_simulans_P10547                  6.33%    failed      0.00%
+   3  REF_LytM_Staphylococcus_aureus_O33599                          14.33%    failed      0.00%
+   4  REF_ALE-1_Staphylococcus_capitis_Q47728                        40.33%    failed      0.01%
+   5  REF_ZoocinA_Streptococcus_zooepidemicus_O54309                 28.33%    failed      0.00%
+   6  REF_EnpA_Enterococcus_faecalis_prophage_E1V3I0                 49.67%    failed      0.00%
+   7  WP_047980627.1                                                  0.33%    passed     85.46%
+   8  WP_066194568.1                                                  2.67%    passed     27.12%
+   9  WP_163578527.1                                                  0.67%    passed     91.62%
+  10  WP_343191776.1                                                  3.67%    passed     67.72%
+  11  WP_269919978.1                                                  3.67%    passed     75.55%
+  12  WP_227092181.1                                                  3.67%    passed     75.56%
+  13  WP_324225084.1                                                  0.00%    passed     32.28%
+  14  WP_176447356.1                                                  0.00%    passed     77.74%
+  15  WP_461177648.1                                                  0.33%    passed     72.73%
+  16  WP_390274409.1                                                  0.00%    passed     39.35%
+  17  WP_068441797.1                                                  0.00%    passed     54.56%
+  18  WP_390303499.1                                                  0.00%    passed     25.88%
+  19  WP_138600556.1                                                  0.00%    passed     99.69%
+  20  WP_382391954.1                                                  0.00%    passed     95.96%
+  21  WP_138600713.1                                                  0.00%    passed     95.03%
+  22  WP_082220163.1                                                  0.33%    passed     98.64%
+  23  WP_046176727.1                                                  0.33%    passed     99.54%
+  24  WP_394237463.1                                                  0.33%    passed     77.83%
+  25  WP_251274384.1                                                  0.33%    passed     97.74%
+  26  WP_097074628.1                                                  0.33%    passed     87.60%
+  27  MER1987475.1                                                    0.33%    passed     99.19%
+  28  WP_464380148.1                                                  0.00%    passed     17.34%
+  29  WP_443121293.1                                                  0.33%    passed     62.01%
+  30  WP_391374839.1                                                  0.33%    passed     97.22%
+  31  WP_380771496.1                                                  0.00%    passed     92.15%
+  32  WP_144460345.1                                                  0.00%    passed     91.41%
+  33  WP_052400764.1                                                  0.00%    passed     48.54%
+  34  WP_340833285.1                                                  0.33%    passed     58.06%
+  35  WP_415778640.1                                                  0.33%    passed     86.22%
+  36  WP_440440272.1                                                  0.33%    passed     41.73%
+  37  WP_453509148.1                                                  3.00%    passed     73.82%
+  38  WP_392723777.1                                                  0.33%    passed     55.66%
+  39  WP_379165135.1                                                  1.67%    passed     65.77%
+  40  WP_181473872.1                                                  0.67%    passed     82.76%
+  41  WP_243292829.1                                                  0.33%    passed     79.24%
+  42  EGL15072.1                                                      1.33%    passed     92.17%
+  43  WP_231392196.1                                                  0.00%    passed     94.77%
+  44  WP_213429141.1                                                  0.00%    passed     87.60%
+  45  MCC4313474.1                                                    2.33%    passed     70.57%
+  46  WP_413242722.1                                                  0.33%    passed     10.03%
+  47  WP_229252482.1                                                  2.33%    passed     70.57%
+  48  WP_082231923.1                                                  1.00%    passed     95.79%
+  49  WP_144625337.1                                                  2.33%    passed     92.63%
+  50  WP_341115568.1                                                  2.33%    passed     69.01%
+  51  WP_173918989.1                                                  1.00%    passed     84.05%
+  52  MBD7939652.1                                                    1.67%    passed     91.53%
+  53  WP_336766092.1                                                  0.00%    passed     86.11%
+  54  WP_459286492.1                                                  0.00%    passed     79.13%
+  55  WP_337035791.1                                                  0.00%    passed     76.45%
+  56  WP_225230805.1                                                  0.00%    passed     91.33%
+  57  WP_193065424.1                                                  0.00%    passed     82.25%
+  58  WP_253500519.1                                                  0.00%    passed     78.11%
+  59  WP_090905445.1                                                  0.00%    passed     88.62%
+  60  KMM61068.1                                                      1.33%    passed     98.70%
+  61  WP_218047977.1                                                  0.00%    passed     95.44%
+  62  WP_172691963.1                                                  0.00%    passed     94.79%
+  63  WP_326068009.1                                                  0.00%    passed     95.76%
+  64  WP_268348884.1                                                  0.00%    passed     95.43%
+  65  WP_017474141.1                                                  0.00%    passed     93.67%
+  66  WP_268346717.1                                                  0.00%    passed     95.43%
+  67  WP_251647350.1                                                  1.33%    passed     91.06%
+  68  WP_268412158.1                                                  0.00%    passed     95.53%
+  69  AYC54099.1                                                      3.33%    passed     95.66%
+  70  WP_017815158.1                                                  0.00%    passed     96.19%
+  71  WP_019688376.1                                                  0.00%    passed     51.52%
+  72  WP_126666970.1                                                  0.00%    passed     40.21%
+  73  WP_326243746.1                                                  2.33%    passed     95.55%
+  74  WP_342437610.1                                                  4.00%    passed     82.71%
+  75  WP_330721863.1                                                  0.00%    passed     56.62%
+  76  WP_290410654.1                                                  0.00%    passed     55.29%
+  77  WP_144523896.1                                                  0.00%    passed     88.49%
+  78  WP_213380728.1                                                  2.33%    passed     93.20%
+  79  WP_430097725.1                                                  0.00%    passed     50.14%
+  80  WP_073411996.1                                                  0.00%    passed     80.00%
+  81  WP_073208534.1                                                  0.00%    passed     80.30%
+  82  WP_474970554.1                                                  0.67%    passed     96.19%
+  83  WP_474317616.1                                                  0.00%    passed     59.18%
+  84  WP_367912948.1                                                  0.00%    passed     81.00%
+  85  WP_096882194.1                                                  0.00%    passed     76.30%
+  86  QWS52513.1                                                      2.67%    passed     81.86%
+  87  PHAGE_HydH5_Staph_phage_vB_SauS_phiIPLA88_B3VMQ7               66.00%    failed      0.00%
+  88  PHAGE_Ply118_Listeria_phage_A118_Q9ANP1                        31.00%    failed      0.02%
+  89  PHAGE_Phi11_endolysin_Staph_Q937Q4                             54.67%    failed      0.00%
+  90  PHAGE_phi11_endolysin_Staph_phage_phi11_AAA67582.1             70.33%    passed     40.94%
+  91  PHAGE_Twort_endolysin_Staph_phage_Twort_YP_001285805.1         78.00%    failed      0.01%
+  92  PHAGE_PlyGRCS_endolysin_Staph_phage_GRCS_WP_058037683.1        29.33%    failed      0.00%
+  93  PHAGE_phiTRT_endolysin_Staph_phage_phiSauS_IPLA35_AGH09573.1   63.67%    failed      0.00%
+  94  PHAGE_phi67_endolysin_ATY82029.1                               65.00%    failed      0.67%
+  95  PHAGE_LysK_Staph_phage_K_AAV44706.1                            45.67%    failed      0.00%
+  96  PHAGE_LysK_alt_Staph_phage_K_AAU05814.1                        63.00%    failed      0.85%
+  97  PHAGE_Cph1_Cgut_phage_endolysin_YP_240620.1                     9.33%    failed      0.04%
+  98  PHAGE_LysB4_Bacillus_phage_B4_ABF71569.1                       58.33%    failed      0.00%
+  99  PHAGE_Plyba_Bacillus_phage_BA_AAQ74489.1                       28.33%    failed      0.02%
+ 100  PHAGE_BSPM4_endolysin_AGT53802.1                               32.67%    failed      0.00%
+ 101  REF_CwlP_clipped_SLT_M23_BACSU_SPbeta                          18.67%    failed      0.00%
+WARNING: 8 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                           9.02%  19 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: WP_229252482.1 is identical to MCC4313474.1 but kept for subsequent analysis
+NOTE: WP_268346717.1 is identical to WP_268348884.1 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.000475883 secs using 1499% CPU
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.037 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 690641)...
+
+NOTE: 21 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+38 trees examined
+Threads: 1 / Time: 16.026 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -42939
+Threads: 2 / Time: 10.666 sec / Speedup: 1.503 / Efficiency: 75% / LogL: -42939
+Threads: 3 / Time: 8.069 sec / Speedup: 1.986 / Efficiency: 66% / LogL: -42939
+Threads: 4 / Time: 7.305 sec / Speedup: 2.194 / Efficiency: 55% / LogL: -42939
+Threads: 5 / Time: 6.349 sec / Speedup: 2.524 / Efficiency: 50% / LogL: -42939
+Threads: 6 / Time: 6.523 sec / Speedup: 2.457 / Efficiency: 41% / LogL: -42939
+Determining AUTO threadcount: done in 54.9507 secs using 291.7% CPU
+BEST NUMBER OF THREADS: 5
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -26226.955
+2. Current log-likelihood: -25259.546
+3. Current log-likelihood: -25249.575
+4. Current log-likelihood: -25249.385
+Optimal log-likelihood: -25249.359
+Gamma shape alpha: 1.506
+Parameters optimization took 4 rounds (0.310 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.236935 secs using 489.6% CPU
+Computing ML distances took 0.237747 sec (of wall-clock time) 1.163145 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.000319004 secs using 394.7% CPU
+Constructing RapidNJ tree: done in 0.00223589 secs using 325.2% CPU
+Computing RapidNJ tree took 0.002887 sec (of wall-clock time) 0.015778 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -25267.543
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 2.470 second
+Computing log-likelihood of 98 initial trees ... 2.344 seconds
+Current best score: -25249.359
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -25165.689
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 6: -25160.758
+Iteration 10 / LogL: -25169.123 / Time: 0h:1m:7s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 12: -25160.559
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 14: -25159.821
+Iteration 20 / LogL: -25185.785 / Time: 0h:1m:16s
+Finish initializing candidate tree set (20)
+Current best tree score: -25159.821 / CPU time: 20.508
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 22: -25159.645
+Iteration 30 / LogL: -25161.081 / Time: 0h:1m:24s (0h:4m:26s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 36: -25157.384
+Iteration 40 / LogL: -25159.705 / Time: 0h:1m:31s (0h:3m:45s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 45: -25156.956
+Iteration 50 / LogL: -25172.319 / Time: 0h:1m:39s (0h:3m:12s left)
+Log-likelihood cutoff on original alignment: -25221.058
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 51: -25156.315
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 54: -25156.101
+Iteration 60 / LogL: -25212.411 / Time: 0h:1m:47s (0h:2m:51s left)
+Iteration 70 / LogL: -25166.258 / Time: 0h:1m:56s (0h:2m:21s left)
+Iteration 80 / LogL: -25162.694 / Time: 0h:2m:5s (0h:1m:57s left)
+Iteration 90 / LogL: -25157.543 / Time: 0h:2m:13s (0h:1m:36s left)
+Iteration 100 / LogL: -25244.970 / Time: 0h:2m:22s (0h:1m:17s left)
+Log-likelihood cutoff on original alignment: -25221.058
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+Iteration 110 / LogL: -25324.687 / Time: 0h:2m:31s (0h:2m:5s left)
+Iteration 120 / LogL: -25156.595 / Time: 0h:2m:39s (0h:1m:47s left)
+Iteration 130 / LogL: -25162.255 / Time: 0h:2m:47s (0h:1m:30s left)
+Iteration 140 / LogL: -25157.300 / Time: 0h:2m:55s (0h:1m:15s left)
+Iteration 150 / LogL: -25157.704 / Time: 0h:3m:3s (0h:1m:1s left)
+Log-likelihood cutoff on original alignment: -25221.058
+TREE SEARCH COMPLETED AFTER 155 ITERATIONS / Time: 0h:3m:7s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -25156.101
+Optimal log-likelihood: -25156.101
+Gamma shape alpha: 1.521
+Parameters optimization took 1 rounds (0.056 sec)
+BEST SCORE FOUND : -25156.101
+Creating bootstrap support values...
+Split supports printed to NEXUS file M23_iqtree_v4.splits.nex
+Total tree length: 68.669
+
+Total number of iterations: 155
+CPU time used for tree search: 633.761 sec (0h:10m:33s)
+Wall-clock time used for tree search: 131.970 sec (0h:2m:11s)
+Total CPU time used: 800.813 sec (0h:13m:20s)
+Total wall-clock time used: 188.298 sec (0h:3m:8s)
+
+Computing bootstrap consensus tree...
+Reading input file M23_iqtree_v4.splits.nex...
+101 taxa and 819 splits.
+Consensus tree written to M23_iqtree_v4.contree
+Reading input trees file M23_iqtree_v4.contree
+Log-likelihood of consensus tree: -25156.993
+
+Analysis results written to: 
+  IQ-TREE report:                M23_iqtree_v4.iqtree
+  Maximum-likelihood tree:       M23_iqtree_v4.treefile
+  Likelihood distances:          M23_iqtree_v4.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          M23_iqtree_v4.splits.nex
+  Consensus tree:                M23_iqtree_v4.contree
+  Screen log file:               M23_iqtree_v4.log
+
+Date and Time: Fri May 22 16:38:24 2026

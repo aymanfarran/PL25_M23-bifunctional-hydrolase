@@ -1,0 +1,67 @@
+{
+  "PL25_M23": {
+    "length": 333,
+    "pI": 4.54,
+    "charge_pH7": -22.43,
+    "K_count": 14,
+    "R_count": 4,
+    "H_count": 9,
+    "D_count": 23,
+    "E_count": 18,
+    "pos_total": 18,
+    "neg_total": 41,
+    "charge_density_pct": -6.91
+  },
+  "CwlP_clipped": {
+    "length": 314,
+    "pI": 9.76,
+    "charge_pH7": 19.09,
+    "K_count": 31,
+    "R_count": 3,
+    "H_count": 4,
+    "D_count": 7,
+    "E_count": 8,
+    "pos_total": 34,
+    "neg_total": 15,
+    "charge_density_pct": 6.05
+  },
+  "CwlT": {
+    "length": 360,
+    "pI": 5.11,
+    "charge_pH7": -12.87,
+    "K_count": 18,
+    "R_count": 16,
+    "H_count": 7,
+    "D_count": 16,
+    "E_count": 31,
+    "pos_total": 34,
+    "neg_total": 47,
+    "charge_density_pct": -3.61
+  },
+  "Lysostaphin": {
+    "length": 133,
+    "pI": 9.11,
+    "charge_pH7": 3.35,
+    "K_count": 8,
+    "R_count": 2,
+    "H_count": 6,
+    "D_count": 4,
+    "E_count": 3,
+    "pos_total": 10,
+    "neg_total": 7,
+    "charge_density_pct": 2.26
+  },
+  "LytM": {
+    "length": 133,
+    "pI": 8.18,
+    "charge_pH7": 1.32,
+    "K_count": 5,
+    "R_count": 4,
+    "H_count": 6,
+    "D_count": 6,
+    "E_count": 2,
+    "pos_total": 9,
+    "neg_total": 8,
+    "charge_density_pct": 0.75
+  }
+}

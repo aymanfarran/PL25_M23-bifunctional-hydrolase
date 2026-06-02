@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/farrana/.macsyfinder/models/CONJScan/profiles/T4SS_T_virB11.hmm
+# target sequence database:        /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa
+# output directed to file:         /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run/hmmer_results/T4SS_T_virB11.search_hmm.out
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       T_virB11  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.9e-24   78.1   0.0      4e-24   77.7   0.0    1.1  1  PL25_00150  hypothetical protein
+
+
+Domain annotation for each sequence (and alignments):
+>> PL25_00150  hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   77.7   0.0     4e-26     4e-24      26     311 ..      18     312 ..       3     332 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 77.7 bits;  conditional E-value: 4e-26
+    T_virB11  26 iaaaledpevvevmlnpdgrlwvdrlseGladtgeelseadgeriirlvahhvgaevhagsprvsaelPetGerfegllPPvv.aaPafair..kpava 121
+                 ++ +l d+++ ++  n    +  d l +G+ +++ + s+ ++e+i + +a   g e  ++sp++ +e+ +    f  +   ++  + +fa+r  +p +a
+  PL25_00150  18 LKPFLVDKNITDISFNGKEMFIQDNL-KGRYKSDLQPSHDEVEQIGKKIADIQGKEFTNSSPILDTEIAHFRVNF--IHKSISpYGCTFAVRisRPKLA 113
+                 567899**********8766555555.7****************************************9955444..4444441356677663377888 PP
+
+    T_virB11 122 vftlddyvaagiltaaqaellrravaerknilvaGgtstGkttlanallaevaktedrvvliedtrelqca....ak..n...lvalrtkdgvvslsdl 211
+                 + +l+   +++      a+ll   ++  +n++++G t++Gkt l   l++ +   + ++ liedt++ + +    +k  n   +++  +++  ++ ++l
+  PL25_00150 114 IDSLSSLANDN-----VARLLDVLIKGDTNMIISGKTGSGKTELQKLLVKFI-PDNKKITLIEDTMDSHIKelygSKdiNswrILTDSSRENKITYNHL 206
+                 88888766665.....58999999********************98666655.56789******9765433112123013111334456999******* PP
+
+    T_virB11 212 vrsslrlrPdrivvGevrGaealdllkaWgtGhPGgiatihagsalgalrrleqli.qeavvtvpral...iaeaidlvavl....sgrgskrrleela 302
+                 +++ lr  Pd +++ e rGaea d+l +  t h   i+tiha  a +   rl  +i qe  v+  + l   i + +++ +++    + +g +r ++e++
+  PL25_00150 207 IKAGLRNNPDWLIIAETRGAEAYDMLESALTDHS-IITTIHAKGAESIPSRLLSMIgQEYQVN-EQLLgkdIVNMLKIGIYMgmkeTDKGIERFIREIV 303
+                 *********************************6.7****************99994555444.33331113344444445422224567888899999 PP
+
+    T_virB11 303 rvegldaeg 311
+                 + +++ ++g
+  PL25_00150 304 EYTDFTEQG 312
+                 998888874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                         99  (19492 residues searched)
+Passed MSV filter:                         6  (0.0606061); expected 2.0 (0.02)
+Passed bias filter:                        6  (0.0606061); expected 2.0 (0.02)
+Passed Vit filter:                         4  (0.040404); expected 0.1 (0.001)
+Passed Fwd filter:                         3  (0.030303); expected 0.0 (1e-05)
+Initial search space (Z):                 99  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1015.43
+//
+[ok]

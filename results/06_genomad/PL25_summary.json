@@ -1,0 +1,17 @@
+{
+    "module": "summary",
+    "input": "PL25.fasta",
+    "input_md5": "fe7d19423bf833399f1222bbcd184195",
+    "start_time": "2026-05-17T11:31:32.738071+03:00",
+    "parameters": {
+        "min_score": 0.7,
+        "max_fdr": 0.1,
+        "min_plasmid_hallmarks": 0,
+        "min_plasmid_hallmarks_short_seqs": 1,
+        "min_virus_hallmarks": 0,
+        "min_virus_hallmarks_short_seqs": 1,
+        "min_plasmid_marker_enrichment": 0.0,
+        "min_virus_marker_enrichment": 0.0,
+        "max_uscg": 4
+    }
+}

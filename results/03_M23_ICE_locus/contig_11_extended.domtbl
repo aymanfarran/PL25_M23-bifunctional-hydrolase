@@ -1,0 +1,21 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Peptidase_M23        PF01551.30    96 PL25_00078           -            370   2.7e-36  114.3   2.9   1   1   2.2e-37   4.6e-36  113.5   2.9     2    96   263   360   262   360 0.95 Peptidase family M23
+AAA_10               PF12846.14   362 PL25_00082           -            878   8.4e-69  222.7   0.1   1   1   3.3e-69     7e-68  219.6   0.0     1   362   474   844   473   844 0.91 AAA-like domain
+AAA_19               PF13245.13   134 PL25_00094           -            760   2.9e-41  131.3   0.0   1   1   6.5e-42   1.4e-40  129.1   0.0     1   132   336   471   336   473 0.97 AAA domain
+AAA_23               PF13476.13   201 PL25_00098           -            480    0.0025    8.9  17.1   1   1   2.4e-05   0.00051   11.1  12.6   118   201    85   174     5   177 0.62 AAA domain
+AAA_19               PF13245.13   134 PL25_00099           -            365   6.9e-05   13.5   0.1   1   1   3.3e-05   0.00068   10.3   0.1     6    34    27    55    21   147 0.91 AAA domain
+T4SS-DNA_transf      PF02534.21   468 PL25_00148           -            573   3.7e-12   36.2   0.1   1   1   1.8e-13   3.7e-12   36.2   0.1    40   394    21   372     2   381 0.78 Type IV secretory system Conjugative DNA transfer
+AAA_19               PF13245.13   134 PL25_00151           -            208     7e-08   23.2   0.2   1   1   3.8e-08     4e-07   20.8   0.2     8   104    13   125     7   145 0.60 AAA domain
+AAA_10               PF12846.14   362 PL25_00151           -            208   1.7e-05   14.4   0.2   1   1     3e-06   3.2e-05   13.5   0.0    20    61    15    56    11    78 0.91 AAA-like domain
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa
+# Target file:     /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/04_HMM_scans/conjscan/ICE_extended.hmm
+# Option settings: /usr/local/bin/hmmscan --domtblout /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_extended.domtbl -E 0.01 --domE 0.01 --cpu 8 /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/04_HMM_scans/conjscan/ICE_extended.hmm /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa 
+# Current dir:     /Users/farrana/R analysis/SVG/C
+# Date:            Sun May 17 10:35:13 2026
+# [ok]

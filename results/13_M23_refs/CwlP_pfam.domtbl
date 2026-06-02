@@ -1,0 +1,15 @@
+#                                                                                                 --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name                                accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- -----                      -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Peptidase_M23        PF01551.30    96 CwlP_yomI_Bacillus_subtilis_SPbeta_2285aa -           2285     4e-33  104.1   2.3   1   2      0.37       7.9   -2.6   0.0    42    91   441   490   428   493 0.84 Peptidase family M23
+Peptidase_M23        PF01551.30    96 CwlP_yomI_Bacillus_subtilis_SPbeta_2285aa -           2285     4e-33  104.1   2.3   2   2   2.4e-33     5e-32  100.6   2.9     2    96  1579  1674  1578  1674 0.96 Peptidase family M23
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/13_M23_refs/CwlP_only.faa
+# Target file:     /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/04_HMM_scans/conjscan/ICE_extended.hmm
+# Option settings: hmmscan --domtblout /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/13_M23_refs/CwlP_pfam.domtbl -E 1e-3 /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/04_HMM_scans/conjscan/ICE_extended.hmm /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/13_M23_refs/CwlP_only.faa 
+# Current dir:     /Users/farrana/R analysis/SVG/C
+# Date:            Mon May 18 15:28:18 2026
+# [ok]

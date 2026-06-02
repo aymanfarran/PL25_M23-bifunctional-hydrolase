@@ -1,0 +1,49 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/farrana/.macsyfinder/models/CONJScan/profiles/T4SS_t4cp1.hmm
+# target sequence database:        /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa
+# output directed to file:         /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run/hmmer_results/T4SS_t4cp1.search_hmm.out
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       t4cp1  [M=110]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00059   13.3   0.0     0.0009   12.7   0.0    1.4  1  PL25_00151  hypothetical protein
+
+
+Domain annotation for each sequence (and alignments):
+>> PL25_00151  hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   9.1e-06    0.0009       1      32 [.      28      61 ..      28     109 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 9.1e-06
+       t4cp1  1 GKtvglv..ipnllkwrgsvivlDpkgelyeata 32
+                GKt+++   ip ll+ ++ v+++D ++e +++ a
+  PL25_00151 28 GKTTMIKtlIPELLDQGKRVCLIDFSKEYADIGA 61
+                9*************99988********9986544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (110 nodes)
+Target sequences:                         99  (19492 residues searched)
+Passed MSV filter:                         6  (0.0606061); expected 2.0 (0.02)
+Passed bias filter:                        6  (0.0606061); expected 2.0 (0.02)
+Passed Vit filter:                         1  (0.010101); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.010101); expected 0.0 (1e-05)
+Initial search space (Z):                 99  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2172.03
+//
+[ok]

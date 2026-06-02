@@ -1,0 +1,47 @@
+# macOS / editor cruft
+.DS_Store
+*.swp
+*~
+.Rhistory
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Backup files
+*.bak
+*.bak2
+*.orig
+*backup*
+*"copy".*
+
+# Internal working notes (kept locally, not deposited)
+WP*_status.md
+WP1_RESULTS.md
+WP2_FOLLOWUP_RESULTS.md
+WP3_BIFUNCTIONAL_DISCOVERY.md
+WP3_REVISED_HONEST_NOVELTY.md
+
+# Intermediate PyMOL render files (regeneratable from the .pml / .py scripts)
+figures/_panel_*.png
+figures/_es2_*.png
+figures/_05cc_*.png
+
+# ColabFold MSA env directories (large, regeneratable)
+results/08_colabfold/**/env/
+results/14_cwlp_structure/**/env/
+results/14_cwlp_structure/*__env
+
+# Large raw data — referenced via NCBI accessions, not deposited in the repo
+*.fastq.gz
+*.bam
+*.sam
+
+# oriTfinder input (regeneratable from the assembly)
+results/18_oriTfinder_INPUT_contig11.fna
+
+# OS / IDE
+.vscode/
+.idea/

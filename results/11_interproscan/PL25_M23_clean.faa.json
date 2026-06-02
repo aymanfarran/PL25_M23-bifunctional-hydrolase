@@ -1,0 +1,1067 @@
+{
+ "interproscan-version": "5.61-93.0",
+"results": [ {
+  "sequence" : "MTFLLTKHTKRGKKNKSQKKWIKYILILLLPVFIVLGLIFVVFGIVLVSFASQEDDNKYDDVLSEFGEDEIPSEFIPIYQAAGEEYDINWILLASIHRVETNFSTNLGVSSAGAIGHTQFMKCTWIGWGYSGCANSGLGDADISESIYTDLNIIAKYGGYGIDANGDGKADPWDIEDAIYSTAYYLSANMSSPDDITSAIFAYNHADWYVEEVMGYFNTYTNGYVAVDGGSVDIKGDKAWVVPHTKNITSEFGMRTLNGKTKLHAGIDIAGGNDLGKPIVAFMDGTVTYSQWNTGGYGNLVIIEHANNIKTYYAHLNQQGISVGTKVKAGQVIGYMGTTGNSTGVHLHFEVRVNEKPVNPRPYLAEWIGE",
+  "md5" : "ff74e7bff7b9d98619f459230f1f05fa",
+  "matches" : [ {
+    "signature" : {
+      "accession" : "cd12797",
+      "name" : "M23_peptidase",
+      "description" : "M23_peptidase",
+      "signatureLibraryRelease" : {
+        "library" : "CDD",
+        "version" : "3.20"
+      },
+      "entry" : null
+    },
+    "locations" : [ {
+      "start" : 264,
+      "end" : 351,
+      "sites" : [ {
+        "description" : "active site",
+        "numLocations" : 4,
+        "siteLocations" : [ {
+          "start" : 348,
+          "end" : 348,
+          "residue" : "H"
+        }, {
+          "start" : 268,
+          "end" : 268,
+          "residue" : "D"
+        }, {
+          "start" : 346,
+          "end" : 346,
+          "residue" : "H"
+        }, {
+          "start" : 264,
+          "end" : 264,
+          "residue" : "H"
+        } ]
+      } ],
+      "evalue" : 9.92583E-35,
+      "score" : 121.16,
+      "location-fragments" : [ {
+        "start" : 264,
+        "end" : 351,
+        "dc-status" : "CONTINUOUS"
+      } ]
+    } ],
+    "model-ac" : "cd12797"
+  }, {
+    "signature" : {
+      "accession" : "G3DSA:1.10.530.10",
+      "name" : "",
+      "description" : null,
+      "signatureLibraryRelease" : {
+        "library" : "GENE3D",
+        "version" : "4.3.0"
+      },
+      "entry" : null
+    },
+    "locations" : [ {
+      "start" : 68,
+      "end" : 229,
+      "hmmStart" : 4,
+      "hmmEnd" : 120,
+      "hmmLength" : 173,
+      "hmmBounds" : "N_TERMINAL_COMPLETE",
+      "evalue" : 3.6E-20,
+      "score" : 74.3,
+      "envelopeStart" : 68,
+      "envelopeEnd" : 234,
+      "postProcessed" : true,
+      "location-fragments" : [ {
+        "start" : 68,
+        "end" : 229,
+        "dc-status" : "CONTINUOUS"
+      } ]
+    } ],
+    "evalue" : 1.9E-20,
+    "score" : 75.2,
+    "model-ac" : "1qsaA03"
+  }, {
+    "signature" : {
+      "accession" : "PTHR21666",
+      "name" : "PEPTIDASE-RELATED",
+      "description" : null,
+      "signatureLibraryRelease" : {
+        "library" : "PANTHER",
+        "version" : "17.0"
+      },
+      "entry" : null
+    },
+    "locations" : [ {
+      "start" : 203,
+      "end" : 365,
+      "hmmStart" : 227,
+      "hmmEnd" : 354,
+      "hmmLength" : 0,
+      "hmmBounds" : "INCOMPLETE",
+      "envelopeStart" : 140,
+      "envelopeEnd" : 368,
+      "location-fragments" : [ {
+        "start" : 203,
+        "end" : 365,
+        "dc-status" : "CONTINUOUS"
+      } ]
+    } ],
+    "accession" : "PTHR21666:SF270",
+    "name" : "MUREIN DD-ENDOPEPTIDASE MEPM",
+    "evalue" : 5.6E-36,
+    "score" : 136.8,
+    "proteinClass" : "PC00153",
+    "graftPoint" : "PTN007699885",
+    "goXrefs" : [ {
+      "name" : null,
+      "databaseName" : "GO",
+      "category" : null,
+      "id" : "GO:0016787"
+    }, {
+      "name" : null,
+      "databaseName" : "GO",
+      "category" : null,
+      "id" : "GO:0140096"
+    }, {
+      "name" : null,
+      "databaseName" : "GO",
+      "category" : null,
+      "id" : "GO:0008237"
+    }, {
+      "name" : null,
+      "databaseName" : "GO",
+      "category" : null,
+      "id" : "GO:0008233"
+    }, {
+      "name" : null,
+      "databaseName" : "GO",
+      "category" : null,
+      "id" : "GO:0003824"
+    }, {
+      "name" : null,
+      "databaseName" : "GO",
+      "category" : null,
+      "id" : "GO:0004222"
+    }, {
+      "name" : null,
+      "databaseName" : "GO",
+      "category" : null,
+      "id" : "GO:0004175"
+    } ],
+    "model-ac" : "PTHR21666:SF270"
+  }, {
+    "signature" : {
+      "accession" : "PF01551",
+      "name" : "Peptidase_M23",
+      "description" : "Peptidase family M23",
+      "signatureLibraryRelease" : {
+        "library" : "PFAM",
+        "version" : "35.0"
+      },
+      "entry" : {
+        "accession" : "IPR016047",
+        "name" : "Peptidase_M23",
+        "description" : "Peptidase M23",
+        "type" : "DOMAIN",
+        "goXRefs" : [ ],
+        "pathwayXRefs" : [ {
+          "name" : "pectin degradation I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7246"
+        }, {
+          "name" : "ulvan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7647"
+        }, {
+          "name" : "microcin B17 biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8119"
+        } ]
+      }
+    },
+    "locations" : [ {
+      "start" : 263,
+      "end" : 360,
+      "hmmStart" : 2,
+      "hmmEnd" : 96,
+      "hmmLength" : 96,
+      "hmmBounds" : "C_TERMINAL_COMPLETE",
+      "evalue" : 2.3E-32,
+      "score" : 111.1,
+      "envelopeStart" : 262,
+      "envelopeEnd" : 360,
+      "postProcessed" : true,
+      "location-fragments" : [ {
+        "start" : 263,
+        "end" : 360,
+        "dc-status" : "CONTINUOUS"
+      } ]
+    } ],
+    "evalue" : 1.3E-32,
+    "score" : 111.8,
+    "model-ac" : "PF01551"
+  }, {
+    "signature" : {
+      "accession" : "SSF51261",
+      "name" : "Duplicated hybrid motif",
+      "description" : null,
+      "signatureLibraryRelease" : {
+        "library" : "SUPERFAMILY",
+        "version" : "1.75"
+      },
+      "entry" : {
+        "accession" : "IPR011055",
+        "name" : "Dup_hybrid_motif",
+        "description" : "Duplicated hybrid motif",
+        "type" : "HOMOLOGOUS_SUPERFAMILY",
+        "goXRefs" : [ ],
+        "pathwayXRefs" : [ {
+          "name" : "inositol diphosphates biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6369"
+        }, {
+          "name" : "cyanidin diglucoside biosynthesis (acyl-glucose dependent)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7256"
+        }, {
+          "name" : "hygromycin B biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8367"
+        }, {
+          "name" : "ribitol degradation II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8394"
+        }, {
+          "name" : "rutin degradation (plants)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7134"
+        }, {
+          "name" : "quercetin glucoside degradation (Allium)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7133"
+        }, {
+          "name" : "stachyose degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6527"
+        }, {
+          "name" : "linustatin bioactivation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7091"
+        }, {
+          "name" : "septacidin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8366"
+        }, {
+          "name" : "xylitol degradation II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8393"
+        }, {
+          "name" : "pectin degradation I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7246"
+        }, {
+          "name" : "podophyllotoxin glucosides metabolism",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7491"
+        }, {
+          "name" : "D-arabinitol degradation II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8392"
+        }, {
+          "name" : "starch degradation V",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6737"
+        }, {
+          "name" : "daphnin interconversion",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7056"
+        }, {
+          "name" : "cichoriin interconversion",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7057"
+        }, {
+          "name" : "(1,4)-beta-D-xylan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6717"
+        }, {
+          "name" : "starch degradation IV",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6735"
+        }, {
+          "name" : "D-tagatose degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8324"
+        }, {
+          "name" : "cell-surface glycoconjugate-linked phosphonate biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8129"
+        }, {
+          "name" : "beta-D-mannosyl phosphomycoketide biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7740"
+        }, {
+          "name" : "starch degradation I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-842"
+        }, {
+          "name" : "fructan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-862"
+        }, {
+          "name" : "dhurrin degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5976"
+        }, {
+          "name" : "dehydrophos biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6682"
+        }, {
+          "name" : "indole-3-acetate activation II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-1921"
+        }, {
+          "name" : "adenosylcobalamin biosynthesis from adenosylcobinamide-GDP II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7975"
+        }, {
+          "name" : "emetine biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7135"
+        }, {
+          "name" : "sphingolipid biosynthesis (plants)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5129"
+        }, {
+          "name" : "4-oxopentanoate degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7948"
+        }, {
+          "name" : "lincomycin A biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6955"
+        }, {
+          "name" : "rutin degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6848"
+        }, {
+          "name" : "CMP-legionaminate biosynthesis I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6749"
+        }, {
+          "name" : "kappa-carrageenan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6821"
+        }, {
+          "name" : "ecdysteroid metabolism (arthropods)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7321"
+        }, {
+          "name" : "phosalacine biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7769"
+        }, {
+          "name" : "microcin B17 biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8119"
+        }, {
+          "name" : "cytidine-5'-diphosphate-glycerol biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6626"
+        }, {
+          "name" : "ulvan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7647"
+        }, {
+          "name" : "oleandomycin activation/inactivation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6972"
+        }, {
+          "name" : "luteolin triglucuronide degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7445"
+        }, {
+          "name" : "N-acetyl-D-galactosamine degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7077"
+        }, {
+          "name" : "cell-surface glycoconjugate-linked phosphocholine biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7886"
+        }, {
+          "name" : "CMP-N-acetyl-7-O-acetylneuraminate biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7529"
+        }, {
+          "name" : "N-(1-deoxy-D-fructos-1-yl)-L-asparagine degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8402"
+        }, {
+          "name" : "dalcochinin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5821"
+        }, {
+          "name" : "phosphinothricin tripeptide biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6322"
+        }, {
+          "name" : "chitin derivatives degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6906"
+        }, {
+          "name" : "phenylethanol glycoconjugate biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7074"
+        }, {
+          "name" : "cellulose and hemicellulose degradation (cellulolosome)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6784"
+        }, {
+          "name" : "chitin degradation I (archaea)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6855"
+        } ]
+      }
+    },
+    "locations" : [ {
+      "start" : 222,
+      "end" : 364,
+      "hmmLength" : 270,
+      "location-fragments" : [ {
+        "start" : 222,
+        "end" : 364,
+        "dc-status" : "CONTINUOUS"
+      } ]
+    } ],
+    "evalue" : 1.41E-49,
+    "model-ac" : "0043026"
+  }, {
+    "signature" : {
+      "accession" : "G3DSA:2.70.70.10",
+      "name" : "Glucose Permease (Domain IIA)",
+      "description" : null,
+      "signatureLibraryRelease" : {
+        "library" : "GENE3D",
+        "version" : "4.3.0"
+      },
+      "entry" : {
+        "accession" : "IPR011055",
+        "name" : "Dup_hybrid_motif",
+        "description" : "Duplicated hybrid motif",
+        "type" : "HOMOLOGOUS_SUPERFAMILY",
+        "goXRefs" : [ ],
+        "pathwayXRefs" : [ {
+          "name" : "inositol diphosphates biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6369"
+        }, {
+          "name" : "cyanidin diglucoside biosynthesis (acyl-glucose dependent)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7256"
+        }, {
+          "name" : "hygromycin B biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8367"
+        }, {
+          "name" : "ribitol degradation II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8394"
+        }, {
+          "name" : "rutin degradation (plants)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7134"
+        }, {
+          "name" : "quercetin glucoside degradation (Allium)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7133"
+        }, {
+          "name" : "stachyose degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6527"
+        }, {
+          "name" : "linustatin bioactivation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7091"
+        }, {
+          "name" : "septacidin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8366"
+        }, {
+          "name" : "xylitol degradation II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8393"
+        }, {
+          "name" : "pectin degradation I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7246"
+        }, {
+          "name" : "podophyllotoxin glucosides metabolism",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7491"
+        }, {
+          "name" : "D-arabinitol degradation II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8392"
+        }, {
+          "name" : "starch degradation V",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6737"
+        }, {
+          "name" : "daphnin interconversion",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7056"
+        }, {
+          "name" : "cichoriin interconversion",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7057"
+        }, {
+          "name" : "(1,4)-beta-D-xylan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6717"
+        }, {
+          "name" : "starch degradation IV",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6735"
+        }, {
+          "name" : "D-tagatose degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8324"
+        }, {
+          "name" : "cell-surface glycoconjugate-linked phosphonate biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8129"
+        }, {
+          "name" : "beta-D-mannosyl phosphomycoketide biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7740"
+        }, {
+          "name" : "starch degradation I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-842"
+        }, {
+          "name" : "fructan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-862"
+        }, {
+          "name" : "dhurrin degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5976"
+        }, {
+          "name" : "dehydrophos biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6682"
+        }, {
+          "name" : "indole-3-acetate activation II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-1921"
+        }, {
+          "name" : "adenosylcobalamin biosynthesis from adenosylcobinamide-GDP II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7975"
+        }, {
+          "name" : "emetine biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7135"
+        }, {
+          "name" : "sphingolipid biosynthesis (plants)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5129"
+        }, {
+          "name" : "4-oxopentanoate degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7948"
+        }, {
+          "name" : "lincomycin A biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6955"
+        }, {
+          "name" : "rutin degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6848"
+        }, {
+          "name" : "CMP-legionaminate biosynthesis I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6749"
+        }, {
+          "name" : "kappa-carrageenan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6821"
+        }, {
+          "name" : "ecdysteroid metabolism (arthropods)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7321"
+        }, {
+          "name" : "phosalacine biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7769"
+        }, {
+          "name" : "microcin B17 biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8119"
+        }, {
+          "name" : "cytidine-5'-diphosphate-glycerol biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6626"
+        }, {
+          "name" : "ulvan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7647"
+        }, {
+          "name" : "oleandomycin activation/inactivation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6972"
+        }, {
+          "name" : "luteolin triglucuronide degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7445"
+        }, {
+          "name" : "N-acetyl-D-galactosamine degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7077"
+        }, {
+          "name" : "cell-surface glycoconjugate-linked phosphocholine biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7886"
+        }, {
+          "name" : "CMP-N-acetyl-7-O-acetylneuraminate biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7529"
+        }, {
+          "name" : "N-(1-deoxy-D-fructos-1-yl)-L-asparagine degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8402"
+        }, {
+          "name" : "dalcochinin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5821"
+        }, {
+          "name" : "phosphinothricin tripeptide biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6322"
+        }, {
+          "name" : "chitin derivatives degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6906"
+        }, {
+          "name" : "phenylethanol glycoconjugate biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7074"
+        }, {
+          "name" : "cellulose and hemicellulose degradation (cellulolosome)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6784"
+        }, {
+          "name" : "chitin degradation I (archaea)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6855"
+        } ]
+      }
+    },
+    "locations" : [ {
+      "start" : 230,
+      "end" : 366,
+      "hmmStart" : 26,
+      "hmmEnd" : 154,
+      "hmmLength" : 159,
+      "hmmBounds" : "C_TERMINAL_COMPLETE",
+      "evalue" : 3.9E-45,
+      "score" : 155.5,
+      "envelopeStart" : 225,
+      "envelopeEnd" : 366,
+      "postProcessed" : true,
+      "location-fragments" : [ {
+        "start" : 230,
+        "end" : 366,
+        "dc-status" : "CONTINUOUS"
+      } ]
+    } ],
+    "evalue" : 2.3E-45,
+    "score" : 156.3,
+    "model-ac" : "2hsiB02"
+  }, {
+    "signature" : {
+      "accession" : "cd13399",
+      "name" : "Slt35-like",
+      "description" : "Slt35-like",
+      "signatureLibraryRelease" : {
+        "library" : "CDD",
+        "version" : "3.20"
+      },
+      "entry" : null
+    },
+    "locations" : [ {
+      "start" : 86,
+      "end" : 214,
+      "sites" : [ {
+        "description" : "sugar binding site",
+        "numLocations" : 16,
+        "siteLocations" : [ {
+          "start" : 106,
+          "end" : 106,
+          "residue" : "N"
+        }, {
+          "start" : 112,
+          "end" : 112,
+          "residue" : "A"
+        }, {
+          "start" : 124,
+          "end" : 124,
+          "residue" : "T"
+        }, {
+          "start" : 119,
+          "end" : 119,
+          "residue" : "Q"
+        }, {
+          "start" : 205,
+          "end" : 205,
+          "residue" : "H"
+        }, {
+          "start" : 120,
+          "end" : 120,
+          "residue" : "F"
+        }, {
+          "start" : 185,
+          "end" : 185,
+          "residue" : "Y"
+        }, {
+          "start" : 202,
+          "end" : 202,
+          "residue" : "A"
+        }, {
+          "start" : 100,
+          "end" : 100,
+          "residue" : "E"
+        }, {
+          "start" : 121,
+          "end" : 121,
+          "residue" : "M"
+        }, {
+          "start" : 102,
+          "end" : 102,
+          "residue" : "N"
+        }, {
+          "start" : 203,
+          "end" : 203,
+          "residue" : "Y"
+        }, {
+          "start" : 98,
+          "end" : 98,
+          "residue" : "R"
+        }, {
+          "start" : 204,
+          "end" : 204,
+          "residue" : "N"
+        }, {
+          "start" : 209,
+          "end" : 209,
+          "residue" : "Y"
+        }, {
+          "start" : 99,
+          "end" : 99,
+          "residue" : "V"
+        } ]
+      } ],
+      "evalue" : 1.14401E-27,
+      "score" : 103.157,
+      "location-fragments" : [ {
+        "start" : 86,
+        "end" : 214,
+        "dc-status" : "CONTINUOUS"
+      } ]
+    } ],
+    "model-ac" : "cd13399"
+  }, {
+    "signature" : {
+      "accession" : "SSF53955",
+      "name" : "Lysozyme-like",
+      "description" : null,
+      "signatureLibraryRelease" : {
+        "library" : "SUPERFAMILY",
+        "version" : "1.75"
+      },
+      "entry" : {
+        "accession" : "IPR023346",
+        "name" : "Lysozyme-like_dom_sf",
+        "description" : "Lysozyme-like domain superfamily",
+        "type" : "HOMOLOGOUS_SUPERFAMILY",
+        "goXRefs" : [ ],
+        "pathwayXRefs" : [ {
+          "name" : "cyanidin diglucoside biosynthesis (acyl-glucose dependent)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7256"
+        }, {
+          "name" : "peptidoglycan biosynthesis IV (Enterococcus faecium)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6471"
+        }, {
+          "name" : "anthocyanidin modification (Arabidopsis)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7450"
+        }, {
+          "name" : "Neutrophil degranulation",
+          "databaseName" : "Reactome",
+          "id" : "R-CFA-6798695"
+        }, {
+          "name" : "peptidoglycan biosynthesis V (beta-lactam resistance)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6470"
+        }, {
+          "name" : "Lactose synthesis",
+          "databaseName" : "Reactome",
+          "id" : "R-HSA-5653890"
+        }, {
+          "name" : "rutin degradation (plants)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7134"
+        }, {
+          "name" : "Antimicrobial peptides",
+          "databaseName" : "Reactome",
+          "id" : "R-SSC-6803157"
+        }, {
+          "name" : "quercetin glucoside degradation (Allium)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7133"
+        }, {
+          "name" : "Neutrophil degranulation",
+          "databaseName" : "Reactome",
+          "id" : "R-BTA-6798695"
+        }, {
+          "name" : "stachyose degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6527"
+        }, {
+          "name" : "linustatin bioactivation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7091"
+        }, {
+          "name" : "paromomycin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7018"
+        }, {
+          "name" : "septacidin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-8366"
+        }, {
+          "name" : "pectin degradation I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7246"
+        }, {
+          "name" : "podophyllotoxin glucosides metabolism",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7491"
+        }, {
+          "name" : "toyocamycin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6720"
+        }, {
+          "name" : "peptidoglycan biosynthesis III (mycobacteria)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6385"
+        }, {
+          "name" : "Neutrophil degranulation",
+          "databaseName" : "Reactome",
+          "id" : "R-MMU-6798695"
+        }, {
+          "name" : "Antimicrobial peptides",
+          "databaseName" : "Reactome",
+          "id" : "R-RNO-6803157"
+        }, {
+          "name" : "starch degradation V",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6737"
+        }, {
+          "name" : "daphnin interconversion",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7056"
+        }, {
+          "name" : "Amyloid fiber formation",
+          "databaseName" : "Reactome",
+          "id" : "R-HSA-977225"
+        }, {
+          "name" : "cichoriin interconversion",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7057"
+        }, {
+          "name" : "(1,4)-beta-D-xylan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6717"
+        }, {
+          "name" : "starch degradation IV",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6735"
+        }, {
+          "name" : "tetrahydromethanopterin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6148"
+        }, {
+          "name" : "Antimicrobial peptides",
+          "databaseName" : "Reactome",
+          "id" : "R-GGA-6803157"
+        }, {
+          "name" : "gentamicin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7025"
+        }, {
+          "name" : "starch degradation I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-842"
+        }, {
+          "name" : "fructan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-862"
+        }, {
+          "name" : "chitin degradation II (Vibrio)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6902"
+        }, {
+          "name" : "dhurrin degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5976"
+        }, {
+          "name" : "xylan biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5800"
+        }, {
+          "name" : "indole-3-acetate activation II",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-1921"
+        }, {
+          "name" : "peptidoglycan biosynthesis II (staphylococci)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5265"
+        }, {
+          "name" : "emetine biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7135"
+        }, {
+          "name" : "Antimicrobial peptides",
+          "databaseName" : "Reactome",
+          "id" : "R-MMU-6803157"
+        }, {
+          "name" : "Antimicrobial peptides",
+          "databaseName" : "Reactome",
+          "id" : "R-HSA-6803157"
+        }, {
+          "name" : "rutin degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6848"
+        }, {
+          "name" : "CMP-legionaminate biosynthesis I",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6749"
+        }, {
+          "name" : "kappa-carrageenan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6821"
+        }, {
+          "name" : "Neutrophil degranulation",
+          "databaseName" : "Reactome",
+          "id" : "R-SSC-6798695"
+        }, {
+          "name" : "Antimicrobial peptides",
+          "databaseName" : "Reactome",
+          "id" : "R-BTA-6803157"
+        }, {
+          "name" : "alpha-dystroglycan glycosylation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7981"
+        }, {
+          "name" : "Antimicrobial peptides",
+          "databaseName" : "Reactome",
+          "id" : "R-CFA-6803157"
+        }, {
+          "name" : "chitin degradation III (Serratia)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7822"
+        }, {
+          "name" : "ulvan degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7647"
+        }, {
+          "name" : "oleandomycin activation/inactivation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6972"
+        }, {
+          "name" : "luteolin triglucuronide degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7445"
+        }, {
+          "name" : "Neutrophil degranulation",
+          "databaseName" : "Reactome",
+          "id" : "R-HSA-6798695"
+        }, {
+          "name" : "CMP-N-acetyl-7-O-acetylneuraminate biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7529"
+        }, {
+          "name" : "Neutrophil degranulation",
+          "databaseName" : "Reactome",
+          "id" : "R-RNO-6798695"
+        }, {
+          "name" : "dalcochinin biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5821"
+        }, {
+          "name" : "type I lipoteichoic acid biosynthesis (S. aureus)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7817"
+        }, {
+          "name" : "chitin derivatives degradation",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6906"
+        }, {
+          "name" : "Lactose synthesis",
+          "databaseName" : "Reactome",
+          "id" : "R-SSC-5653890"
+        }, {
+          "name" : "NAD salvage (plants)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-5381"
+        }, {
+          "name" : "Lactose synthesis",
+          "databaseName" : "Reactome",
+          "id" : "R-MMU-5653890"
+        }, {
+          "name" : "Neutrophil degranulation",
+          "databaseName" : "Reactome",
+          "id" : "R-GGA-6798695"
+        }, {
+          "name" : "phenylethanol glycoconjugate biosynthesis",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-7074"
+        }, {
+          "name" : "Lactose synthesis",
+          "databaseName" : "Reactome",
+          "id" : "R-DME-5653890"
+        }, {
+          "name" : "cellulose and hemicellulose degradation (cellulolosome)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6784"
+        }, {
+          "name" : "chitin degradation I (archaea)",
+          "databaseName" : "MetaCyc",
+          "id" : "PWY-6855"
+        } ]
+      }
+    },
+    "locations" : [ {
+      "start" : 70,
+      "end" : 222,
+      "hmmLength" : 322,
+      "location-fragments" : [ {
+        "start" : 159,
+        "end" : 222,
+        "dc-status" : "N_TERMINAL_DISC"
+      }, {
+        "start" : 70,
+        "end" : 126,
+        "dc-status" : "C_TERMINAL_DISC"
+      } ]
+    } ],
+    "evalue" : 1.52E-25,
+    "model-ac" : "0043002"
+  } ],
+  "xref" : [ {
+    "name" : "PL25_M23 Virgibacillus salarius PL25 contig_11 conjugation M23 metallopeptidase (PL25_00078, 370 aa)",
+    "id" : "PL25_M23"
+  } ]
+} ]
+}

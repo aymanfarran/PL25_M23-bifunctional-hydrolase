@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/farrana/.macsyfinder/models/CONJScan/profiles/FA_orf15.hmm
+# target sequence database:        /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa
+# output directed to file:         /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run/hmmer_results/FA_orf15.search_hmm.out
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       FA_orf15  [M=615]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-13   41.0  24.2    6.2e-13   41.0  24.2    2.9  1  PL25_00080  hypothetical protein
+
+
+Domain annotation for each sequence (and alignments):
+>> PL25_00080  hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.0  24.2   6.2e-15   6.2e-13     132     414 ..     177     455 ..     108     465 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 41.0 bits;  conditional E-value: 6.2e-15
+    FA_orf15 132 ivclnafiifsvkgnarealkraflilcligfgvgvl..anasniikgtnnvgkdlnnvim....nstssidgnidyvnensginkirnqlfdmtlykt 224
+                 iv + ++  f vk     a+  + l+  +i + v +l   n s iikg+n +  +   +i+    n+  s +gni+ +     +n   +++f+  ++k+
+  PL25_00080 177 IVAIYTLYQFVVKKASITAF--GALLKTVIALTVALLffNNYSSIIKGANTISVEASGMILsgsaNTEVSDNGNINNITVKEKMN---DNIFNTFVHKP 270
+                 44444444455554444444..34667778888887643799****************998333344456788888887776666...689999***** PP
+
+    FA_orf15 225 ylvmnygtvdekeikakgkdridnilkldvdkksekelddkvkdevekknnkamkqgyvfqklaisvigliitlalsivflsisfaklifsafalflfl 323
+                 yl+++ygt d+ ei   g+dr+  +l    ++ s + ++++ ++ev+++ n ++    ++q+l  s + ++   + si +  +sf+ +if  + l++ +
+  PL25_00080 271 YLMLQYGTTDQSEI---GDDRVLSLL----SEPSGEARQEIANQEVTEHGNDTLLYESLIQRLIFSNVMILTNTVSSIPIYLLSFTLIIFQFWFLVIAM 362
+                 ************99...778987776....466777888999*********************99988776666667877889**************** PP
+
+    FA_orf15 324 flvfswlvsfipgfelsvfkalaktlgyiilsacltfl.fvvvglsikl.ansfiepdsqnayflnsiflivilfvlykkraeiidfvsrgnl 414
+                 +  f+ l s +p+    + + +   l  ++l   ++ l +v+ gls  +   s +   s   ++l +i   +il+ l+  r++i ++ s g  
+  PL25_00080 363 IAPFALLWSALPNQFGVLKRYFLELLVPLVLKMGVSVLaLVIFGLSEVVyGISSLSNGSTLGFILSTIVQAIILLTLFLLRKRIFNIFSMGSQ 455
+                 ************9644445568899999*****9998846788**9555156889999****************************9999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (615 nodes)
+Target sequences:                         99  (19492 residues searched)
+Passed MSV filter:                        18  (0.181818); expected 2.0 (0.02)
+Passed bias filter:                        7  (0.0707071); expected 2.0 (0.02)
+Passed Vit filter:                         2  (0.020202); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.010101); expected 0.0 (1e-05)
+Initial search space (Z):                 99  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 718.93
+//
+[ok]

@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/farrana/.macsyfinder/models/CONJScan/profiles/FA_orf13.hmm
+# target sequence database:        /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa
+# output directed to file:         /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run/hmmer_results/FA_orf13.search_hmm.out
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       FA_orf13  [M=327]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-26   86.3  18.2    1.9e-26   85.7  18.2    1.2  1  PL25_00085  hypothetical protein
+
+
+Domain annotation for each sequence (and alignments):
+>> PL25_00085  hypothetical protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   85.7  18.2   1.9e-28   1.9e-26       6     322 ..      19     334 ..       8     338 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 85.7 bits;  conditional E-value: 1.9e-28
+    FA_orf13   6 kekkflkkikkKekkkkkPkvkevskkkanlivlgilglLlflsllgvlrainlssqvnslkekvetleek.skknkkkkeeldvsaveyylsnFineY 103
+                 k kk +k  k+K++ kk+Pk+k+v+ k      +g++ + + ++++ ++  ++  s   +        + +  ++ k++++  +  a+  + +nF+++Y
+  PL25_00085  19 KFKKVIKYEKEKKEAKKRPKNKSVKPKGFLARKVGVIVFWVTFGFMFLIVVVTFFSDGSDEA------NADeYNHLKEQNQATSPEAI-QFAENFAKDY 110
+                 33344444445666678999999988876666666677777777776666666655555442......33303444566666666666.589******* PP
+
+    FA_orf13 104 iNykndaadeekRkeeLekYls..fdteevketddlkkdRkLkeqslisveeeedl.slvqlkvgYevekkeek.lekq.mnlaiPvkekddllaivgr 197
+                   +    + + +Rke+++kYl+  +++    +   l+ +  +k+  + +v+e+ d+   ++l v+ +++k +e+ ++k+ + +++Pv   +  + i   
+  PL25_00085 111 FTWTVSDEGKHERKEKMSKYLAqgINEYAGLDFGSLEWNSSFKGSEVKKVQEKGDNlAHITLLVEMNISKSDEDeVNKTeKYFVVPVAYDGKTYGIYEL 209
+                 **9999999999**********55444444466689999***********876543144455566667776544145541569**************** PP
+
+    FA_orf13 198 PYflaeelyqgkskslekkkeedrkeldkeekesIekFLqvFFeKYasenkedlkllmKePelleg...qlkvsevdeknvkfyet.kkgvevvqvsVt 292
+                 P f     y  ++ +l++ ++e  k+ +  + + I++FL++FF+ Ya+++k+ l++++ +   ++g    + ++++++ ++ + +  ++++ vv   Vt
+  PL25_00085 210 PKF----TYVQEQTTLKQVTSERLKKAELADSRNIKDFLPTFFKSYAEDSKDKLNYIIANEDITDGlneTMLFESINKADIYMKNDeDDNTFVVFTEVT 304
+                 *99....78899999988999999***********************************99887663337889****66665555445666688899** PP
+
+    FA_orf13 293 FkdketnltvtEkFsLyltkndnqyyvnkl 322
+                 F++ etn++   ++ L ++k+d+ y v  +
+  PL25_00085 305 FTEPETNIPFVSNYQLSVIKKDGRYIVSGI 334
+                 **************************9866 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (327 nodes)
+Target sequences:                         99  (19492 residues searched)
+Passed MSV filter:                         9  (0.0909091); expected 2.0 (0.02)
+Passed bias filter:                        3  (0.030303); expected 2.0 (0.02)
+Passed Vit filter:                         2  (0.020202); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.010101); expected 0.0 (1e-05)
+Initial search space (Z):                 99  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1373.77
+//
+[ok]

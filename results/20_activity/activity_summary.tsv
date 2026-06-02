@@ -1,0 +1,5 @@
+Strain	Ctrl_mean_CFU_per_mL	Ctrl_SD	M23_mean_CFU_per_mL	M23_SD	Log10_reduction	Percent_killing	Welch_t	p_Welch	MW_U	p_MW	n
+Bacillus subtilis	4.667e+08	5.774e+07	4.333e+05	2.517e+05	3.084	99.91	19.2	0.001841	9	0.07652	3
+Staphylococcus warneri	4.333e+08	1.155e+08	2.267e+06	1.617e+06	2.356	99.48	10.93	0.003429	9	0.07652	3
+MRSA	4.667e+08	1.528e+08	2.267e+06	1.617e+06	2.383	99.51	10.75	0.002463	9	0.1	3
+Virgibacillus salarius PL25	4e+08	1e+08	3.567e+04	3.188e+04	4.204	99.99	14.06	0.003434	9	0.1	3

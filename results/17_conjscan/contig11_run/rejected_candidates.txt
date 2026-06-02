@@ -1,0 +1,92 @@
+# macsyfinder 2.1.6  (using MacSyLib 1.0.4 )
+# models : CONJScan-2.1.0
+# /usr/local/Caskroom/miniforge/base/envs/macsy/bin/macsyfinder --models CONJScan/Plasmids all --sequence-db /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/03_M23_ICE_locus/contig_11_proteome.faa --db-type ordered_replicon --replicon-topology circular --hmmer /usr/local/Caskroom/miniforge/base/envs/macsy/bin/hmmsearch -o /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run -w 4 --force
+# Rejected candidates:
+
+Cluster:
+- model = MOB
+- replicon = contig_11_proteome
+- hits = (PL25_00148, T4SS_t4cp2, 77)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (1) is not reached: 0
+============================================================
+Cluster:
+- model = T4SS_typeB
+- replicon = contig_11_proteome
+- hits = (PL25_00148, T4SS_t4cp2, 77)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (3) is not reached: 1
+	- The quorum of genes required (4) is not reached: 1
+============================================================
+Cluster:
+- model = T4SS_typeC
+- replicon = contig_11_proteome
+- hits = (PL25_00148, T4SS_t4cp2, 77)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (3) is not reached: 1
+	- The quorum of genes required (4) is not reached: 1
+============================================================
+Cluster:
+- model = T4SS_typeF
+- replicon = contig_11_proteome
+- hits = (PL25_00148, T4SS_t4cp2, 77)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (3) is not reached: 1
+	- The quorum of genes required (6) is not reached: 1
+============================================================
+Cluster:
+- model = T4SS_typeFA
+- replicon = contig_11_proteome
+- hits = (PL25_00085, FA_orf13, 15), (PL25_00148, T4SS_t4cp2, 77)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (3) is not reached: 1
+	- The quorum of genes required (5) is not reached: 2
+============================================================
+Cluster:
+- model = T4SS_typeFATA
+- replicon = contig_11_proteome
+- hits = (PL25_00148, T4SS_t4cp2, 77)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (3) is not reached: 1
+	- The quorum of genes required (4) is not reached: 1
+============================================================
+Cluster:
+- model = T4SS_typeG
+- replicon = contig_11_proteome
+- hits = (PL25_00148, T4SS_t4cp2, 77)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (3) is not reached: 1
+	- The quorum of genes required (6) is not reached: 1
+============================================================
+Cluster:
+- model = T4SS_typeI
+- replicon = contig_11_proteome
+- hits = (PL25_00148, T4SS_t4cp2, 77)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (3) is not reached: 1
+	- The quorum of genes required (6) is not reached: 1
+============================================================
+Cluster:
+- model = T4SS_typeT
+- replicon = contig_11_proteome
+- hits = (PL25_00148, T4SS_t4cp2, 77), (PL25_00150, T4SS_T_virB11, 79)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (3) is not reached: 1
+	- The quorum of genes required (4) is not reached: 2
+============================================================
+Cluster:
+- model = dCONJ_typeFA
+- replicon = contig_11_proteome
+- hits = (PL25_00085, FA_orf13, 15), (PL25_00148, T4SS_t4cp2, 77)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (1) is not reached: 0
+	- The quorum of genes required (4) is not reached: 2
+============================================================
+Cluster:
+- model = dCONJ_typeT
+- replicon = contig_11_proteome
+- hits = (PL25_00148, T4SS_t4cp2, 77), (PL25_00150, T4SS_T_virB11, 79)
+This candidate has been rejected because:
+	- The quorum of mandatory genes required (1) is not reached: 0
+	- The quorum of genes required (3) is not reached: 2
+============================================================

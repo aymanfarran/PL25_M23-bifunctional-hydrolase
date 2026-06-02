@@ -1,0 +1,40 @@
+{
+  "INFO": {
+    "failedjobs": 0,
+    "size": 1
+  },
+  "CSV_FILE": "/ibex/scratch/farrana/non_endolysin/outputs/07_signalp6_final/prediction_results.txt",
+  "MATURE_FILE": "/ibex/scratch/farrana/non_endolysin/outputs/07_signalp6_final/processed_entries.fasta",
+  "GFF_FILE": "/ibex/scratch/farrana/non_endolysin/outputs/07_signalp6_final/output.gff3",
+  "ZIP_FILE": "",
+  "SEQUENCES": {
+    "PL25_M23 Virgibacillus salarius PL25 contig_11 conjugation M23 metallopeptidase (PL25_00078, 370 aa)": {
+      "Name": "PL25_M23 Virgibacillus salarius PL25 contig_11 conjugation M23 metallopeptidase (PL25_00078, 370 aa)",
+      "Plot_eps": "",
+      "Plot_png": "/ibex/scratch/farrana/non_endolysin/outputs/07_signalp6_final/output_PL25_M23_Virgibacillus_salarius_PL25_contig_11_conjugation_M23_metallopeptidase__PL25_00078__370_aa__plot.png",
+      "Plot_txt": "/ibex/scratch/farrana/non_endolysin/outputs/07_signalp6_final/output_PL25_M23_Virgibacillus_salarius_PL25_contig_11_conjugation_M23_metallopeptidase__PL25_00078__370_aa__plot.txt",
+      "Prediction": "Other",
+      "Likelihood": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Protein_types": [
+        "Other",
+        "Signal Peptide (Sec/SPI)",
+        "Lipoprotein signal peptide (Sec/SPII)",
+        "TAT signal peptide (Tat/SPI)",
+        "TAT Lipoprotein signal peptide (Tat/SPII)",
+        "Pilin-like signal peptide (Sec/SPIII)"
+      ],
+      "CS_pos": ""
+    }
+  },
+  "FORMAT": "png",
+  "ORG": "other",
+  "MODE": "fast",
+  "REGION_GFF_FILE": "/ibex/scratch/farrana/non_endolysin/outputs/07_signalp6_final/region_output.gff3"
+}

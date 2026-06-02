@@ -1,0 +1,6 @@
+# gene: T4SS_T_virB11 extract from /Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper/results/17_conjscan/contig11_run/hmmer_results/T4SS_T_virB11.search_hmm.out hmm output
+# profile length= 328
+# i_evalue threshold= 0.001
+# coverage threshold= 0.500
+# hit_id	replicon_name	position_hit	hit_sequence_length	gene_name	i_eval	score	profile_coverage	sequence_coverage	begin	end
+PL25_00150	contig_11_proteome	79	376	T4SS_T_virB11	4.000e-24	77.700	0.872	0.785	18	312
