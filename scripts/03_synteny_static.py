@@ -56,7 +56,7 @@ KEY_GENES = {
     "PL25_00077": ("RusA resolvase",         "#673AB7"),
     "PL25_00078": ("M23 peptidase",          "#D7191C"),
     "PL25_00082": ("VirB4-like ATPase",      "#1F77B4"),
-    "PL25_00094": ("ATPase",                 "#42A5F5"),
+    "PL25_00094": ("RecD2-like helicase",    "#42A5F5"),
     "PL25_00148": ("T4SS-DNA transfer",      "#5E3C99"),
 }
 

@@ -51,7 +51,7 @@ KEY = {
     "PL25_00077": ("RusA resolvase",         "#673AB7"),
     "PL25_00078": ("M23 peptidase",          "#D7191C"),
     "PL25_00082": ("VirB4-like ATPase",      "#1F77B4"),
-    "PL25_00094": ("ATPase",                 "#42A5F5"),
+    "PL25_00094": ("RecD2-like helicase",    "#42A5F5"),
     "PL25_00148": ("T4SS-DNA transfer",      "#5E3C99"),
 }
 
@@ -152,7 +152,7 @@ legend = [
     Patch(color="#9C27B0", label="PL25_00076  Replication-Relaxation"),
     Patch(color="#673AB7", label="PL25_00077  RusA resolvase"),
     Patch(color="#1F77B4", label="PL25_00082  VirB4-like ATPase"),
-    Patch(color="#42A5F5", label="PL25_00094  AAA ATPase"),
+    Patch(color="#42A5F5", label="PL25_00094  RecD2-like helicase"),
     Patch(color="#5E3C99", label="PL25_00148  T4SS-DNA transfer"),
     Patch(color="#BDBDBD", label="Other CDS"),
     Patch(color="#1B5E20", label="GC content (above mean)"),
