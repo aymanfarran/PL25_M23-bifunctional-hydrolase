@@ -146,7 +146,7 @@ The exact tool versions and parameters used in the analyses are listed in the ma
 | InterProScan | 5.61-93.0 |
 | SignalP | 6.0h |
 | MAFFT | 7.526 |
-| trimAl | 1.4.1 |
+| trimAl | 1.5.rev1 |
 | IQ-TREE | 3.1.1 |
 | ColabFold (AlphaFold2 ptm) | 1.5.5 |
 | PyMOL (Open-Source) | 3.1.6.1 |
