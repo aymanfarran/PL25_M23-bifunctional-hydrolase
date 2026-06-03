@@ -141,11 +141,11 @@ The exact tool versions and parameters used in the analyses are listed in the ma
 | geNomad | 1.7.0 |
 | MOB-suite | 3.1.9 |
 | MacSyFinder + CONJScan | 2.1.6 + 2.1.0 |
-| HMMER | 3.3.2 |
+| HMMER | 3.4 |
 | BLAST+ | 2.16.0 |
 | InterProScan | 5.61-93.0 |
 | SignalP | 6.0h |
-| MAFFT | 7.505 |
+| MAFFT | 7.526 |
 | trimAl | 1.4.1 |
 | IQ-TREE | 3.1.1 |
 | ColabFold (AlphaFold2 ptm) | 1.5.5 |
