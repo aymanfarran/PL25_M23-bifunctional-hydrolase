@@ -49,3 +49,9 @@ results/18_oriTfinder_INPUT_contig11.fna
 # Manuscript working drafts (kept locally, not deposited on GitHub)
 MANUSCRIPT_DRAFT.md
 MANUSCRIPT_DRAFT.docx
+
+# Supplementary files — managed locally; will be replaced by a single combined file
+SUPPLEMENTARY_TABLE_*.md
+SUPPLEMENTARY_TABLE_*.docx
+SUPPLEMENTARY_METHODS_*.md
+SUPPLEMENTARY_METHODS_*.docx
