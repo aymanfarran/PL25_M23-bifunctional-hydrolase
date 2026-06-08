@@ -1,0 +1,111 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=16;
+TAXLABELS
+[1] 'PL25_M23|plasmid_pPL25-M23|this_study'
+[2] 'Lysostaphin_outgroup|chromosome|P10547'
+[3] 'Lentibacillus_sp_CBA3610|chromosome|WP_176447356.1'
+[4] 'Virgibacillus_ainsalahensis|chromosome|WP_461177648.1'
+[5] 'Lentibacillus_amyloliquefaciens|chromosome|WP_068441797.1'
+[6] 'Gracilibacillus_boraciitolerans|plasmid_pJCM21714|WP_464380148.1'
+[7] 'Virgibacillus_halodenitrificans|plasmid_Bac324|WP_121616750.1'
+[8] 'Cytobacillus_oceanisediminis_2691|plasmid_pBO1|WP_019380455.1'
+[9] 'Cytobacillus_firmus_M7|plasmid_p1|WP_263600221.1'
+[10] 'Cytobacillus_firmus_CK19|plasmid_unnamed1|WP_252222728.1'
+[11] 'Cytobacillus_oceanisediminis_CK22|plasmid_unnamed1|WP_252246573.1'
+[12] 'Cytobacillus_pseudoceanisediminis|plasmid_unnamed|WP_251264864.1'
+[13] 'Halobacillus_litoralis_ERB031|plasmid_pLDW-31|WP_241656025.1'
+[14] 'Cytobacillus_firmus_SGAir0285|plasmid_pSGAir0285_3|WP_009335593.1'
+[15] 'Cytobacillus_oceanisediminis_YPW-V2|plasmid_unnamed1|WP_192909257.1'
+[16] 'Salinicoccus_jeotgali|plasmid_pJCM16981-2|WP_344700570.1'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=16 nsplits=80;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 16,
+	48	 2 16,
+	100	 7,
+	100	 8,
+	100	 11,
+	59	 8 11,
+	100	 10,
+	2	 8 10 11,
+	100	 9,
+	2	 8 9 10 11,
+	100	 12,
+	100	 8 9 10 11 12,
+	100	 13,
+	83	 8 9 10 11 12 13,
+	100	 14,
+	100	 15,
+	100	 14 15,
+	77	 1 2 3 4 5 6 7 16,
+	95	 1 2 3 4 5 6 16,
+	38	 1 3 4 5 6,
+	100	 3,
+	100	 5,
+	81	 3 5,
+	100	 4,
+	99	 3 4 5,
+	38	 1 6,
+	100	 6,
+	100	 1,
+	19	 4 5,
+	52	 9 10,
+	85	 9 10 12,
+	33	 1 2 3 4 5 16,
+	41	 1 2 16,
+	33	 8 9 10 12,
+	38	 1 2 3 4 5 6,
+	7	 1 3 4 5,
+	4	 8 11 12,
+	4	 8 9 11 12,
+	11	 7 8 9 10 11 12 13,
+	2	 8 12,
+	9	 10 12,
+	7	 9 10 11 12,
+	2	 2 6,
+	5	 1 2 6,
+	34	 9 12,
+	9	 2 3 4 5,
+	2	 1 2 3 4 5,
+	4	 3 4 5 6,
+	12	 8 9 10 11 12 14 15,
+	5	 1 2,
+	1	 7 16,
+	4	 2 7,
+	7	 1 3 4 5 6 16,
+	1	 8 10 11 12,
+	11	 1 2 6 16,
+	4	 1 16,
+	11	 1 2 3 4 5 6 13 16,
+	1	 8 9 10,
+	6	 7 14 15,
+	2	 2 3 4 5 16,
+	0	 9 10 11,
+	2	 3 4 5 16,
+	0	 2 7 16,
+	0	 9 12 13,
+	0	 9 10 12 13,
+	2	 8 9 11,
+	0	 2 4,
+	1	 1 3 4 5 16,
+	1	 9 11,
+	0	 10 11,
+	2	 1 6 16,
+	0	 7 8 9 10 11 12,
+	0	 2 3,
+	0	 2 3 5,
+	1	 1 2 3 4 5 6 14 15,
+	0	 13 14 15,
+	0	 11 12,
+	0	 2 7 14 15,
+	0	 2 3 4 5 6,
+;
+END; [Splits]
+
