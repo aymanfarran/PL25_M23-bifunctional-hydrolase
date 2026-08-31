@@ -52,18 +52,7 @@ This repository contains the code, intermediate files, structural models and fig
 │   ├── 10_antibacterial_activity.py        Figure 9 — antibacterial-activity stats + figure
 │   └── 11_orit_motif_scan.py               oriT consensus-motif screen (Supp. Methods S4)
 │
-├── figures/                         Final figures (PDF / SVG / PNG)
-│   ├── 01b_gc_codon_panelB.*                   Figure 1B — GC / GC3 per contig
-│   ├── 01c_contig11_circular_map.*             Figure 1 — circular plasmid map
-│   ├── 02d_M23_phylogeny_v4_CwlT_removed.*     Figure 2 — M23 phylogeny (CwlT excluded)
-│   ├── 03d_M23_bifunctional_architecture_v3.*  Figure 3 — domain architecture
-│   ├── 04c_M23_bifunctional_panel_v2.*         Figure 4 — 3D structure panel
-│   ├── 05cc_M23_3way_alignment.*               Figure 5 — PL25 vs CwlP vs CwlT
-│   ├── 06_synteny_contig11_vs_relatives.*      Figure 6 — clinker synteny
-│   ├── 07_mobile_element_integrated.*          Figure 7 — integrated mobile-element panel
-│   ├── 08b_electrostatic_comparison_v2.*       Figure 8 — electrostatic surfaces
-│   ├── 09_active_site_comparison.*             Supplementary — active-site comparison
-│   └── 09_antibacterial_activity.*             Figure 9 — antibacterial activity
+│   (figures/ is not tracked in this repository — see "Figures" below)
 │
 ├── results/
 │   ├── 01_annotation/prokka/        Prokka genome annotation (GBK, GFF, FAA, FFN)
@@ -98,6 +87,15 @@ This repository contains the code, intermediate files, structural models and fig
 **Note:** the manuscript text itself (`MANUSCRIPT_DRAFT.md` / `.docx`) is maintained outside this repository. The deposit holds the **code, intermediate files, models, figures and supplementary tables**, but not the manuscript prose.
 
 ---
+
+## Figures
+
+Rendered figures are **not tracked in this repository**. They are distributed with
+the manuscript and its supplementary material, and every one of them can be
+regenerated from the scripts and result files kept here.
+
+Running any script below writes its output into a local `figures/` directory,
+which is git-ignored.
 
 ## How to reproduce a single figure
 
