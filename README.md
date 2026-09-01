@@ -26,29 +26,30 @@ This repository contains the code, intermediate files, structural models and fig
 
 ```
 .
-├── SUPPLEMENTARY_TABLE_S1.{md,docx} Per-contig geNomad / Flye / GC stats
-├── SUPPLEMENTARY_TABLE_S2.{md,docx} Structural superposition RMSDs
-├── SUPPLEMENTARY_TABLE_S3.{md,docx} Active-site residue conservation
-├── SUPPLEMENTARY_TABLE_S4.{md,docx} Plasmid mobility analysis (MOB-suite + CONJScan + oriT)
 ├── LICENSE                          MIT license
 ├── README.md                        This file
 ├── .gitignore
 │
 ├── scripts/                         All analysis and plotting scripts
-│   ├── 04_realign_ALE1.pml                 PyMOL — ALE-1 M23 superposition (S2 update)
-│   ├── 04c_render_M23_panels.py            PyMOL — Figure 4 panel rendering
-│   ├── 04c_combine_M23_panel.py            Figure 4 — 4-view 3D structure assembly
+│   ├── 04_realign_ALE1.pml                 PyMOL — ALE-1 M23 superposition
+│   ├── 04c_render_M23_panels.py            PyMOL — Figure 3b structure views
+│   ├── 04c_combine_M23_panel.py            4-view 3D structure assembly
 │   ├── 05_active_site_panel.py             PyMOL — Zn²⁺-site close-ups
-│   ├── 05b_combine_panels.py               Supplementary — active-site panel assembly
-│   ├── 05cc_M23_3way_alignment.py          PyMOL — Figure 5 panel rendering
-│   ├── 05cc_combine.py                     Figure 5 — three-way alignment assembly
-│   ├── 06c_M23_bifunctional_figure_v3.py   Figure 3 — pLDDT + domain architecture
-│   ├── 08_M23_tree_v4.py                   Figure 2 — IQ-TREE phylogeny visualisation
-│   ├── 08_render_surfaces.py               PyMOL — Figure 8 surface rendering
-│   ├── 08_combine_electrostatic.py         Figure 8 — electrostatic comparison assembly
-│   ├── 09_circular_plasmid_map.py          Figure 1 — circular plasmid map
-│   ├── 10_antibacterial_activity.py        Figure 9 — antibacterial-activity stats + figure
-│   └── 11_orit_motif_scan.py               oriT consensus-motif screen (Supp. Methods S4)
+│   ├── 05b_combine_panels.py               Active-site panel assembly
+│   ├── 05cc_M23_3way_alignment.py          PyMOL — Figure 4 panel rendering
+│   ├── 05cc_combine.py                     Figure 4 — three-way alignment assembly
+│   ├── 06c_M23_bifunctional_figure_v3.py   Figure 3a — pLDDT + domain architecture
+│   ├── 08_M23_tree_v4.py                   Supp. Figure 1 — full 101-taxon phylogeny
+│   ├── 08_render_surfaces.py               PyMOL — Figure 5 surface rendering
+│   ├── 08_combine_electrostatic.py         Figure 5 — electrostatic comparison assembly
+│   ├── 09_circular_plasmid_map.py          Figure 1a — circular plasmid map
+│   ├── 10_antibacterial_activity.py        Primary antibacterial assay stats
+│   ├── 11_orit_motif_scan.py               oriT consensus-motif screen (Supp. Methods S4)
+│   ├── 22_closed_genome_search.py          Closed-genome M23 homologue census
+│   ├── 22_render_F3_plasmid_lineage.py     Supp. Figure 2 — plasmid-clade phylogeny
+│   ├── 39_compact_M23_targeted.py          Figure 2 — compact targeted M23 phylogeny
+│   ├── 40_activity_export_raw.py           Bench workbook → tidy raw-data TSVs
+│   └── 41_activity_panels.py               Figures 6 and 7 — activity + biochemistry
 │
 │   (figures/ is not tracked in this repository — see "Figures" below)
 │
@@ -82,7 +83,7 @@ This repository contains the code, intermediate files, structural models and fig
     └── inputs/                      Input FASTAs sent to IBEX jobs
 ```
 
-**Note:** the manuscript text itself (`MANUSCRIPT_DRAFT.md` / `.docx`) is maintained outside this repository. The deposit holds the **code, intermediate files, models, figures and supplementary tables**, but not the manuscript prose.
+**Note:** the manuscript prose, the rendered figures and the supplementary tables are all maintained outside this repository and are distributed with the paper. The deposit holds the **code, raw assay data, intermediate files and structural models** needed to reproduce the analyses and rebuild the figures.
 
 ---
 
@@ -97,31 +98,56 @@ which is git-ignored.
 
 ## How to reproduce a single figure
 
-Most figures are one-script-one-figure. Examples:
+Most figures are one script, or a PyMOL render followed by a matplotlib
+assembly step. Figures 1 and 3 are composited by hand from the panels their
+scripts produce; Figure 6 panel b is a photograph of the drop plates and has
+no script.
 
 ```bash
-# Figure 1B — GC / GC3 per contig
-python scripts/01b_gc_codon_panelB.py     # (creation script not yet renamed; see scripts/)
-
-# Figure 1 — circular plasmid map
+# Figure 1a — circular plasmid map
 python scripts/09_circular_plasmid_map.py
 
-# Figure 9 — antibacterial activity
-python scripts/10_antibacterial_activity.py
+# Figure 2 — compact targeted M23 phylogeny
+python scripts/39_compact_M23_targeted.py
 
-# Figure 5 — three-way structural alignment (requires PyMOL Open-Source)
+# Figure 3a — pLDDT + domain architecture
+python scripts/06c_M23_bifunctional_figure_v3.py
+
+# Figure 3b — structure views (requires PyMOL Open-Source)
+pymol -cq scripts/04c_render_M23_panels.py
+
+# Figure 4 — three-way structural alignment (requires PyMOL Open-Source)
 pymol -cq scripts/05cc_M23_3way_alignment.py
 python scripts/05cc_combine.py
+
+# Figure 5 — electrostatic surface comparison (requires PyMOL Open-Source)
+pymol -cq scripts/08_render_surfaces.py
+python scripts/08_combine_electrostatic.py
+
+# Figures 6 and 7 — activity assays and biochemical characterisation
+python scripts/41_activity_panels.py
 ```
 
-The CwlT-free M23 phylogeny (Figure 2) can be rebuilt from scratch with:
+PyMOL steps must be run under the **open-source** build. The Incentive/trial
+build stamps an evaluation watermark into the ray-traced PNGs, which the
+assembly step would then bake into the composite figure.
+
+The activity figures read the raw-data TSVs in `results/20_activity/`, which
+are tracked here. To regenerate those TSVs from the bench workbook:
+
+```bash
+python scripts/40_activity_export_raw.py path/to/data.xlsx
+```
+
+The CwlT-free M23 phylogeny can be rebuilt from scratch with:
 
 ```bash
 cd results/07_M23_phylogeny
 mafft --auto M23_seedset_v4_noCwlT.faa > M23_aln_v4.fasta
 trimal -in M23_aln_v4.fasta -out M23_aln_v4_trim.fasta -gappyout
 iqtree3 -s M23_aln_v4_trim.fasta -m Q.pfam+G4 -B 1000 -T AUTO --prefix M23_iqtree_v4
-python ../../scripts/08_M23_tree_v4.py
+python ../../scripts/08_M23_tree_v4.py          # Supp. Figure 1, all 101 taxa
+python ../../scripts/39_compact_M23_targeted.py # Figure 2, collapsed to 20 tips
 ```
 
 ---
