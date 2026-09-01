@@ -149,16 +149,9 @@ ax3.set_yticks([])
 ax3.set_xlabel("Residue position in full-length PL25_M23 (aa)")
 for s in ("top","right","left"): ax3.spines[s].set_visible(False)
 
-# Caveat footnote
-fig.text(0.01, 0.012,
-    "Residue numbering: full-length PL25_M23 (370 aa). The N-terminal hydrophobic region (residues 19–46, orange band) "
-    "overlaps the start of the modelled extracellular catalytic region (residues 38–370) used for AlphaFold2 prediction. "
-    "SignalP 6.0h predicts OTHER = 1.000 (no cleavable signal peptide). The N-terminal glycoside-hydrolase domain is "
-    "detected at the FOLD level by CDD cd13399 (E = 1.1×10⁻²⁷), SUPERFAMILY SSF53955 (E = 1.5×10⁻²⁵) and Gene3D, "
-    "but is below the Pfam PF01464 HMM detection threshold; the CwlP-like architectural assignment therefore rests on "
-    "fold homology rather than Pfam-family membership. Zn²⁺-coordination is inferred from sequence motifs and AlphaFold2 "
-    "side-chain geometry only; experimental confirmation (EDTA/Zn²⁺ assay) remains to be performed.",
-    fontsize=7.8, style="italic", color="#444", ha="left", wrap=True)
+# Residue numbering, domain-detection thresholds and the fold-level basis of the
+# CwlP-like assignment are stated in the manuscript figure caption, so no caveat
+# footnote is drawn into the figure itself.
 
 items = [
     mpatches.Patch(color="#2196F3", label="Slt35-/Lysozyme-like glycoside hydrolase (fold-level)"),

@@ -21,8 +21,9 @@ OUT  = ROOT/"figures"
 RES  = ROOT/"results/20_activity"; RES.mkdir(parents=True, exist_ok=True)
 
 # ── Raw data (CFU/mL) — updated 2026-06-02 ────────────────
-# Assay: PL25_M23 (100 µg/mL) vs OD600-normalised bacteria, 2 h at 37 °C in PBS,
-#        serial dilution + spotting on LB agar; 3 technical replicates per condition.
+# Assay: PL25_M23 (100 µg/mL) vs OD600-normalised bacteria, 60 min at 37 °C in PBS,
+#        serial dilution + Miles-Misra drop-plate enumeration;
+#        3 technical replicates per condition, single biological experiment.
 data = {
     "Bacillus subtilis":              {"Neg":[5e8, 4e8, 5e8],    "M23":[4e5, 7e5, 2e5]},
     "Staphylococcus warneri":         {"Neg":[5e8, 3e8, 5e8],    "M23":[2e6, 8e5, 4e6]},
@@ -114,8 +115,7 @@ ax1.set_xticks(x)
 ax1.set_xticklabels([short_lab[s] for s in strains], fontsize=10)
 ax1.set_ylabel("log₁₀ CFU mL⁻¹", fontsize=11)
 ax1.set_ylim(2, 11.5)
-ax1.set_title("a   Bacterial viability after 2 h exposure to PL25_M23 (100 µg/mL, 37 °C, PBS)",
-              loc="left", fontsize=11, fontweight="bold")
+ax1.set_title("a", loc="left", fontsize=12, fontweight="bold")
 ax1.legend(loc="upper right", frameon=False, fontsize=9)
 for sp in ("top","right"): ax1.spines[sp].set_visible(False)
 
@@ -134,25 +134,17 @@ ax2.set_xticks(x)
 ax2.set_xticklabels([short_lab[s] for s in strains], fontsize=10)
 ax2.set_ylabel("log₁₀ reduction (vs. negative control)", fontsize=11)
 ax2.set_ylim(0, max(log_reds)+1.2)
-ax2.set_title("b   Magnitude of bactericidal effect", loc="left", fontsize=11, fontweight="bold")
+ax2.set_title("b", loc="left", fontsize=12, fontweight="bold")
 for sp in ("top","right"): ax2.spines[sp].set_visible(False)
 ax2.axhline(2, ls="--", lw=0.8, color="#888")
 ax2.text(len(strains)-0.5, 2.05, "2-log = 99 % killing", ha="right", va="bottom",
          fontsize=8, style="italic", color="#666")
 
-fig.suptitle("PL25_M23 shows bactericidal activity against Gram-positive bacteria, including MRSA",
-             fontsize=12.5, fontweight="bold", y=1.005)
+# Assay conditions, replicate structure, significance thresholds and the
+# single-biological-experiment caveat are all stated in the manuscript figure
+# caption, so no figure-level title or footnote is drawn here.
 
-fig.text(0.01, 0.005,
-    "Assay: OD₆₀₀-normalised bacterial suspensions were incubated with PL25_M23 at 100 µg/mL or with PBS "
-    "(negative control) for 2 h at 37 °C, serially diluted, and spotted on LB agar to enumerate surviving CFU. "
-    "Bars in (a) show mean log₁₀ CFU mL⁻¹ ± SD with individual replicates as black dots (n = 3 per condition). "
-    "Significance: Welch's t-test on log₁₀-transformed CFU/mL data; *p < 0.05; **p < 0.01; ***p < 0.001; ns = not significant. "
-    "Bars in (b) show the mean log₁₀ reduction in viable counts and the corresponding percentage killing. "
-    "Data are from a single experiment with three technical replicates; biological-replicate confirmation is recommended.",
-    ha="left", va="bottom", fontsize=8, style="italic", color="#555")
-
-plt.tight_layout(rect=[0, 0.05, 1, 0.97])
+plt.tight_layout()
 out = OUT/"09_antibacterial_activity"
 for ext in ("pdf","svg","png"):
     fig.savefig(f"{out}.{ext}", dpi=300, bbox_inches="tight")

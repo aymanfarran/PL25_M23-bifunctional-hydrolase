@@ -165,12 +165,8 @@ ax.set_title("M23 phylogeny v4 — PL25 plasmid SLT/M23 in context of CwlP (SP-�
              f"IQ-TREE3 · Q.PFAM+G4 · 1,000 UFBoot · {n_terms} sequences · midpoint-rooted   [CwlT removed: NlpC/P60 family, not M23]",
              fontsize=11.5, fontweight="bold", loc="left", pad=10)
 
-fig.text(0.5, 0.011,
-    "★ red = PL25 M23 (plasmid-encoded, this study)  •  ★ purple = CwlP-clipped (B. subtilis SP-β, only published SLT+M23 reference)  •  "
-    "▢ purple-dark = other M23 reference enzymes (lysostaphin, LytM, ALE-1, EnpA, zoocin A)  •  "
-    "◆ orange = phage-encoded M23 lysins  •  ● = halophile-Bacillaceae homologues from NCBI nr.  "
-    "CwlT is omitted from this M23 phylogeny because its C-terminal peptidase belongs to the NlpC/P60 cysteine-peptidase family (Pfam PF00877), not Pfam Peptidase_M23.",
-    ha="center", va="bottom", fontsize=7.5, style="italic", color="#444", wrap=True)
+# The symbol key and the reason CwlT is excluded from this phylogeny are given
+# in the manuscript figure caption; the in-plot legend below carries the colours.
 
 ordered = ["PL25","Reference_SLT_M23","Reference","Phage_M23","Virgibacillus","Lentibacillus",
            "Caldifermentibacillus","Cytobacillus","Ornithinibacillus","Domibacillus","Niallia",

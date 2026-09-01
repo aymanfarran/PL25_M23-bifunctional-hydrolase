@@ -165,12 +165,8 @@ fig.legend(handles=legend, loc="lower center", bbox_to_anchor=(0.5, -0.04),
            title="Tracks (outer → inner: CDS forward, CDS reverse, coverage, GC %, GC skew)",
            title_fontsize=9)
 
-fig.text(0.5, 0.965,
-    "PL25 contig_11 — 74,025 bp closed circular plasmid carrying PL25_M23",
-    ha="center", fontsize=13, fontweight="bold")
-fig.text(0.5, 0.945,
-    "Flye-confirmed circularity (assembly_info.txt: circ=Y; mean cov 889×; Nanopore + Flye v2.9+)",
-    ha="center", fontsize=9.5, style="italic", color="#444")
+# Title and assembly provenance are given in the manuscript figure caption,
+# so no figure-level text is drawn here.
 
 out = OUT/"01c_contig11_circular_map"
 for ext in ("pdf","svg","png"):

@@ -127,17 +127,9 @@ for s in ("top","right"): ax3.spines[s].set_visible(False)
 ax3.set_title("Sequence-based pI, net charge, and charge density of the modelled region of each protein",
               loc="left", fontsize=10.5, fontweight="bold", pad=6)
 
-fig.suptitle("Predicted acidic surface profile of PL25_M23 compared with reference cell-wall hydrolases",
-             fontsize=12.5, fontweight="bold", y=0.995)
-
-fig.text(0.01, 0.005,
-    "Cautious interpretation: panels show a PREDICTED acidic-surface profile for PL25_M23 (pI 4.54; net charge −22.4; "
-    "charge density −6.9 %) relative to four reference cell-wall hydrolases. This is consistent with — but does NOT prove — "
-    "halophile-type adaptation. Confirmation requires direct biochemical tests of activity / stability under high-salt conditions. "
-    "Surfaces are coloured by per-atom side-chain charge using a single rule applied identically to all five proteins; "
-    "absolute vacuum-electrostatic-potential values were not used as the comparison metric because their numeric scale "
-    "is protein-specific. Bar-chart values from Biopython ProteinAnalysis (Henderson–Hasselbalch, pH 7.0).",
-    ha="left", va="bottom", fontsize=7.7, style="italic", color="#444", wrap=True)
+# Figure title, the per-atom side-chain colouring rule and the source of the
+# bar-chart values are all stated in the manuscript figure caption, so no
+# figure-level title or footnote is drawn here.
 
 fig.subplots_adjust(top=0.945, bottom=0.10, left=0.05, right=0.99, hspace=0.20, wspace=0.06)
 
