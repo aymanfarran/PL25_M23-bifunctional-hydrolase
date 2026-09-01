@@ -1,108 +1,104 @@
-# IBEX scripts — non_endolysin paper (M23 only)
+# IBEX batch scripts
 
-## Overview
-Five SLURM batch scripts for analyses too heavy to run locally. Run **after** you log in to IBEX.
+SLURM scripts for the compute-heavy steps of the PL25_M23 analysis: the
+remote BLASTp searches, the AlphaFold2 model, the geNomad scan and the
+initial M23 phylogeny. Everything downstream of these runs locally from
+`../scripts/`.
 
-| Script | What it does | Walltime | GPU? |
-|---|---|---|---|
-| `01_blast_nr.sbatch`         | BLASTp 3 queries vs NCBI nr  | ~3 h  | no  |
-| `02_colabfold_M23.sbatch`    | AlphaFold2 structure of M23  | ~3 h  | **yes** |
-| `03_genomad_PL25.sbatch`     | geNomad full-genome scan     | ~1 h  | no  |
-| `04_iqtree_M23_phylogeny.sbatch` | IQ-TREE2 1000 UFBoot tree | ~1 h  | no  |
-| `05_iceberg_blast.sbatch`    | BLAST contig_11 vs ICEberg2  | ~30 m | no  |
+## Scripts
 
-## Step 0 — Set up the IBEX scratch tree (one-time)
+| Script | What it does | Inputs | Outputs | Walltime | GPU |
+|---|---|---|---|---|---|
+| `01_blast_nr.sbatch` | BLASTp of three PL25 queries against NCBI nr | `PL25_M23.faa`, `PL25_00076_unknown.faa`, `contig_11_proteome.faa` | `outputs/01_blast_nr/*_vs_nr.tsv` | ~3 h | no |
+| `02_colabfold_M23.sbatch` | AlphaFold2 structure of PL25_M23, full length and residues 38–370 | `PL25_M23.faa`, `PL25_M23_mature.faa` | `outputs/02_colabfold/PL25_M23_{full,mature}/` | ~3 h | **yes** |
+| `03_genomad_PL25.sbatch` | geNomad plasmid/virus classification of the whole assembly | `PL25.fasta` | `outputs/03_genomad/` | ~1 h | no |
+| `04_iqtree_M23_phylogeny.sbatch` | MAFFT → trimAl → IQ-TREE, 1000 UFBoot | `M23_seedset.faa` (built from script 01) | `outputs/04_M23_phylogeny/M23_iqtree.*` | ~1 h | no |
+| `05_iceberg_blast.sbatch` | BLASTn of contig_11 against ICEberg2 — **exploratory, not used for the conclusions in the manuscript** | `contig_11.fna` | `outputs/05_iceberg/` | ~30 m | no |
 
-After SSH'ing into IBEX:
+The manuscript models the mature form (residues 38–370) produced by script 02;
+the full-length model is retained for reference only.
+
+## Software
+
+| Tool | Module |
+|---|---|
+| BLAST+ | `blast/2.16.0` |
+| MAFFT | `mafft/7.526` |
+| trimAl | `trimal/1.4.1` |
+| IQ-TREE | `iqtree/2.3.4` |
+| ColabFold | `colabfold` |
+| conda | `miniforge` (for geNomad) |
+
+> **Note on the phylogeny.** Script 04 produces the initial M23 tree under
+> IQ-TREE 2.3.4 with automatic model selection (`-m MFP`). The tree reported
+> in the manuscript was rebuilt locally under IQ-TREE v3.1.1 with the
+> Q.pfam+G4 model; see the phylogeny section of the top-level `README.md`.
+
+## Order
+
+Script 01 must finish first: its BLASTp output supplies the seed set for the
+phylogeny. Scripts 02, 03 and 05 are independent and can run in parallel with
+it.
+
+## Setup
+
+On IBEX:
 
 ```bash
-# Replace $USER with your IBEX username
 WORK=/ibex/scratch/$USER/non_endolysin
 mkdir -p $WORK/{inputs,outputs,logs,scripts}
+```
 
-# Copy inputs and scripts from your Mac:
-# Run THIS from your Mac terminal (not IBEX):
-#   scp -r ~/prophage-endolysin-pipeline/non_endolysin_paper/ibex/inputs  $USER@ilogin:/ibex/scratch/$USER/non_endolysin/
-#   scp -r ~/prophage-endolysin-pipeline/non_endolysin_paper/ibex/scripts $USER@ilogin:/ibex/scratch/$USER/non_endolysin/
+From a local terminal:
 
+```bash
+scp -r ibex/inputs  $USER@ilogin:/ibex/scratch/$USER/non_endolysin/
+scp -r ibex/scripts $USER@ilogin:/ibex/scratch/$USER/non_endolysin/
+```
+
+Before the first submission, confirm the module names resolve and set the
+database paths inside the scripts — `NR_DB` in script 01, the geNomad
+database in script 03, and the ICEberg2 download in script 05:
+
+```bash
+module avail blast mafft iqtree colabfold miniforge
+genomad download-database /ibex/scratch/$USER/genomad_db
+```
+
+## Running
+
+```bash
 cd $WORK/scripts
-```
 
-## Step 1 — Run BLAST vs nr FIRST (depends on this)
-
-```bash
-# Verify NR_DB path inside the script — edit if needed
 sbatch 01_blast_nr.sbatch
-squeue -u $USER
-```
-
-Output: `$WORK/outputs/01_blast_nr/`
-Critical files:
-- `PL25_M23_vs_nr.tsv`  — feeds phylogeny (script 04)
-- `PL25_00076_vs_nr.tsv` — resolves Rep vs Relaxase question
-
-## Step 2 — Submit the other jobs in parallel
-
-Once script 01 completes (or in parallel for the ones that don't depend on it):
-
-```bash
-# Independent — can submit in parallel
 sbatch 02_colabfold_M23.sbatch
 sbatch 03_genomad_PL25.sbatch
 sbatch 05_iceberg_blast.sbatch
 
-# DEPENDS ON script 01: phylogeny needs the BLAST seed set first
-# After script 01 finishes, manually build M23_seedset.faa from top BLAST hits:
-#   - Take top 100 unique hits from PL25_M23_vs_nr.tsv
-#   - Pull their UniRef90 sequences (use efetch or download)
-#   - Add reference enzymes (lysostaphin P10547, LytM Q8NXI8, ALE-1 Q47728, CwlT O32008, EnpA E1V3I0)
-#   - Save to $WORK/outputs/04_M23_phylogeny/M23_seedset.faa
+squeue -u $USER
+```
+
+Once script 01 has finished, build the phylogeny seed set from its output:
+
+- the top 80 high-scoring unique PL25_M23 homologues from `PL25_M23_vs_nr.tsv`
+- the five characterised reference M23 enzymes — lysostaphin `P10547`,
+  LytM `O33599`, ALE-1 `O05156`, EnpA `E1V3I0`, zoocin A `O54309`
+- the CwlP catalytic core (residues 1373–1686 of `O31976`)
+- 14 phage-associated M23 lysins
+
+giving 101 sequences. Save as
+`$WORK/outputs/04_M23_phylogeny/M23_seedset.faa`, then:
+
+```bash
 sbatch 04_iqtree_M23_phylogeny.sbatch
 ```
 
-## Pre-flight checks BEFORE submitting
+CwlT (`P96645`) is deliberately excluded: its C-terminal peptidase belongs to
+the NlpC/P60 family (PF00877), not Peptidase_M23 (PF01551). It is used only as
+a structural comparator, in `../scripts/05cc_M23_3way_alignment.py`.
 
-Each script has paths/modules to verify on IBEX:
-
-1. **`01_blast_nr.sbatch`** — check `NR_DB` path is correct
-2. **`02_colabfold_M23.sbatch`** — verify `module load colabfold` syntax; check GPU partition name
-3. **`03_genomad_PL25.sbatch`** — pre-download geNomad db: `genomad download-database /ibex/scratch/$USER/genomad_db`
-4. **`05_iceberg_blast.sbatch`** — pre-download ICEberg2 from https://bioinfo-mml.sjtu.edu.cn/ICEberg2/
-
-Run this check once on IBEX:
-```bash
-module avail blast
-module avail mafft
-module avail iqtree
-module avail colabfold     # or: ls /ibex/sw/colabfold
-module avail miniforge     # or whichever conda installer
-```
-
-## Quick smoke tests (1-minute jobs)
-
-To verify environment before running the real jobs:
+## Retrieving results
 
 ```bash
-# Smoke test BLAST
-sbatch --time=10 --wrap="module load blast/2.16.0 && blastp -version && which blastp"
-
-# Smoke test conda for geNomad
-sbatch --time=10 --wrap="conda activate genomad && genomad --version"
-
-# Smoke test IQ-TREE
-sbatch --time=10 --wrap="module load iqtree/2.3.4 && iqtree2 -version"
+rsync -avz $USER@ilogin:/ibex/scratch/$USER/non_endolysin/outputs/ ibex/outputs/
 ```
-
-## When jobs finish — pull results back to Mac
-
-```bash
-# Run on your Mac:
-LOCAL=~/prophage-endolysin-pipeline/non_endolysin_paper/ibex/outputs
-mkdir -p $LOCAL
-rsync -avz $USER@ilogin:/ibex/scratch/$USER/non_endolysin/outputs/ $LOCAL/
-```
-
-After this, downstream analyses (annotation, HMM scans, geNomad, IQ-TREE, ColabFold) can be re-run locally or on IBEX from `non_endolysin_paper/scripts/`.
-
-## Note on M15
-M15 was dropped from this paper (not actually a PL25 protein). Only M23 is being characterised.
