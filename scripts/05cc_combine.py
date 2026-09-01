@@ -2,10 +2,8 @@
 corrected CwlT structure (AF2 of UniProt P96645).
 Saves figures/05cc_M23_3way_alignment.{pdf,svg,png}.
 
-Render the input panels with 05cc_M23_3way_alignment.py under OPEN-SOURCE
-PyMOL. The Incentive/trial build stamps a 'No License File - For Evaluation
-Only' watermark into the ray-traced PNGs, which would be baked into the
-composite here."""
+Render the input panels with 05cc_M23_3way_alignment.py using the open-source
+PyMOL build used in the manuscript."""
 import matplotlib.pyplot as plt
 from matplotlib.image import imread
 from matplotlib.patches import Patch

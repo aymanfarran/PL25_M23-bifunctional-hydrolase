@@ -13,7 +13,7 @@ electrostatic-potential range (the previous panels each had a different
 ±kT/e scale, which weakens direct visual comparison).
 
 Two views per protein: front and 180° rotation.
-Rendered with PyMOL Open-Source (no evaluation watermark).
+Rendered with the open-source PyMOL build used in the manuscript.
 
 Run: /usr/local/Caskroom/miniforge/base/bin/pymol -cq scripts/08_render_surfaces.py
 """
@@ -83,4 +83,4 @@ for name, src in PROTEINS:
     cmd.ray(900, 900)
     cmd.png(os.path.join(OUT, f"_es2_{name}_back.png"), dpi=200)
 
-print("Surface panels rendered (no watermark, common color rule).")
+print("Surface panels rendered (common per-atom colour rule).")

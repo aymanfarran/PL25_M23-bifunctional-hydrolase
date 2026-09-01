@@ -128,9 +128,8 @@ python scripts/08_combine_electrostatic.py
 python scripts/41_activity_panels.py
 ```
 
-PyMOL steps must be run under the **open-source** build. The Incentive/trial
-build stamps an evaluation watermark into the ray-traced PNGs, which the
-assembly step would then bake into the composite figure.
+PyMOL rendering should be performed with the open-source build used in the
+manuscript.
 
 The activity figures read the raw-data TSVs in `results/20_activity/`, which
 are tracked here. To regenerate those TSVs from the bench workbook:
