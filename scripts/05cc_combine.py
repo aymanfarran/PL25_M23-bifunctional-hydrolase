@@ -1,5 +1,11 @@
-"""Assemble the 3-panel Figure 5 (revised) using the corrected CwlT structure
-(AF2 of UniProt P96645). Saves figures/05cc_M23_3way_alignment.{pdf,svg,png}."""
+"""Assemble the 3-panel three-way structural alignment figure using the
+corrected CwlT structure (AF2 of UniProt P96645).
+Saves figures/05cc_M23_3way_alignment.{pdf,svg,png}.
+
+Render the input panels with 05cc_M23_3way_alignment.py under OPEN-SOURCE
+PyMOL. The Incentive/trial build stamps a 'No License File - For Evaluation
+Only' watermark into the ray-traced PNGs, which would be baked into the
+composite here."""
 import matplotlib.pyplot as plt
 from matplotlib.image import imread
 from matplotlib.patches import Patch
@@ -29,8 +35,8 @@ for ax, (img, title, sub) in zip(axes, panels):
 # Legend
 handles = [
     Patch(color="#D7191C", label="PL25_M23 (this study, AF2) — predicted SLT + M23"),
-    Patch(color="#7C3AED", label="CwlP-clipped (AF2 of O31976) — SLT + M23"),
-    Patch(color="#FF7F0E", label="CwlT (AF2 of P96645) — GH25 + NlpC/P60   [different family — shown for contrast]"),
+    Patch(color="#1F77B4", label="CwlP-clipped (AF2 of O31976) — SLT + M23"),
+    Patch(color="#FF7F0E", label="CwlT (AF2 of P96645) — GH25 + NlpC/P60"),
 ]
 fig.legend(handles=handles, loc="lower center", bbox_to_anchor=(0.5, -0.05),
            ncol=3, fontsize=9, frameon=True, framealpha=0.9)
