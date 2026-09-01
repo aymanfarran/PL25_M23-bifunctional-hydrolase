@@ -1,0 +1,57 @@
+figure	panel	strain	comparison	log10_reduction	p_welch	symbol	n
+6	a	Bacillus subtilis	treated vs untreated	3.084	0.001841	**	3
+6	a	Staphylococcus warneri	treated vs untreated	2.356	0.003429	**	3
+6	a	MRSA	treated vs untreated	2.383	0.002463	**	3
+6	a	Virgibacillus salarius PL25	treated vs untreated	4.204	0.003434	**	3
+6	c	Bacillus subtilis	0 min vs untreated	-0.1003	0.2912	ns	3
+6	c	Bacillus subtilis	30 min vs untreated	0.3486	0.1381	ns	3
+6	c	Bacillus subtilis	60 min vs untreated	2.184	0.01338	*	3
+6	c	Bacillus subtilis	120 min vs untreated	2.252	0.009275	**	3
+6	c	Bacillus subtilis	180 min vs untreated	2.307	0.008853	**	3
+6	c	Staphylococcus warneri	0 min vs untreated	-0.06804	0.4958	ns	3
+6	c	Staphylococcus warneri	30 min vs untreated	0.4243	0.03097	*	3
+6	c	Staphylococcus warneri	60 min vs untreated	2.243	0.009991	**	3
+6	c	Staphylococcus warneri	120 min vs untreated	2.376	0.004564	**	3
+6	c	Staphylococcus warneri	180 min vs untreated	2.466	0.005275	**	3
+6	c	MRSA	0 min vs untreated	0.0323	0.8095	ns	3
+6	c	MRSA	30 min vs untreated	0.483	0.04649	*	3
+6	c	MRSA	60 min vs untreated	2.211	0.01216	*	3
+6	c	MRSA	120 min vs untreated	2.311	0.00667	**	3
+6	c	MRSA	180 min vs untreated	2.424	0.01149	*	3
+6	c	Virgibacillus salarius PL25	0 min vs untreated	0.00591	0.9351	ns	3
+6	c	Virgibacillus salarius PL25	30 min vs untreated	0.5816	0.02545	*	3
+6	c	Virgibacillus salarius PL25	60 min vs untreated	2.951	6.924e-05	****	3
+6	c	Virgibacillus salarius PL25	120 min vs untreated	3.025	0.0005541	***	3
+6	c	Virgibacillus salarius PL25	180 min vs untreated	3.089	0.0003897	***	3
+6	d	Bacillus subtilis	0 ug/mL vs untreated	-0.1003	0.2912	ns	3
+6	d	Bacillus subtilis	50 ug/mL vs untreated	0.07395	0.397	ns	3
+6	d	Bacillus subtilis	100 ug/mL vs untreated	2.252	0.009275	**	3
+6	d	Bacillus subtilis	300 ug/mL vs untreated	2.366	0.002077	**	3
+6	d	Staphylococcus warneri	0 ug/mL vs untreated	-0.1003	0.2912	ns	3
+6	d	Staphylococcus warneri	50 ug/mL vs untreated	0.0323	0.6981	ns	3
+6	d	Staphylococcus warneri	100 ug/mL vs untreated	2.307	0.003233	**	3
+6	d	Staphylococcus warneri	300 ug/mL vs untreated	2.434	0.006148	**	3
+6	d	MRSA	0 ug/mL vs untreated	-0.02639	0.8206	ns	3
+6	d	MRSA	50 ug/mL vs untreated	-0.07395	0.3804	ns	3
+6	d	MRSA	100 ug/mL vs untreated	2.252	0.009275	**	3
+6	d	MRSA	300 ug/mL vs untreated	2.385	0.003051	**	3
+6	d	Virgibacillus salarius PL25	0 ug/mL vs untreated	0.00591	0.9351	ns	3
+6	d	Virgibacillus salarius PL25	50 ug/mL vs untreated	0.1479	0.05195	ns	3
+6	d	Virgibacillus salarius PL25	100 ug/mL vs untreated	3.025	0.0005541	***	3
+6	d	Virgibacillus salarius PL25	300 ug/mL vs untreated	3.106	1.001e-06	****	3
+7	a	Bacillus subtilis	PL25_M23+EDTA vs PL25_M23 alone	3.074	0.9573	ns	3
+7	a	Bacillus subtilis	PL25_M23+EDTA+Zn vs PL25_M23 alone	3.025	0.7757	ns	3
+7	a	Staphylococcus warneri	PL25_M23+EDTA vs PL25_M23 alone	2.356	1	ns	3
+7	a	Staphylococcus warneri	PL25_M23+EDTA+Zn vs PL25_M23 alone	2.158	0.6517	ns	3
+7	a	MRSA	PL25_M23+EDTA vs PL25_M23 alone	2.35	0.9411	ns	3
+7	a	MRSA	PL25_M23+EDTA+Zn vs PL25_M23 alone	2.35	0.9411	ns	3
+7	a	Virgibacillus salarius PL25	PL25_M23+EDTA vs PL25_M23 alone	4.259	0.9036	ns	3
+7	a	Virgibacillus salarius PL25	PL25_M23+EDTA+Zn vs PL25_M23 alone	4.259	0.9036	ns	3
+7	b	Bacillus subtilis	0.5 M NaCl vs 0 M	3.015	0.7287	ns	3
+7	b	Bacillus subtilis	1.0 M NaCl vs 0 M	3.015	0.7287	ns	3
+7	b	Staphylococcus warneri	0.5 M NaCl vs 0 M	2.265	0.9284	ns	3
+7	b	Staphylococcus warneri	1.0 M NaCl vs 0 M	2.243	0.8768	ns	3
+7	b	MRSA	0.5 M NaCl vs 0 M	2.36	0.9532	ns	3
+7	b	MRSA	1.0 M NaCl vs 0 M	2.302	0.8627	ns	3
+7	b	Virgibacillus salarius PL25	0.5 M NaCl vs 0 M	4.211	0.9884	ns	3
+7	b	Virgibacillus salarius PL25	1.0 M NaCl vs 0 M	4.174	0.9494	ns	3

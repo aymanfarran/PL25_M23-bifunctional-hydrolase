@@ -1,0 +1,21 @@
+strain	condition	rep1_CFU_per_mL	rep2_CFU_per_mL	rep3_CFU_per_mL
+Bacillus subtilis	Untreated	5.00e+08	4.00e+08	5.00e+08
+Bacillus subtilis	EDTA only	4.00e+08	4.00e+08	5.00e+08
+Bacillus subtilis	PL25_M23	4.00e+05	7.00e+05	2.00e+05
+Bacillus subtilis	PL25_M23+EDTA	4.00e+05	5.00e+05	3.00e+05
+Bacillus subtilis	PL25_M23+EDTA+Zn	7.00e+05	4.00e+05	3.00e+05
+Staphylococcus warneri	Untreated	5.00e+08	3.00e+08	5.00e+08
+Staphylococcus warneri	EDTA only	5.00e+08	3.00e+08	4.00e+08
+Staphylococcus warneri	PL25_M23	2.00e+06	8.00e+05	4.00e+06
+Staphylococcus warneri	PL25_M23+EDTA	4.00e+06	4.00e+05	4.00e+06
+Staphylococcus warneri	PL25_M23+EDTA+Zn	6.00e+06	6.00e+05	7.00e+06
+MRSA	Untreated	6.00e+08	3.00e+08	5.00e+08
+MRSA	EDTA only	5.00e+08	3.00e+08	5.00e+08
+MRSA	PL25_M23	4.00e+06	8.00e+05	2.00e+06
+MRSA	PL25_M23+EDTA	4.00e+06	4.00e+05	5.00e+06
+MRSA	PL25_M23+EDTA+Zn	4.00e+06	4.00e+05	5.00e+06
+Virgibacillus salarius PL25	Untreated	4.00e+08	5.00e+08	3.00e+08
+Virgibacillus salarius PL25	EDTA only	4.00e+08	4.00e+08	3.00e+08
+Virgibacillus salarius PL25	PL25_M23	7.00e+04	3.00e+04	7.00e+03
+Virgibacillus salarius PL25	PL25_M23+EDTA	5.00e+04	4.00e+04	5.00e+03
+Virgibacillus salarius PL25	PL25_M23+EDTA+Zn	4.00e+04	5.00e+04	5.00e+03

@@ -1,0 +1,17 @@
+strain	treatment	NaCl_M	rep1_CFU_per_mL	rep2_CFU_per_mL	rep3_CFU_per_mL
+Bacillus subtilis	Untreated	0.0	5.00e+08	4.00e+08	5.00e+08
+Bacillus subtilis	PL25_M23	0.0	4.00e+05	7.00e+05	2.00e+05
+Bacillus subtilis	PL25_M23	0.5	6.00e+05	5.00e+05	3.00e+05
+Bacillus subtilis	PL25_M23	1.0	5.00e+05	3.00e+05	6.00e+05
+Staphylococcus warneri	Untreated	0.0	5.00e+08	3.00e+08	5.00e+08
+Staphylococcus warneri	PL25_M23	0.0	3.00e+06	6.00e+05	5.00e+06
+Staphylococcus warneri	PL25_M23	0.5	4.00e+06	5.00e+05	6.00e+06
+Staphylococcus warneri	PL25_M23	1.0	4.00e+06	7.00e+05	5.00e+06
+MRSA	Untreated	0.0	6.00e+08	3.00e+08	5.00e+08
+MRSA	PL25_M23	0.0	4.00e+06	8.00e+05	2.00e+06
+MRSA	PL25_M23	0.5	3.00e+06	5.00e+05	5.00e+06
+MRSA	PL25_M23	1.0	4.00e+06	4.00e+05	7.00e+06
+Virgibacillus salarius PL25	Untreated	0.0	4.00e+08	5.00e+08	3.00e+08
+Virgibacillus salarius PL25	PL25_M23	0.0	7.00e+04	3.00e+04	7.00e+03
+Virgibacillus salarius PL25	PL25_M23	0.5	4.00e+04	7.00e+04	5.00e+03
+Virgibacillus salarius PL25	PL25_M23	1.0	6.00e+04	5.00e+04	6.00e+03

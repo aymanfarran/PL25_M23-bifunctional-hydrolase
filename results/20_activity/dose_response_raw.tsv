@@ -1,0 +1,33 @@
+strain	treatment	dose_ug_mL	rep1_CFU_per_mL	rep2_CFU_per_mL	rep3_CFU_per_mL
+Bacillus subtilis	Untreated	0	4.00e+08	5.00e+08	3.00e+08
+Bacillus subtilis	PL25_M23	0	5.00e+08	4.00e+08	6.00e+08
+Bacillus subtilis	Untreated	50	4.00e+08	5.00e+08	3.00e+08
+Bacillus subtilis	PL25_M23	50	3.00e+08	4.00e+08	3.00e+08
+Bacillus subtilis	Untreated	100	4.00e+08	5.00e+08	3.00e+08
+Bacillus subtilis	PL25_M23	100	5.00e+06	7.00e+05	3.00e+06
+Bacillus subtilis	Untreated	300	4.00e+08	5.00e+08	3.00e+08
+Bacillus subtilis	PL25_M23	300	2.00e+06	8.00e+05	3.00e+06
+Staphylococcus warneri	Untreated	0	5.00e+08	3.00e+08	4.00e+08
+Staphylococcus warneri	PL25_M23	0	4.00e+08	5.00e+08	6.00e+08
+Staphylococcus warneri	Untreated	50	5.00e+08	3.00e+08	4.00e+08
+Staphylococcus warneri	PL25_M23	50	4.00e+08	4.00e+08	3.00e+08
+Staphylococcus warneri	Untreated	100	5.00e+08	3.00e+08	4.00e+08
+Staphylococcus warneri	PL25_M23	100	2.00e+06	9.00e+05	4.00e+06
+Staphylococcus warneri	Untreated	300	5.00e+08	3.00e+08	4.00e+08
+Staphylococcus warneri	PL25_M23	300	2.00e+06	5.00e+05	3.00e+06
+MRSA	Untreated	0	5.00e+08	3.00e+08	4.00e+08
+MRSA	PL25_M23	0	6.00e+08	4.00e+08	3.00e+08
+MRSA	Untreated	50	5.00e+08	3.00e+08	4.00e+08
+MRSA	PL25_M23	50	5.00e+08	4.00e+08	5.00e+08
+MRSA	Untreated	100	5.00e+08	3.00e+08	4.00e+08
+MRSA	PL25_M23	100	5.00e+06	7.00e+05	3.00e+06
+MRSA	Untreated	300	5.00e+08	3.00e+08	4.00e+08
+MRSA	PL25_M23	300	2.00e+06	7.00e+05	3.00e+06
+Virgibacillus salarius PL25	Untreated	0	5.00e+08	4.00e+08	5.00e+08
+Virgibacillus salarius PL25	PL25_M23	0	4.00e+08	4.00e+08	6.00e+08
+Virgibacillus salarius PL25	Untreated	50	5.00e+08	4.00e+08	5.00e+08
+Virgibacillus salarius PL25	PL25_M23	50	3.00e+08	4.00e+08	3.00e+08
+Virgibacillus salarius PL25	Untreated	100	5.00e+08	4.00e+08	5.00e+08
+Virgibacillus salarius PL25	PL25_M23	100	4.00e+05	7.00e+05	3.00e+05
+Virgibacillus salarius PL25	Untreated	300	5.00e+08	4.00e+08	5.00e+08
+Virgibacillus salarius PL25	PL25_M23	300	4.00e+05	3.00e+05	4.00e+05
