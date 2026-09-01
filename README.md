@@ -35,8 +35,6 @@ This repository contains the code, intermediate files, structural models and fig
 ├── .gitignore
 │
 ├── scripts/                         All analysis and plotting scripts
-│   ├── 03_synteny_static.py                Figure 6 — clinker static rendering
-│   ├── 04_integrated_mobile_element.py     Figure 7 — integrated mobile-element panel
 │   ├── 04_realign_ALE1.pml                 PyMOL — ALE-1 M23 superposition (S2 update)
 │   ├── 04c_render_M23_panels.py            PyMOL — Figure 4 panel rendering
 │   ├── 04c_combine_M23_panel.py            Figure 4 — 4-view 3D structure assembly
