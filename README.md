@@ -1,6 +1,6 @@
-# PL25_M23 — a plasmid-encoded bifunctional cell-wall hydrolase from *Virgibacillus salarius* PL25
+# PL25_M23 — a plasmid-candidate-encoded bifunctional SLT/M23 hydrolase from *Virgibacillus salarius* PL25 with activity against Gram-positive bacteria
 
-This repository contains the code, intermediate files, structural models and figures supporting:
+This repository contains the code, source data, intermediate files, structural models and figure-generation scripts supporting:
 
 > [Author list]. *A divergent plasmid-encoded SLT/M23 cell-wall hydrolase from halophilic Virgibacillus salarius PL25 with antibacterial activity against Gram-positive pathogens.* [Journal], [Year]. DOI: [paper DOI when assigned].
 
@@ -12,8 +12,8 @@ This repository contains the code, intermediate files, structural models and fig
 |---|---|
 | BioProject | [PRJNA1473924](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1473924) |
 | BioSample | [SAMN60541943](https://www.ncbi.nlm.nih.gov/biosample/SAMN60541943) |
-| WGS assembly | *to be assigned after NCBI processing* |
-| Raw Nanopore reads (SRA) | *submission pending* |
+| WGS assembly | [JBYTNQ000000000](https://www.ncbi.nlm.nih.gov/nuccore/JBYTNQ000000000) (version `JBYTNQ010000000`) |
+| Raw Nanopore reads (SRA) | [SRR35929825](https://www.ncbi.nlm.nih.gov/sra/SRR35929825) |
 | Locus tag prefix | `AC3VG8` |
 | Strain | *Virgibacillus salarius* PL25 (TaxID 447199) |
 | Source | Hypersaline-lake sediment, Al Lith, Saudi Arabia (2023) |
@@ -83,7 +83,7 @@ This repository contains the code, intermediate files, structural models and fig
     └── inputs/                      Input FASTAs sent to IBEX jobs
 ```
 
-**Note:** the manuscript prose, the rendered figures and the supplementary tables are all maintained outside this repository and are distributed with the paper. The deposit holds the **code, raw assay data, intermediate files and structural models** needed to reproduce the analyses and rebuild the figures.
+**Note:** the manuscript prose, the rendered figures and the supplementary tables are all maintained outside this repository and are distributed with the paper. The deposit holds the **code, source data, intermediate files, structural models and figure-generation scripts** needed to reproduce the analyses and rebuild the figures.
 
 ---
 
