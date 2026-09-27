@@ -1,0 +1,460 @@
+assay	strain	bio_rep	condition	log10_untreated	log10_treated
+primary	Streptococcus equi subsp. zooepidemicus	1	PL25_M23 100 ug/mL	8.161	5.74
+primary	Streptococcus pneumoniae	1	PL25_M23 100 ug/mL	8.477	6.146
+primary	Staphylococcus aureus (MRSA)	1	PL25_M23 100 ug/mL	8.653	6.352
+primary	Staphylococcus aureus (MSSA)	1	PL25_M23 100 ug/mL	8.161	4.903
+primary	Mammaliicoccus sciuri	1	PL25_M23 100 ug/mL	8.477	5.653
+primary	Staphylococcus aureus	1	PL25_M23 100 ug/mL	8.544	6.146
+primary	Virgibacillus salarius	1	PL25_M23 100 ug/mL	8.161	4.602
+primary	Streptococcus equi subsp. zooepidemicus	2	PL25_M23 100 ug/mL	8.13	5.602
+primary	Streptococcus pneumoniae	2	PL25_M23 100 ug/mL	8.477	6.398
+primary	Staphylococcus aureus (MRSA)	2	PL25_M23 100 ug/mL	8.544	6.114
+primary	Staphylococcus aureus (MSSA)	2	PL25_M23 100 ug/mL	8.38	4.875
+primary	Mammaliicoccus sciuri	2	PL25_M23 100 ug/mL	8.279	5.845
+primary	Staphylococcus aureus	2	PL25_M23 100 ug/mL	8.352	6.23
+primary	Virgibacillus salarius	2	PL25_M23 100 ug/mL	8.279	4.531
+primary	Streptococcus equi subsp. zooepidemicus	3	PL25_M23 100 ug/mL	8.13	5.544
+primary	Streptococcus pneumoniae	3	PL25_M23 100 ug/mL	7.978	6.602
+primary	Staphylococcus aureus (MRSA)	3	PL25_M23 100 ug/mL	8.699	6.447
+primary	Staphylococcus aureus (MSSA)	3	PL25_M23 100 ug/mL	8.477	5.097
+primary	Mammaliicoccus sciuri	3	PL25_M23 100 ug/mL	8.544	5.653
+primary	Staphylococcus aureus	3	PL25_M23 100 ug/mL	8.477	6.591
+primary	Virgibacillus salarius	3	PL25_M23 100 ug/mL	8.477	4.447
+dose	Streptococcus equi subsp. zooepidemicus	1	PL25_M23 0 ug/mL	8.161	8.267
+dose	Streptococcus equi subsp. zooepidemicus	1	PL25_M23 50 ug/mL	8.161	7.699
+dose	Streptococcus equi subsp. zooepidemicus	1	PL25_M23 100 ug/mL	7.929	5.699
+dose	Streptococcus equi subsp. zooepidemicus	1	PL25_M23 300 ug/mL	7.929	5.243
+dose	Streptococcus pneumoniae	1	PL25_M23 0 ug/mL	8.398	8.477
+dose	Streptococcus pneumoniae	1	PL25_M23 50 ug/mL	8.398	7.653
+dose	Streptococcus pneumoniae	1	PL25_M23 100 ug/mL	8.398	6.477
+dose	Streptococcus pneumoniae	1	PL25_M23 300 ug/mL	8.398	5.544
+dose	Staphylococcus aureus (MRSA)	1	PL25_M23 0 ug/mL	8.544	8.544
+dose	Staphylococcus aureus (MRSA)	1	PL25_M23 50 ug/mL	8.544	8.146
+dose	Staphylococcus aureus (MRSA)	1	PL25_M23 100 ug/mL	8.477	6.13
+dose	Staphylococcus aureus (MRSA)	1	PL25_M23 300 ug/mL	8.477	5.398
+dose	Staphylococcus aureus (MSSA)	1	PL25_M23 0 ug/mL	8.161	7.929
+dose	Staphylococcus aureus (MSSA)	1	PL25_M23 50 ug/mL	8.161	6.74
+dose	Staphylococcus aureus (MSSA)	1	PL25_M23 100 ug/mL	8.097	4.813
+dose	Staphylococcus aureus (MSSA)	1	PL25_M23 300 ug/mL	8.097	4.544
+dose	Mammaliicoccus sciuri	1	PL25_M23 0 ug/mL	8.544	8.29
+dose	Mammaliicoccus sciuri	1	PL25_M23 50 ug/mL	8.544	7.845
+dose	Mammaliicoccus sciuri	1	PL25_M23 100 ug/mL	8.38	5.653
+dose	Mammaliicoccus sciuri	1	PL25_M23 300 ug/mL	8.38	5.322
+dose	Staphylococcus aureus	1	PL25_M23 0 ug/mL	8.398	8.477
+dose	Staphylococcus aureus	1	PL25_M23 50 ug/mL	8.398	7.813
+dose	Staphylococcus aureus	1	PL25_M23 100 ug/mL	8.267	6.332
+dose	Staphylococcus aureus	1	PL25_M23 300 ug/mL	8.267	5.041
+dose	Virgibacillus salarius	1	PL25_M23 0 ug/mL	8.161	8.097
+dose	Virgibacillus salarius	1	PL25_M23 50 ug/mL	8.161	6.633
+dose	Virgibacillus salarius	1	PL25_M23 100 ug/mL	8.398	4.512
+dose	Virgibacillus salarius	1	PL25_M23 300 ug/mL	8.398	3.602
+dose	Streptococcus equi subsp. zooepidemicus	2	PL25_M23 0 ug/mL	8.161	8.13
+dose	Streptococcus equi subsp. zooepidemicus	2	PL25_M23 50 ug/mL	8.161	7.653
+dose	Streptococcus equi subsp. zooepidemicus	2	PL25_M23 100 ug/mL	7.903	5.544
+dose	Streptococcus equi subsp. zooepidemicus	2	PL25_M23 300 ug/mL	8.146	5.23
+dose	Streptococcus pneumoniae	2	PL25_M23 0 ug/mL	8.477	8.29
+dose	Streptococcus pneumoniae	2	PL25_M23 50 ug/mL	8.398	7.544
+dose	Streptococcus pneumoniae	2	PL25_M23 100 ug/mL	8.477	6.176
+dose	Streptococcus pneumoniae	2	PL25_M23 300 ug/mL	8.398	5.398
+dose	Staphylococcus aureus (MRSA)	2	PL25_M23 0 ug/mL	8.544	8.398
+dose	Staphylococcus aureus (MRSA)	2	PL25_M23 50 ug/mL	8.544	8.371
+dose	Staphylococcus aureus (MRSA)	2	PL25_M23 100 ug/mL	8.398	6.255
+dose	Staphylococcus aureus (MRSA)	2	PL25_M23 300 ug/mL	8.477	6.332
+dose	Staphylococcus aureus (MSSA)	2	PL25_M23 0 ug/mL	7.929	7.978
+dose	Staphylococcus aureus (MSSA)	2	PL25_M23 50 ug/mL	8.161	6.699
+dose	Staphylococcus aureus (MSSA)	2	PL25_M23 100 ug/mL	8.146	4.813
+dose	Staphylococcus aureus (MSSA)	2	PL25_M23 300 ug/mL	8.097	4.602
+dose	Mammaliicoccus sciuri	2	PL25_M23 0 ug/mL	8.398	8.389
+dose	Mammaliicoccus sciuri	2	PL25_M23 50 ug/mL	8.544	7.778
+dose	Mammaliicoccus sciuri	2	PL25_M23 100 ug/mL	8.38	5.477
+dose	Mammaliicoccus sciuri	2	PL25_M23 300 ug/mL	8.38	5.447
+dose	Staphylococcus aureus	2	PL25_M23 0 ug/mL	8.301	8.477
+dose	Staphylococcus aureus	2	PL25_M23 50 ug/mL	8.161	7.845
+dose	Staphylococcus aureus	2	PL25_M23 100 ug/mL	8.097	6.061
+dose	Staphylococcus aureus	2	PL25_M23 300 ug/mL	8.267	5.74
+dose	Virgibacillus salarius	2	PL25_M23 0 ug/mL	7.929	8.267
+dose	Virgibacillus salarius	2	PL25_M23 50 ug/mL	8.161	6.568
+dose	Virgibacillus salarius	2	PL25_M23 100 ug/mL	8.161	4.352
+dose	Virgibacillus salarius	2	PL25_M23 300 ug/mL	8.398	3.544
+dose	Streptococcus equi subsp. zooepidemicus	3	PL25_M23 0 ug/mL	8.161	8.13
+dose	Streptococcus equi subsp. zooepidemicus	3	PL25_M23 50 ug/mL	8.161	7.544
+dose	Streptococcus equi subsp. zooepidemicus	3	PL25_M23 100 ug/mL	7.903	5.477
+dose	Streptococcus equi subsp. zooepidemicus	3	PL25_M23 300 ug/mL	8.146	5.061
+dose	Streptococcus pneumoniae	3	PL25_M23 0 ug/mL	8.477	8.29
+dose	Streptococcus pneumoniae	3	PL25_M23 50 ug/mL	8.398	7.544
+dose	Streptococcus pneumoniae	3	PL25_M23 100 ug/mL	8.477	6.161
+dose	Streptococcus pneumoniae	3	PL25_M23 300 ug/mL	8.398	5.544
+dose	Staphylococcus aureus (MRSA)	3	PL25_M23 0 ug/mL	8.544	8.398
+dose	Staphylococcus aureus (MRSA)	3	PL25_M23 50 ug/mL	8.544	8.371
+dose	Staphylococcus aureus (MRSA)	3	PL25_M23 100 ug/mL	8.161	6.342
+dose	Staphylococcus aureus (MRSA)	3	PL25_M23 300 ug/mL	8.161	6.061
+dose	Staphylococcus aureus (MSSA)	3	PL25_M23 0 ug/mL	7.929	7.978
+dose	Staphylococcus aureus (MSSA)	3	PL25_M23 50 ug/mL	8.161	6.699
+dose	Staphylococcus aureus (MSSA)	3	PL25_M23 100 ug/mL	8.146	4.845
+dose	Staphylococcus aureus (MSSA)	3	PL25_M23 300 ug/mL	7.903	4.398
+dose	Mammaliicoccus sciuri	3	PL25_M23 0 ug/mL	8.398	8.389
+dose	Mammaliicoccus sciuri	3	PL25_M23 50 ug/mL	8.544	7.778
+dose	Mammaliicoccus sciuri	3	PL25_M23 100 ug/mL	8.13	5.699
+dose	Mammaliicoccus sciuri	3	PL25_M23 300 ug/mL	8.38	5.431
+dose	Staphylococcus aureus	3	PL25_M23 0 ug/mL	8.301	8.477
+dose	Staphylococcus aureus	3	PL25_M23 50 ug/mL	8.161	7.845
+dose	Staphylococcus aureus	3	PL25_M23 100 ug/mL	8.097	6.389
+dose	Staphylococcus aureus	3	PL25_M23 300 ug/mL	8.398	5.477
+dose	Virgibacillus salarius	3	PL25_M23 0 ug/mL	7.929	8.267
+dose	Virgibacillus salarius	3	PL25_M23 50 ug/mL	8.161	6.568
+dose	Virgibacillus salarius	3	PL25_M23 100 ug/mL	8.161	4.544
+dose	Virgibacillus salarius	3	PL25_M23 300 ug/mL	8.398	3.398
+time-kill	Streptococcus equi subsp. zooepidemicus	1	0 min at 100 ug/mL	8.161	8.146
+time-kill	Streptococcus equi subsp. zooepidemicus	1	30 min at 100 ug/mL	8.279	6.74
+time-kill	Streptococcus equi subsp. zooepidemicus	1	60 min at 100 ug/mL	8.146	5.699
+time-kill	Streptococcus equi subsp. zooepidemicus	1	120 min at 100 ug/mL	8.301	5.602
+time-kill	Streptococcus equi subsp. zooepidemicus	1	180 min at 100 ug/mL	8.161	5.544
+time-kill	Streptococcus pneumoniae	1	0 min at 100 ug/mL	8.398	8.301
+time-kill	Streptococcus pneumoniae	1	30 min at 100 ug/mL	8.477	6.653
+time-kill	Streptococcus pneumoniae	1	60 min at 100 ug/mL	8.398	6.114
+time-kill	Streptococcus pneumoniae	1	120 min at 100 ug/mL	8.161	5.74
+time-kill	Streptococcus pneumoniae	1	180 min at 100 ug/mL	8.398	5.301
+time-kill	Staphylococcus aureus (MRSA)	1	0 min at 100 ug/mL	8.398	8.398
+time-kill	Staphylococcus aureus (MRSA)	1	30 min at 100 ug/mL	8.398	6.477
+time-kill	Staphylococcus aureus (MRSA)	1	60 min at 100 ug/mL	8.398	5.778
+time-kill	Staphylococcus aureus (MRSA)	1	120 min at 100 ug/mL	8.398	5.544
+time-kill	Staphylococcus aureus (MRSA)	1	180 min at 100 ug/mL	8.389	5.398
+time-kill	Staphylococcus aureus (MSSA)	1	0 min at 100 ug/mL	8.161	8.161
+time-kill	Staphylococcus aureus (MSSA)	1	30 min at 100 ug/mL	8.301	5.903
+time-kill	Staphylococcus aureus (MSSA)	1	60 min at 100 ug/mL	8.279	4.903
+time-kill	Staphylococcus aureus (MSSA)	1	120 min at 100 ug/mL	8.161	4.74
+time-kill	Staphylococcus aureus (MSSA)	1	180 min at 100 ug/mL	8.301	4.477
+time-kill	Mammaliicoccus sciuri	1	0 min at 100 ug/mL	8.176	8.398
+time-kill	Mammaliicoccus sciuri	1	30 min at 100 ug/mL	8.301	6.653
+time-kill	Mammaliicoccus sciuri	1	60 min at 100 ug/mL	8.161	5.653
+time-kill	Mammaliicoccus sciuri	1	120 min at 100 ug/mL	7.978	5.544
+time-kill	Mammaliicoccus sciuri	1	180 min at 100 ug/mL	8.301	5.477
+time-kill	Staphylococcus aureus	1	0 min at 100 ug/mL	8.398	8.477
+time-kill	Staphylococcus aureus	1	30 min at 100 ug/mL	8.398	7.243
+time-kill	Staphylococcus aureus	1	60 min at 100 ug/mL	8.398	6.146
+time-kill	Staphylococcus aureus	1	120 min at 100 ug/mL	8.544	5.845
+time-kill	Staphylococcus aureus	1	180 min at 100 ug/mL	8.398	5.813
+time-kill	Virgibacillus salarius	1	0 min at 100 ug/mL	7.929	8.29
+time-kill	Virgibacillus salarius	1	30 min at 100 ug/mL	7.978	4.74
+time-kill	Virgibacillus salarius	1	60 min at 100 ug/mL	7.978	4.332
+time-kill	Virgibacillus salarius	1	120 min at 100 ug/mL	7.978	3.602
+time-kill	Virgibacillus salarius	1	180 min at 100 ug/mL	8.161	3.602
+time-kill	Streptococcus equi subsp. zooepidemicus	2	0 min at 100 ug/mL	8.161	8.146
+time-kill	Streptococcus equi subsp. zooepidemicus	2	30 min at 100 ug/mL	8.13	5.813
+time-kill	Streptococcus equi subsp. zooepidemicus	2	60 min at 100 ug/mL	7.978	5.477
+time-kill	Streptococcus equi subsp. zooepidemicus	2	120 min at 100 ug/mL	8.146	5.544
+time-kill	Streptococcus equi subsp. zooepidemicus	2	180 min at 100 ug/mL	8.161	5.544
+time-kill	Streptococcus pneumoniae	2	0 min at 100 ug/mL	8.602	8.146
+time-kill	Streptococcus pneumoniae	2	30 min at 100 ug/mL	8.477	6.778
+time-kill	Streptococcus pneumoniae	2	60 min at 100 ug/mL	8.477	6.398
+time-kill	Streptococcus pneumoniae	2	120 min at 100 ug/mL	8.301	6.146
+time-kill	Streptococcus pneumoniae	2	180 min at 100 ug/mL	8.398	6.146
+time-kill	Staphylococcus aureus (MRSA)	2	0 min at 100 ug/mL	8.398	8.161
+time-kill	Staphylococcus aureus (MRSA)	2	30 min at 100 ug/mL	8.544	6.398
+time-kill	Staphylococcus aureus (MRSA)	2	60 min at 100 ug/mL	8.544	5.778
+time-kill	Staphylococcus aureus (MRSA)	2	120 min at 100 ug/mL	8.301	5.653
+time-kill	Staphylococcus aureus (MRSA)	2	180 min at 100 ug/mL	8.398	5.544
+time-kill	Staphylococcus aureus (MSSA)	2	0 min at 100 ug/mL	7.653	7.954
+time-kill	Staphylococcus aureus (MSSA)	2	30 min at 100 ug/mL	8.38	5.398
+time-kill	Staphylococcus aureus (MSSA)	2	60 min at 100 ug/mL	7.954	4.74
+time-kill	Staphylococcus aureus (MSSA)	2	120 min at 100 ug/mL	8.146	4.653
+time-kill	Staphylococcus aureus (MSSA)	2	180 min at 100 ug/mL	8.161	4.477
+time-kill	Mammaliicoccus sciuri	2	0 min at 100 ug/mL	8.146	8.398
+time-kill	Mammaliicoccus sciuri	2	30 min at 100 ug/mL	8.279	6.161
+time-kill	Mammaliicoccus sciuri	2	60 min at 100 ug/mL	8.021	5.74
+time-kill	Mammaliicoccus sciuri	2	120 min at 100 ug/mL	8.279	5.477
+time-kill	Mammaliicoccus sciuri	2	180 min at 100 ug/mL	8.161	5.398
+time-kill	Staphylococcus aureus	2	0 min at 100 ug/mL	8.301	8.477
+time-kill	Staphylococcus aureus	2	30 min at 100 ug/mL	8.352	6.875
+time-kill	Staphylococcus aureus	2	60 min at 100 ug/mL	8.161	6.243
+time-kill	Staphylococcus aureus	2	120 min at 100 ug/mL	8.146	6.041
+time-kill	Staphylococcus aureus	2	180 min at 100 ug/mL	8.29	5.778
+time-kill	Virgibacillus salarius	2	0 min at 100 ug/mL	7.903	8.097
+time-kill	Virgibacillus salarius	2	30 min at 100 ug/mL	7.954	4.653
+time-kill	Virgibacillus salarius	2	60 min at 100 ug/mL	8.146	4.243
+time-kill	Virgibacillus salarius	2	120 min at 100 ug/mL	8.29	3.602
+time-kill	Virgibacillus salarius	2	180 min at 100 ug/mL	8.161	3.602
+time-kill	Streptococcus equi subsp. zooepidemicus	3	0 min at 100 ug/mL	8.161	8.161
+time-kill	Streptococcus equi subsp. zooepidemicus	3	30 min at 100 ug/mL	8.13	5.699
+time-kill	Streptococcus equi subsp. zooepidemicus	3	60 min at 100 ug/mL	8.13	5.398
+time-kill	Streptococcus equi subsp. zooepidemicus	3	120 min at 100 ug/mL	8.13	5.477
+time-kill	Streptococcus equi subsp. zooepidemicus	3	180 min at 100 ug/mL	8.13	5.398
+time-kill	Streptococcus pneumoniae	3	0 min at 100 ug/mL	8.477	8.477
+time-kill	Streptococcus pneumoniae	3	30 min at 100 ug/mL	7.978	6.778
+time-kill	Streptococcus pneumoniae	3	60 min at 100 ug/mL	7.978	6.544
+time-kill	Streptococcus pneumoniae	3	120 min at 100 ug/mL	7.978	6.544
+time-kill	Streptococcus pneumoniae	3	180 min at 100 ug/mL	7.978	6.47
+time-kill	Staphylococcus aureus (MRSA)	3	0 min at 100 ug/mL	8.544	8.398
+time-kill	Staphylococcus aureus (MRSA)	3	30 min at 100 ug/mL	8.699	6.699
+time-kill	Staphylococcus aureus (MRSA)	3	60 min at 100 ug/mL	8.267	5.875
+time-kill	Staphylococcus aureus (MRSA)	3	120 min at 100 ug/mL	8.267	5.74
+time-kill	Staphylococcus aureus (MRSA)	3	180 min at 100 ug/mL	8.267	5.544
+time-kill	Staphylococcus aureus (MSSA)	3	0 min at 100 ug/mL	7.929	7.954
+time-kill	Staphylococcus aureus (MSSA)	3	30 min at 100 ug/mL	8.161	5.778
+time-kill	Staphylococcus aureus (MSSA)	3	60 min at 100 ug/mL	7.954	4.602
+time-kill	Staphylococcus aureus (MSSA)	3	120 min at 100 ug/mL	8.301	4.398
+time-kill	Staphylococcus aureus (MSSA)	3	180 min at 100 ug/mL	8.29	3.954
+time-kill	Mammaliicoccus sciuri	3	0 min at 100 ug/mL	8.161	8.301
+time-kill	Mammaliicoccus sciuri	3	30 min at 100 ug/mL	8.176	6.161
+time-kill	Mammaliicoccus sciuri	3	60 min at 100 ug/mL	8.161	5.602
+time-kill	Mammaliicoccus sciuri	3	120 min at 100 ug/mL	8.301	5.301
+time-kill	Mammaliicoccus sciuri	3	180 min at 100 ug/mL	8.161	5.398
+time-kill	Staphylococcus aureus	3	0 min at 100 ug/mL	8.301	8.301
+time-kill	Staphylococcus aureus	3	30 min at 100 ug/mL	8.146	6.301
+time-kill	Staphylococcus aureus	3	60 min at 100 ug/mL	8.301	6.371
+time-kill	Staphylococcus aureus	3	120 min at 100 ug/mL	7.978	6.439
+time-kill	Staphylococcus aureus	3	180 min at 100 ug/mL	8.301	6.23
+time-kill	Virgibacillus salarius	3	0 min at 100 ug/mL	7.929	8.267
+time-kill	Virgibacillus salarius	3	30 min at 100 ug/mL	7.929	4.778
+time-kill	Virgibacillus salarius	3	60 min at 100 ug/mL	8.161	3.813
+time-kill	Virgibacillus salarius	3	120 min at 100 ug/mL	8.301	3.477
+time-kill	Virgibacillus salarius	3	180 min at 100 ug/mL	7.903	3.544
+metal dependence	Streptococcus equi subsp. zooepidemicus	1	Untreated		8.161
+metal dependence	Streptococcus equi subsp. zooepidemicus	1	EDTA only		7.929
+metal dependence	Streptococcus equi subsp. zooepidemicus	1	Zn only		8.146
+metal dependence	Streptococcus equi subsp. zooepidemicus	1	PL25_M23		5.74
+metal dependence	Streptococcus equi subsp. zooepidemicus	1	PL25_M23 + EDTA		7.74
+metal dependence	Streptococcus equi subsp. zooepidemicus	1	PL25_M23 + Zn		5.74
+metal dependence	Streptococcus equi subsp. zooepidemicus	1	PL25_M23 + EDTA + Zn		6.74
+metal dependence	Streptococcus pneumoniae	1	Untreated		8.477
+metal dependence	Streptococcus pneumoniae	1	EDTA only		8.176
+metal dependence	Streptococcus pneumoniae	1	Zn only		7.978
+metal dependence	Streptococcus pneumoniae	1	PL25_M23		6.146
+metal dependence	Streptococcus pneumoniae	1	PL25_M23 + EDTA		7.813
+metal dependence	Streptococcus pneumoniae	1	PL25_M23 + Zn		5.875
+metal dependence	Streptococcus pneumoniae	1	PL25_M23 + EDTA + Zn		6.845
+metal dependence	Staphylococcus aureus (MRSA)	1	Untreated		8.653
+metal dependence	Staphylococcus aureus (MRSA)	1	EDTA only		8.477
+metal dependence	Staphylococcus aureus (MRSA)	1	Zn only		8.602
+metal dependence	Staphylococcus aureus (MRSA)	1	PL25_M23		6.352
+metal dependence	Staphylococcus aureus (MRSA)	1	PL25_M23 + EDTA		7.161
+metal dependence	Staphylococcus aureus (MRSA)	1	PL25_M23 + Zn		6.146
+metal dependence	Staphylococcus aureus (MRSA)	1	PL25_M23 + EDTA + Zn		6.371
+metal dependence	Staphylococcus aureus (MSSA)	1	Untreated		8.161
+metal dependence	Staphylococcus aureus (MSSA)	1	EDTA only		8.398
+metal dependence	Staphylococcus aureus (MSSA)	1	Zn only		8.301
+metal dependence	Staphylococcus aureus (MSSA)	1	PL25_M23		4.903
+metal dependence	Staphylococcus aureus (MSSA)	1	PL25_M23 + EDTA		6.813
+metal dependence	Staphylococcus aureus (MSSA)	1	PL25_M23 + Zn		5.362
+metal dependence	Staphylococcus aureus (MSSA)	1	PL25_M23 + EDTA + Zn		6.146
+metal dependence	Mammaliicoccus sciuri	1	Untreated		8.477
+metal dependence	Mammaliicoccus sciuri	1	EDTA only		8.161
+metal dependence	Mammaliicoccus sciuri	1	Zn only		8.301
+metal dependence	Mammaliicoccus sciuri	1	PL25_M23		5.653
+metal dependence	Mammaliicoccus sciuri	1	PL25_M23 + EDTA		7.699
+metal dependence	Mammaliicoccus sciuri	1	PL25_M23 + Zn		5.74
+metal dependence	Mammaliicoccus sciuri	1	PL25_M23 + EDTA + Zn		6.161
+metal dependence	Staphylococcus aureus	1	Untreated		8.544
+metal dependence	Staphylococcus aureus	1	EDTA only		8.398
+metal dependence	Staphylococcus aureus	1	Zn only		8.398
+metal dependence	Staphylococcus aureus	1	PL25_M23		6.146
+metal dependence	Staphylococcus aureus	1	PL25_M23 + EDTA		7.74
+metal dependence	Staphylococcus aureus	1	PL25_M23 + Zn		5.903
+metal dependence	Staphylococcus aureus	1	PL25_M23 + EDTA + Zn		6.813
+metal dependence	Virgibacillus salarius	1	Untreated		8.161
+metal dependence	Virgibacillus salarius	1	EDTA only		8.301
+metal dependence	Virgibacillus salarius	1	Zn only		7.699
+metal dependence	Virgibacillus salarius	1	PL25_M23		4.602
+metal dependence	Virgibacillus salarius	1	PL25_M23 + EDTA		6.602
+metal dependence	Virgibacillus salarius	1	PL25_M23 + Zn		4.301
+metal dependence	Virgibacillus salarius	1	PL25_M23 + EDTA + Zn		4.813
+metal dependence	Streptococcus equi subsp. zooepidemicus	2	Untreated		8.161
+metal dependence	Streptococcus equi subsp. zooepidemicus	2	EDTA only		7.954
+metal dependence	Streptococcus equi subsp. zooepidemicus	2	Zn only		7.978
+metal dependence	Streptococcus equi subsp. zooepidemicus	2	PL25_M23		5.602
+metal dependence	Streptococcus equi subsp. zooepidemicus	2	PL25_M23 + EDTA		7.544
+metal dependence	Streptococcus equi subsp. zooepidemicus	2	PL25_M23 + Zn		5.544
+metal dependence	Streptococcus equi subsp. zooepidemicus	2	PL25_M23 + EDTA + Zn		6.699
+metal dependence	Streptococcus pneumoniae	2	Untreated		8.301
+metal dependence	Streptococcus pneumoniae	2	EDTA only		8.161
+metal dependence	Streptococcus pneumoniae	2	Zn only		7.954
+metal dependence	Streptococcus pneumoniae	2	PL25_M23		6.398
+metal dependence	Streptococcus pneumoniae	2	PL25_M23 + EDTA		7.778
+metal dependence	Streptococcus pneumoniae	2	PL25_M23 + Zn		6.29
+metal dependence	Streptococcus pneumoniae	2	PL25_M23 + EDTA + Zn		6.74
+metal dependence	Staphylococcus aureus (MRSA)	2	Untreated		8.544
+metal dependence	Staphylococcus aureus (MRSA)	2	EDTA only		8.176
+metal dependence	Staphylococcus aureus (MRSA)	2	Zn only		8.398
+metal dependence	Staphylococcus aureus (MRSA)	2	PL25_M23		6.114
+metal dependence	Staphylococcus aureus (MRSA)	2	PL25_M23 + EDTA		7.74
+metal dependence	Staphylococcus aureus (MRSA)	2	PL25_M23 + Zn		6.097
+metal dependence	Staphylococcus aureus (MRSA)	2	PL25_M23 + EDTA + Zn		6.13
+metal dependence	Staphylococcus aureus (MSSA)	2	Untreated		8.38
+metal dependence	Staphylococcus aureus (MSSA)	2	EDTA only		7.929
+metal dependence	Staphylococcus aureus (MSSA)	2	Zn only		8.29
+metal dependence	Staphylococcus aureus (MSSA)	2	PL25_M23		4.875
+metal dependence	Staphylococcus aureus (MSSA)	2	PL25_M23 + EDTA		6.602
+metal dependence	Staphylococcus aureus (MSSA)	2	PL25_M23 + Zn		4.653
+metal dependence	Staphylococcus aureus (MSSA)	2	PL25_M23 + EDTA + Zn		5.146
+metal dependence	Mammaliicoccus sciuri	2	Untreated		8.279
+metal dependence	Mammaliicoccus sciuri	2	EDTA only		7.954
+metal dependence	Mammaliicoccus sciuri	2	Zn only		8.176
+metal dependence	Mammaliicoccus sciuri	2	PL25_M23		5.845
+metal dependence	Mammaliicoccus sciuri	2	PL25_M23 + EDTA		7.778
+metal dependence	Mammaliicoccus sciuri	2	PL25_M23 + Zn		5.778
+metal dependence	Mammaliicoccus sciuri	2	PL25_M23 + EDTA + Zn		6.079
+metal dependence	Staphylococcus aureus	2	Untreated		8.352
+metal dependence	Staphylococcus aureus	2	EDTA only		8.161
+metal dependence	Staphylococcus aureus	2	Zn only		8.301
+metal dependence	Staphylococcus aureus	2	PL25_M23		6.23
+metal dependence	Staphylococcus aureus	2	PL25_M23 + EDTA		7.74
+metal dependence	Staphylococcus aureus	2	PL25_M23 + Zn		6.146
+metal dependence	Staphylococcus aureus	2	PL25_M23 + EDTA + Zn		6.477
+metal dependence	Virgibacillus salarius	2	Untreated		8.279
+metal dependence	Virgibacillus salarius	2	EDTA only		7.978
+metal dependence	Virgibacillus salarius	2	Zn only		8.161
+metal dependence	Virgibacillus salarius	2	PL25_M23		4.531
+metal dependence	Virgibacillus salarius	2	PL25_M23 + EDTA		6.243
+metal dependence	Virgibacillus salarius	2	PL25_M23 + Zn		4.699
+metal dependence	Virgibacillus salarius	2	PL25_M23 + EDTA + Zn		4.778
+metal dependence	Streptococcus equi subsp. zooepidemicus	3	Untreated		8.13
+metal dependence	Streptococcus equi subsp. zooepidemicus	3	EDTA only		8.061
+metal dependence	Streptococcus equi subsp. zooepidemicus	3	Zn only		7.978
+metal dependence	Streptococcus equi subsp. zooepidemicus	3	PL25_M23		5.544
+metal dependence	Streptococcus equi subsp. zooepidemicus	3	PL25_M23 + EDTA		7.653
+metal dependence	Streptococcus equi subsp. zooepidemicus	3	PL25_M23 + Zn		5.653
+metal dependence	Streptococcus equi subsp. zooepidemicus	3	PL25_M23 + EDTA + Zn		6.653
+metal dependence	Streptococcus pneumoniae	3	Untreated		7.978
+metal dependence	Streptococcus pneumoniae	3	EDTA only		8.146
+metal dependence	Streptococcus pneumoniae	3	Zn only		7.929
+metal dependence	Streptococcus pneumoniae	3	PL25_M23		6.477
+metal dependence	Streptococcus pneumoniae	3	PL25_M23 + EDTA		7.74
+metal dependence	Streptococcus pneumoniae	3	PL25_M23 + Zn		5.813
+metal dependence	Streptococcus pneumoniae	3	PL25_M23 + EDTA + Zn		6.903
+metal dependence	Staphylococcus aureus (MRSA)	3	Untreated		8.544
+metal dependence	Staphylococcus aureus (MRSA)	3	EDTA only		8.301
+metal dependence	Staphylococcus aureus (MRSA)	3	Zn only		8.477
+metal dependence	Staphylococcus aureus (MRSA)	3	PL25_M23		6.447
+metal dependence	Staphylococcus aureus (MRSA)	3	PL25_M23 + EDTA		7.602
+metal dependence	Staphylococcus aureus (MRSA)	3	PL25_M23 + Zn		6.079
+metal dependence	Staphylococcus aureus (MRSA)	3	PL25_M23 + EDTA + Zn		6.146
+metal dependence	Staphylococcus aureus (MSSA)	3	Untreated		8.398
+metal dependence	Staphylococcus aureus (MSSA)	3	EDTA only		8.161
+metal dependence	Staphylococcus aureus (MSSA)	3	Zn only		8.176
+metal dependence	Staphylococcus aureus (MSSA)	3	PL25_M23		5.097
+metal dependence	Staphylococcus aureus (MSSA)	3	PL25_M23 + EDTA		6.653
+metal dependence	Staphylococcus aureus (MSSA)	3	PL25_M23 + Zn		4.845
+metal dependence	Staphylococcus aureus (MSSA)	3	PL25_M23 + EDTA + Zn		5.903
+metal dependence	Mammaliicoccus sciuri	3	Untreated		8.544
+metal dependence	Mammaliicoccus sciuri	3	EDTA only		8.176
+metal dependence	Mammaliicoccus sciuri	3	Zn only		7.929
+metal dependence	Mammaliicoccus sciuri	3	PL25_M23		5.653
+metal dependence	Mammaliicoccus sciuri	3	PL25_M23 + EDTA		7.778
+metal dependence	Mammaliicoccus sciuri	3	PL25_M23 + Zn		5.74
+metal dependence	Mammaliicoccus sciuri	3	PL25_M23 + EDTA + Zn		5.778
+metal dependence	Staphylococcus aureus	3	Untreated		8.477
+metal dependence	Staphylococcus aureus	3	EDTA only		7.954
+metal dependence	Staphylococcus aureus	3	Zn only		8.301
+metal dependence	Staphylococcus aureus	3	PL25_M23		6.591
+metal dependence	Staphylococcus aureus	3	PL25_M23 + EDTA		7.602
+metal dependence	Staphylococcus aureus	3	PL25_M23 + Zn		6.301
+metal dependence	Staphylococcus aureus	3	PL25_M23 + EDTA + Zn		6.699
+metal dependence	Virgibacillus salarius	3	Untreated		8.477
+metal dependence	Virgibacillus salarius	3	EDTA only		8.176
+metal dependence	Virgibacillus salarius	3	Zn only		8.398
+metal dependence	Virgibacillus salarius	3	PL25_M23		4.447
+metal dependence	Virgibacillus salarius	3	PL25_M23 + EDTA		6.477
+metal dependence	Virgibacillus salarius	3	PL25_M23 + Zn		4.544
+metal dependence	Virgibacillus salarius	3	PL25_M23 + EDTA + Zn		4.653
+salt tolerance	Streptococcus equi subsp. zooepidemicus	1	untreated 0 M NaCl		8.29
+salt tolerance	Streptococcus equi subsp. zooepidemicus	1	untreated 1 M NaCl		3.398
+salt tolerance	Streptococcus pneumoniae	1	untreated 0 M NaCl		8.477
+salt tolerance	Streptococcus pneumoniae	1	untreated 1 M NaCl		4.079
+salt tolerance	Staphylococcus aureus (MRSA)	1	untreated 0 M NaCl		8.653
+salt tolerance	Staphylococcus aureus (MRSA)	1	untreated 1 M NaCl		8.477
+salt tolerance	Staphylococcus aureus (MRSA)	1	PL25_M23 0 M NaCl		6.352
+salt tolerance	Staphylococcus aureus (MRSA)	1	PL25_M23 0.25 M NaCl		6.061
+salt tolerance	Staphylococcus aureus (MRSA)	1	PL25_M23 0.5 M NaCl		6.146
+salt tolerance	Staphylococcus aureus (MRSA)	1	PL25_M23 1 M NaCl		6.653
+salt tolerance	Staphylococcus aureus (MSSA)	1	untreated 0 M NaCl		8.161
+salt tolerance	Staphylococcus aureus (MSSA)	1	untreated 1 M NaCl		8.398
+salt tolerance	Staphylococcus aureus (MSSA)	1	PL25_M23 0 M NaCl		4.903
+salt tolerance	Staphylococcus aureus (MSSA)	1	PL25_M23 0.25 M NaCl		4.699
+salt tolerance	Staphylococcus aureus (MSSA)	1	PL25_M23 0.5 M NaCl		4.903
+salt tolerance	Staphylococcus aureus (MSSA)	1	PL25_M23 1 M NaCl		6.813
+salt tolerance	Mammaliicoccus sciuri	1	untreated 0 M NaCl		8.477
+salt tolerance	Mammaliicoccus sciuri	1	untreated 1 M NaCl		8.161
+salt tolerance	Mammaliicoccus sciuri	1	PL25_M23 0 M NaCl		5.653
+salt tolerance	Mammaliicoccus sciuri	1	PL25_M23 0.25 M NaCl		5.74
+salt tolerance	Mammaliicoccus sciuri	1	PL25_M23 0.5 M NaCl		5.875
+salt tolerance	Mammaliicoccus sciuri	1	PL25_M23 1 M NaCl		6.699
+salt tolerance	Staphylococcus aureus	1	untreated 0 M NaCl		8.544
+salt tolerance	Staphylococcus aureus	1	untreated 1 M NaCl		8.398
+salt tolerance	Staphylococcus aureus	1	PL25_M23 0 M NaCl		6.146
+salt tolerance	Staphylococcus aureus	1	PL25_M23 0.25 M NaCl		5.903
+salt tolerance	Staphylococcus aureus	1	PL25_M23 0.5 M NaCl		5.929
+salt tolerance	Staphylococcus aureus	1	PL25_M23 1 M NaCl		6.176
+salt tolerance	Virgibacillus salarius	1	untreated 0 M NaCl		8.398
+salt tolerance	Virgibacillus salarius	1	untreated 1 M NaCl		8.301
+salt tolerance	Virgibacillus salarius	1	PL25_M23 0 M NaCl		4.243
+salt tolerance	Virgibacillus salarius	1	PL25_M23 0.25 M NaCl		4.301
+salt tolerance	Virgibacillus salarius	1	PL25_M23 0.5 M NaCl		4.875
+salt tolerance	Virgibacillus salarius	1	PL25_M23 1 M NaCl		5.146
+salt tolerance	Streptococcus equi subsp. zooepidemicus	2	untreated 0 M NaCl		8.161
+salt tolerance	Streptococcus equi subsp. zooepidemicus	2	untreated 1 M NaCl		3.477
+salt tolerance	Streptococcus pneumoniae	2	untreated 0 M NaCl		8.301
+salt tolerance	Streptococcus pneumoniae	2	untreated 1 M NaCl		4.398
+salt tolerance	Staphylococcus aureus (MRSA)	2	untreated 0 M NaCl		8.544
+salt tolerance	Staphylococcus aureus (MRSA)	2	untreated 1 M NaCl		8.176
+salt tolerance	Staphylococcus aureus (MRSA)	2	PL25_M23 0 M NaCl		6.114
+salt tolerance	Staphylococcus aureus (MRSA)	2	PL25_M23 0.25 M NaCl		6.097
+salt tolerance	Staphylococcus aureus (MRSA)	2	PL25_M23 0.5 M NaCl		6.097
+salt tolerance	Staphylococcus aureus (MRSA)	2	PL25_M23 1 M NaCl		6.477
+salt tolerance	Staphylococcus aureus (MSSA)	2	untreated 0 M NaCl		8.161
+salt tolerance	Staphylococcus aureus (MSSA)	2	untreated 1 M NaCl		8.602
+salt tolerance	Staphylococcus aureus (MSSA)	2	PL25_M23 0 M NaCl		4.875
+salt tolerance	Staphylococcus aureus (MSSA)	2	PL25_M23 0.25 M NaCl		4.602
+salt tolerance	Staphylococcus aureus (MSSA)	2	PL25_M23 0.5 M NaCl		5.161
+salt tolerance	Staphylococcus aureus (MSSA)	2	PL25_M23 1 M NaCl		6.74
+salt tolerance	Mammaliicoccus sciuri	2	untreated 0 M NaCl		8.301
+salt tolerance	Mammaliicoccus sciuri	2	untreated 1 M NaCl		8.332
+salt tolerance	Mammaliicoccus sciuri	2	PL25_M23 0 M NaCl		5.653
+salt tolerance	Mammaliicoccus sciuri	2	PL25_M23 0.25 M NaCl		5.477
+salt tolerance	Mammaliicoccus sciuri	2	PL25_M23 0.5 M NaCl		5.74
+salt tolerance	Mammaliicoccus sciuri	2	PL25_M23 1 M NaCl		6.602
+salt tolerance	Staphylococcus aureus	2	untreated 0 M NaCl		8.544
+salt tolerance	Staphylococcus aureus	2	untreated 1 M NaCl		8.477
+salt tolerance	Staphylococcus aureus	2	PL25_M23 0 M NaCl		5.653
+salt tolerance	Staphylococcus aureus	2	PL25_M23 0.25 M NaCl		5.875
+salt tolerance	Staphylococcus aureus	2	PL25_M23 0.5 M NaCl		5.954
+salt tolerance	Staphylococcus aureus	2	PL25_M23 1 M NaCl		6.477
+salt tolerance	Virgibacillus salarius	2	untreated 0 M NaCl		8.301
+salt tolerance	Virgibacillus salarius	2	untreated 1 M NaCl		8.398
+salt tolerance	Virgibacillus salarius	2	PL25_M23 0 M NaCl		4.041
+salt tolerance	Virgibacillus salarius	2	PL25_M23 0.25 M NaCl		4.389
+salt tolerance	Virgibacillus salarius	2	PL25_M23 0.5 M NaCl		4.813
+salt tolerance	Virgibacillus salarius	2	PL25_M23 1 M NaCl		4.929
+salt tolerance	Streptococcus equi subsp. zooepidemicus	3	untreated 0 M NaCl		8.29
+salt tolerance	Streptococcus equi subsp. zooepidemicus	3	untreated 1 M NaCl		3.525
+salt tolerance	Streptococcus pneumoniae	3	untreated 0 M NaCl		7.978
+salt tolerance	Streptococcus pneumoniae	3	untreated 1 M NaCl		3.978
+salt tolerance	Staphylococcus aureus (MRSA)	3	untreated 0 M NaCl		8.544
+salt tolerance	Staphylococcus aureus (MRSA)	3	untreated 1 M NaCl		8.398
+salt tolerance	Staphylococcus aureus (MRSA)	3	PL25_M23 0 M NaCl		6.255
+salt tolerance	Staphylococcus aureus (MRSA)	3	PL25_M23 0.25 M NaCl		6.352
+salt tolerance	Staphylococcus aureus (MRSA)	3	PL25_M23 0.5 M NaCl		6.079
+salt tolerance	Staphylococcus aureus (MRSA)	3	PL25_M23 1 M NaCl		6.47
+salt tolerance	Staphylococcus aureus (MSSA)	3	untreated 0 M NaCl		8.114
+salt tolerance	Staphylococcus aureus (MSSA)	3	untreated 1 M NaCl		8.161
+salt tolerance	Staphylococcus aureus (MSSA)	3	PL25_M23 0 M NaCl		4.699
+salt tolerance	Staphylococcus aureus (MSSA)	3	PL25_M23 0.25 M NaCl		4.699
+salt tolerance	Staphylococcus aureus (MSSA)	3	PL25_M23 0.5 M NaCl		4.845
+salt tolerance	Staphylococcus aureus (MSSA)	3	PL25_M23 1 M NaCl		6.161
+salt tolerance	Mammaliicoccus sciuri	3	untreated 0 M NaCl		8.398
+salt tolerance	Mammaliicoccus sciuri	3	untreated 1 M NaCl		8.161
+salt tolerance	Mammaliicoccus sciuri	3	PL25_M23 0 M NaCl		5.398
+salt tolerance	Mammaliicoccus sciuri	3	PL25_M23 0.25 M NaCl		5.544
+salt tolerance	Mammaliicoccus sciuri	3	PL25_M23 0.5 M NaCl		5.544
+salt tolerance	Mammaliicoccus sciuri	3	PL25_M23 1 M NaCl		6.398
+salt tolerance	Staphylococcus aureus	3	untreated 0 M NaCl		8.544
+salt tolerance	Staphylococcus aureus	3	untreated 1 M NaCl		8.477
+salt tolerance	Staphylococcus aureus	3	PL25_M23 0 M NaCl		6.041
+salt tolerance	Staphylococcus aureus	3	PL25_M23 0.25 M NaCl		6.23
+salt tolerance	Staphylococcus aureus	3	PL25_M23 0.5 M NaCl		6.29
+salt tolerance	Staphylococcus aureus	3	PL25_M23 1 M NaCl		6.653
+salt tolerance	Virgibacillus salarius	3	untreated 0 M NaCl		8.161
+salt tolerance	Virgibacillus salarius	3	untreated 1 M NaCl		8.146
+salt tolerance	Virgibacillus salarius	3	PL25_M23 0 M NaCl		4.114
+salt tolerance	Virgibacillus salarius	3	PL25_M23 0.25 M NaCl		4.568
+salt tolerance	Virgibacillus salarius	3	PL25_M23 0.5 M NaCl		4.38
+salt tolerance	Virgibacillus salarius	3	PL25_M23 1 M NaCl		4.845

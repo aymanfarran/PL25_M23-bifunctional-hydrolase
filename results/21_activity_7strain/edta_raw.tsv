@@ -1,0 +1,148 @@
+strain	bio_rep	log10_cfu	condition
+Streptococcus equi subsp. zooepidemicus	1	8.16136800223497	Untreated
+Streptococcus equi subsp. zooepidemicus	1	7.92941892571429	EDTA only
+Streptococcus equi subsp. zooepidemicus	1	8.14612803567824	Zn only
+Streptococcus equi subsp. zooepidemicus	1	5.74036268949424	PL25_M23
+Streptococcus equi subsp. zooepidemicus	1	7.74036268949424	PL25_M23 + EDTA
+Streptococcus equi subsp. zooepidemicus	1	5.74036268949424	PL25_M23 + Zn
+Streptococcus equi subsp. zooepidemicus	1	6.74036268949424	PL25_M23 + EDTA + Zn
+Streptococcus pneumoniae	1	8.47712125471966	Untreated
+Streptococcus pneumoniae	1	8.17609125905568	EDTA only
+Streptococcus pneumoniae	1	7.97772360528885	Zn only
+Streptococcus pneumoniae	1	6.14612803567824	PL25_M23
+Streptococcus pneumoniae	1	7.81291335664286	PL25_M23 + EDTA
+Streptococcus pneumoniae	1	5.8750612633917	PL25_M23 + Zn
+Streptococcus pneumoniae	1	6.84509804001426	PL25_M23 + EDTA + Zn
+Staphylococcus aureus (MRSA)	1	8.65321251377534	Untreated
+Staphylococcus aureus (MRSA)	1	8.47712125471966	EDTA only
+Staphylococcus aureus (MRSA)	1	8.60205999132796	Zn only
+Staphylococcus aureus (MRSA)	1	6.35218251811136	PL25_M23
+Staphylococcus aureus (MRSA)	1	7.16136800223498	PL25_M23 + EDTA
+Staphylococcus aureus (MRSA)	1	6.14612803567824	PL25_M23 + Zn
+Staphylococcus aureus (MRSA)	1	6.37106786227174	PL25_M23 + EDTA + Zn
+Staphylococcus aureus (MSSA)	1	8.16136800223497	Untreated
+Staphylococcus aureus (MSSA)	1	8.39794000867204	EDTA only
+Staphylococcus aureus (MSSA)	1	8.30102999566398	Zn only
+Staphylococcus aureus (MSSA)	1	4.90308998699194	PL25_M23
+Staphylococcus aureus (MSSA)	1	6.81291335664286	PL25_M23 + EDTA
+Staphylococcus aureus (MSSA)	1	5.36172783601759	PL25_M23 + Zn
+Staphylococcus aureus (MSSA)	1	6.14612803567824	PL25_M23 + EDTA + Zn
+Mammaliicoccus sciuri	1	8.47712125471966	Untreated
+Mammaliicoccus sciuri	1	8.16136800223497	EDTA only
+Mammaliicoccus sciuri	1	8.30102999566398	Zn only
+Mammaliicoccus sciuri	1	5.65321251377534	PL25_M23
+Mammaliicoccus sciuri	1	7.69897000433602	PL25_M23 + EDTA
+Mammaliicoccus sciuri	1	5.74036268949424	PL25_M23 + Zn
+Mammaliicoccus sciuri	1	6.16136800223498	PL25_M23 + EDTA + Zn
+Staphylococcus aureus	1	8.54406804435028	Untreated
+Staphylococcus aureus	1	8.39794000867204	EDTA only
+Staphylococcus aureus	1	8.39794000867204	Zn only
+Staphylococcus aureus	1	6.14612803567824	PL25_M23
+Staphylococcus aureus	1	7.74036268949424	PL25_M23 + EDTA
+Staphylococcus aureus	1	5.90308998699194	PL25_M23 + Zn
+Staphylococcus aureus	1	6.81291335664286	PL25_M23 + EDTA + Zn
+Virgibacillus salarius	1	8.16136800223497	Untreated
+Virgibacillus salarius	1	8.30102999566398	EDTA only
+Virgibacillus salarius	1	7.69897000433602	Zn only
+Virgibacillus salarius	1	4.60205999132796	PL25_M23
+Virgibacillus salarius	1	6.60205999132796	PL25_M23 + EDTA
+Virgibacillus salarius	1	4.30102999566398	PL25_M23 + Zn
+Virgibacillus salarius	1	4.81291335664286	PL25_M23 + EDTA + Zn
+Streptococcus equi subsp. zooepidemicus	2	8.16136800223497	Untreated
+Streptococcus equi subsp. zooepidemicus	2	7.95424250943933	EDTA only
+Streptococcus equi subsp. zooepidemicus	2	7.97772360528885	Zn only
+Streptococcus equi subsp. zooepidemicus	2	5.60205999132796	PL25_M23
+Streptococcus equi subsp. zooepidemicus	2	7.54406804435028	PL25_M23 + EDTA
+Streptococcus equi subsp. zooepidemicus	2	5.54406804435028	PL25_M23 + Zn
+Streptococcus equi subsp. zooepidemicus	2	6.69897000433602	PL25_M23 + EDTA + Zn
+Streptococcus pneumoniae	2	8.30102999566398	Untreated
+Streptococcus pneumoniae	2	8.16136800223497	EDTA only
+Streptococcus pneumoniae	2	7.95424250943933	Zn only
+Streptococcus pneumoniae	2	6.39794000867204	PL25_M23
+Streptococcus pneumoniae	2	7.77815125038364	PL25_M23 + EDTA
+Streptococcus pneumoniae	2	6.29003461136252	PL25_M23 + Zn
+Streptococcus pneumoniae	2	6.74036268949424	PL25_M23 + EDTA + Zn
+Staphylococcus aureus (MRSA)	2	8.54406804435028	Untreated
+Staphylococcus aureus (MRSA)	2	8.17609125905568	EDTA only
+Staphylococcus aureus (MRSA)	2	8.39794000867204	Zn only
+Staphylococcus aureus (MRSA)	2	6.11394335230684	PL25_M23
+Staphylococcus aureus (MRSA)	2	7.74036268949424	PL25_M23 + EDTA
+Staphylococcus aureus (MRSA)	2	6.09691001300806	PL25_M23 + Zn
+Staphylococcus aureus (MRSA)	2	6.13033376849501	PL25_M23 + EDTA + Zn
+Staphylococcus aureus (MSSA)	2	8.38021124171161	Untreated
+Staphylococcus aureus (MSSA)	2	7.92941892571429	EDTA only
+Staphylococcus aureus (MSSA)	2	8.29003461136252	Zn only
+Staphylococcus aureus (MSSA)	2	4.8750612633917	PL25_M23
+Staphylococcus aureus (MSSA)	2	6.60205999132796	PL25_M23 + EDTA
+Staphylococcus aureus (MSSA)	2	4.65321251377534	PL25_M23 + Zn
+Staphylococcus aureus (MSSA)	2	5.14612803567824	PL25_M23 + EDTA + Zn
+Mammaliicoccus sciuri	2	8.27875360095283	Untreated
+Mammaliicoccus sciuri	2	7.95424250943933	EDTA only
+Mammaliicoccus sciuri	2	8.17609125905568	Zn only
+Mammaliicoccus sciuri	2	5.84509804001426	PL25_M23
+Mammaliicoccus sciuri	2	7.77815125038364	PL25_M23 + EDTA
+Mammaliicoccus sciuri	2	5.77815125038364	PL25_M23 + Zn
+Mammaliicoccus sciuri	2	6.07918124604763	PL25_M23 + EDTA + Zn
+Staphylococcus aureus	2	8.35218251811136	Untreated
+Staphylococcus aureus	2	8.16136800223497	EDTA only
+Staphylococcus aureus	2	8.30102999566398	Zn only
+Staphylococcus aureus	2	6.23044892137827	PL25_M23
+Staphylococcus aureus	2	7.74036268949424	PL25_M23 + EDTA
+Staphylococcus aureus	2	6.14612803567824	PL25_M23 + Zn
+Staphylococcus aureus	2	6.47712125471966	PL25_M23 + EDTA + Zn
+Virgibacillus salarius	2	8.27875360095283	Untreated
+Virgibacillus salarius	2	7.97772360528885	EDTA only
+Virgibacillus salarius	2	8.16136800223497	Zn only
+Virgibacillus salarius	2	4.53147891704226	PL25_M23
+Virgibacillus salarius	2	6.24303804868629	PL25_M23 + EDTA
+Virgibacillus salarius	2	4.69897000433602	PL25_M23 + Zn
+Virgibacillus salarius	2	4.77815125038364	PL25_M23 + EDTA + Zn
+Streptococcus equi subsp. zooepidemicus	3	8.13033376849501	Untreated
+Streptococcus equi subsp. zooepidemicus	3	8.06069784035361	EDTA only
+Streptococcus equi subsp. zooepidemicus	3	7.97772360528885	Zn only
+Streptococcus equi subsp. zooepidemicus	3	5.54406804435028	PL25_M23
+Streptococcus equi subsp. zooepidemicus	3	7.65321251377534	PL25_M23 + EDTA
+Streptococcus equi subsp. zooepidemicus	3	5.65321251377534	PL25_M23 + Zn
+Streptococcus equi subsp. zooepidemicus	3	6.65321251377534	PL25_M23 + EDTA + Zn
+Streptococcus pneumoniae	3	7.97772360528885	Untreated
+Streptococcus pneumoniae	3	8.14612803567824	EDTA only
+Streptococcus pneumoniae	3	7.92941892571429	Zn only
+Streptococcus pneumoniae	3	6.47712125471966	PL25_M23
+Streptococcus pneumoniae	3	7.74036268949424	PL25_M23 + EDTA
+Streptococcus pneumoniae	3	5.81291335664286	PL25_M23 + Zn
+Streptococcus pneumoniae	3	6.90308998699194	PL25_M23 + EDTA + Zn
+Staphylococcus aureus (MRSA)	3	8.54406804435028	Untreated
+Staphylococcus aureus (MRSA)	3	8.30102999566398	EDTA only
+Staphylococcus aureus (MRSA)	3	8.47712125471966	Zn only
+Staphylococcus aureus (MRSA)	3	6.44715803134222	PL25_M23
+Staphylococcus aureus (MRSA)	3	7.60205999132796	PL25_M23 + EDTA
+Staphylococcus aureus (MRSA)	3	6.07918124604763	PL25_M23 + Zn
+Staphylococcus aureus (MRSA)	3	6.14612803567824	PL25_M23 + EDTA + Zn
+Staphylococcus aureus (MSSA)	3	8.39794000867204	Untreated
+Staphylococcus aureus (MSSA)	3	8.16136800223497	EDTA only
+Staphylococcus aureus (MSSA)	3	8.17609125905568	Zn only
+Staphylococcus aureus (MSSA)	3	5.09691001300806	PL25_M23
+Staphylococcus aureus (MSSA)	3	6.65321251377534	PL25_M23 + EDTA
+Staphylococcus aureus (MSSA)	3	4.84509804001426	PL25_M23 + Zn
+Staphylococcus aureus (MSSA)	3	5.90308998699194	PL25_M23 + EDTA + Zn
+Mammaliicoccus sciuri	3	8.54406804435028	Untreated
+Mammaliicoccus sciuri	3	8.17609125905568	EDTA only
+Mammaliicoccus sciuri	3	7.92941892571429	Zn only
+Mammaliicoccus sciuri	3	5.65321251377534	PL25_M23
+Mammaliicoccus sciuri	3	7.77815125038364	PL25_M23 + EDTA
+Mammaliicoccus sciuri	3	5.74036268949424	PL25_M23 + Zn
+Mammaliicoccus sciuri	3	5.77815125038364	PL25_M23 + EDTA + Zn
+Staphylococcus aureus	3	8.47712125471966	Untreated
+Staphylococcus aureus	3	7.95424250943933	EDTA only
+Staphylococcus aureus	3	8.30102999566398	Zn only
+Staphylococcus aureus	3	6.5910646070265	PL25_M23
+Staphylococcus aureus	3	7.60205999132796	PL25_M23 + EDTA
+Staphylococcus aureus	3	6.30102999566398	PL25_M23 + Zn
+Staphylococcus aureus	3	6.69897000433602	PL25_M23 + EDTA + Zn
+Virgibacillus salarius	3	8.47712125471966	Untreated
+Virgibacillus salarius	3	8.17609125905568	EDTA only
+Virgibacillus salarius	3	8.39794000867204	Zn only
+Virgibacillus salarius	3	4.44715803134222	PL25_M23
+Virgibacillus salarius	3	6.47712125471966	PL25_M23 + EDTA
+Virgibacillus salarius	3	4.54406804435028	PL25_M23 + Zn
+Virgibacillus salarius	3	4.65321251377534	PL25_M23 + EDTA + Zn

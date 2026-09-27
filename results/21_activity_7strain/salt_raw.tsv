@@ -1,0 +1,103 @@
+strain	bio_rep	log10_cfu	treated	NaCl_M
+Streptococcus equi subsp. zooepidemicus	1	8.29003461136252	FALSE	0
+Streptococcus equi subsp. zooepidemicus	1	3.39794000867204	FALSE	1
+Streptococcus pneumoniae	1	8.47712125471966	FALSE	0
+Streptococcus pneumoniae	1	4.07918124604763	FALSE	1
+Staphylococcus aureus (MRSA)	1	8.65321251377534	FALSE	0
+Staphylococcus aureus (MRSA)	1	8.47712125471966	FALSE	1
+Staphylococcus aureus (MRSA)	1	6.35218251811136	TRUE	0
+Staphylococcus aureus (MRSA)	1	6.06069784035361	TRUE	0.25
+Staphylococcus aureus (MRSA)	1	6.14612803567824	TRUE	0.5
+Staphylococcus aureus (MRSA)	1	6.65321251377534	TRUE	1
+Staphylococcus aureus (MSSA)	1	8.16136800223497	FALSE	0
+Staphylococcus aureus (MSSA)	1	8.39794000867204	FALSE	1
+Staphylococcus aureus (MSSA)	1	4.90308998699194	TRUE	0
+Staphylococcus aureus (MSSA)	1	4.69897000433602	TRUE	0.25
+Staphylococcus aureus (MSSA)	1	4.90308998699194	TRUE	0.5
+Staphylococcus aureus (MSSA)	1	6.81291335664286	TRUE	1
+Mammaliicoccus sciuri	1	8.47712125471966	FALSE	0
+Mammaliicoccus sciuri	1	8.16136800223497	FALSE	1
+Mammaliicoccus sciuri	1	5.65321251377534	TRUE	0
+Mammaliicoccus sciuri	1	5.74036268949424	TRUE	0.25
+Mammaliicoccus sciuri	1	5.8750612633917	TRUE	0.5
+Mammaliicoccus sciuri	1	6.69897000433602	TRUE	1
+Staphylococcus aureus	1	8.54406804435028	FALSE	0
+Staphylococcus aureus	1	8.39794000867204	FALSE	1
+Staphylococcus aureus	1	6.14612803567824	TRUE	0
+Staphylococcus aureus	1	5.90308998699194	TRUE	0.25
+Staphylococcus aureus	1	5.92941892571429	TRUE	0.5
+Staphylococcus aureus	1	6.17609125905568	TRUE	1
+Virgibacillus salarius	1	8.39794000867204	FALSE	0
+Virgibacillus salarius	1	8.30102999566398	FALSE	1
+Virgibacillus salarius	1	4.24303804868629	TRUE	0
+Virgibacillus salarius	1	4.30102999566398	TRUE	0.25
+Virgibacillus salarius	1	4.8750612633917	TRUE	0.5
+Virgibacillus salarius	1	5.14612803567824	TRUE	1
+Streptococcus equi subsp. zooepidemicus	2	8.16136800223497	FALSE	0
+Streptococcus equi subsp. zooepidemicus	2	3.47712125471966	FALSE	1
+Streptococcus pneumoniae	2	8.30102999566398	FALSE	0
+Streptococcus pneumoniae	2	4.39794000867204	FALSE	1
+Staphylococcus aureus (MRSA)	2	8.54406804435028	FALSE	0
+Staphylococcus aureus (MRSA)	2	8.17609125905568	FALSE	1
+Staphylococcus aureus (MRSA)	2	6.11394335230684	TRUE	0
+Staphylococcus aureus (MRSA)	2	6.09691001300806	TRUE	0.25
+Staphylococcus aureus (MRSA)	2	6.09691001300806	TRUE	0.5
+Staphylococcus aureus (MRSA)	2	6.47712125471966	TRUE	1
+Staphylococcus aureus (MSSA)	2	8.16136800223497	FALSE	0
+Staphylococcus aureus (MSSA)	2	8.60205999132796	FALSE	1
+Staphylococcus aureus (MSSA)	2	4.8750612633917	TRUE	0
+Staphylococcus aureus (MSSA)	2	4.60205999132796	TRUE	0.25
+Staphylococcus aureus (MSSA)	2	5.16136800223498	TRUE	0.5
+Staphylococcus aureus (MSSA)	2	6.74036268949424	TRUE	1
+Mammaliicoccus sciuri	2	8.30102999566398	FALSE	0
+Mammaliicoccus sciuri	2	8.33243845991561	FALSE	1
+Mammaliicoccus sciuri	2	5.65321251377534	TRUE	0
+Mammaliicoccus sciuri	2	5.47712125471966	TRUE	0.25
+Mammaliicoccus sciuri	2	5.74036268949424	TRUE	0.5
+Mammaliicoccus sciuri	2	6.60205999132796	TRUE	1
+Staphylococcus aureus	2	8.54406804435028	FALSE	0
+Staphylococcus aureus	2	8.47712125471966	FALSE	1
+Staphylococcus aureus	2	5.65321251377534	TRUE	0
+Staphylococcus aureus	2	5.8750612633917	TRUE	0.25
+Staphylococcus aureus	2	5.95424250943933	TRUE	0.5
+Staphylococcus aureus	2	6.47712125471966	TRUE	1
+Virgibacillus salarius	2	8.30102999566398	FALSE	0
+Virgibacillus salarius	2	8.39794000867204	FALSE	1
+Virgibacillus salarius	2	4.04139268515823	TRUE	0
+Virgibacillus salarius	2	4.38916608436453	TRUE	0.25
+Virgibacillus salarius	2	4.81291335664286	TRUE	0.5
+Virgibacillus salarius	2	4.92941892571429	TRUE	1
+Streptococcus equi subsp. zooepidemicus	3	8.29003461136252	FALSE	0
+Streptococcus equi subsp. zooepidemicus	3	3.52504480703685	FALSE	1
+Streptococcus pneumoniae	3	7.97772360528885	FALSE	0
+Streptococcus pneumoniae	3	3.97772360528885	FALSE	1
+Staphylococcus aureus (MRSA)	3	8.54406804435028	FALSE	0
+Staphylococcus aureus (MRSA)	3	8.39794000867204	FALSE	1
+Staphylococcus aureus (MRSA)	3	6.25527250510331	TRUE	0
+Staphylococcus aureus (MRSA)	3	6.35218251811136	TRUE	0.25
+Staphylococcus aureus (MRSA)	3	6.07918124604763	TRUE	0.5
+Staphylococcus aureus (MRSA)	3	6.46982201597816	TRUE	1
+Staphylococcus aureus (MSSA)	3	8.11394335230684	FALSE	0
+Staphylococcus aureus (MSSA)	3	8.16136800223497	FALSE	1
+Staphylococcus aureus (MSSA)	3	4.69897000433602	TRUE	0
+Staphylococcus aureus (MSSA)	3	4.69897000433602	TRUE	0.25
+Staphylococcus aureus (MSSA)	3	4.84509804001426	TRUE	0.5
+Staphylococcus aureus (MSSA)	3	6.16136800223498	TRUE	1
+Mammaliicoccus sciuri	3	8.39794000867204	FALSE	0
+Mammaliicoccus sciuri	3	8.16136800223497	FALSE	1
+Mammaliicoccus sciuri	3	5.39794000867204	TRUE	0
+Mammaliicoccus sciuri	3	5.54406804435028	TRUE	0.25
+Mammaliicoccus sciuri	3	5.54406804435028	TRUE	0.5
+Mammaliicoccus sciuri	3	6.39794000867204	TRUE	1
+Staphylococcus aureus	3	8.54406804435028	FALSE	0
+Staphylococcus aureus	3	8.47712125471966	FALSE	1
+Staphylococcus aureus	3	6.04139268515823	TRUE	0
+Staphylococcus aureus	3	6.23044892137827	TRUE	0.25
+Staphylococcus aureus	3	6.29003461136252	TRUE	0.5
+Staphylococcus aureus	3	6.65321251377534	TRUE	1
+Virgibacillus salarius	3	8.16136800223497	FALSE	0
+Virgibacillus salarius	3	8.14612803567824	FALSE	1
+Virgibacillus salarius	3	4.11394335230684	TRUE	0
+Virgibacillus salarius	3	4.56820172406699	TRUE	0.25
+Virgibacillus salarius	3	4.38021124171161	TRUE	0.5
+Virgibacillus salarius	3	4.84509804001426	TRUE	1

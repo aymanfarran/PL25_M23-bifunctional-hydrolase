@@ -43,13 +43,13 @@ This repository contains the code, source data, intermediate files, structural m
 │   ├── 08_render_surfaces.py               PyMOL — Figure 5 surface rendering
 │   ├── 08_combine_electrostatic.py         Figure 5 — electrostatic comparison assembly
 │   ├── 09_circular_plasmid_map.py          Figure 1a — circular plasmid map
-│   ├── 10_antibacterial_activity.py        Primary antibacterial assay stats
 │   ├── 11_orit_motif_scan.py               oriT consensus-motif screen (Supp. Methods S4)
 │   ├── 22_closed_genome_search.py          Closed-genome M23 homologue census
 │   ├── 22_render_F3_plasmid_lineage.py     Supp. Figure 2 — plasmid-clade phylogeny
 │   ├── 39_compact_M23_targeted.py          Figure 2 — compact targeted M23 phylogeny
-│   ├── 40_activity_export_raw.py           Bench workbook → tidy raw-data TSVs
-│   └── 41_activity_panels.py               Figures 6 and 7 — activity + biochemistry
+│   ├── 50_activity_read.R                  Bench workbook → tidy raw-data TSVs
+│   ├── 51_activity_figures.R               Figures 1 and 2 — activity, metal, salt
+│   └── 52_supp_controls.R                  Supp. Figure S1 and Supp. Table S1
 │
 │   (figures/ is not tracked in this repository — see "Figures" below)
 │
@@ -75,7 +75,7 @@ This repository contains the code, source data, intermediate files, structural m
 │   ├── 16_electrostatic/            pI / charge / charge-density JSON
 │   ├── 17_conjscan/                 MacSyFinder + CONJScan v2.1.0 output
 │   ├── 19_circularity/              FASTA-level circularity check (nucmer + oriT scan output)
-│   └── 20_activity/                 Antibacterial assay raw data + stats
+│   └── 21_activity_7strain/         Wet-lab assay raw data, stats and Table S1
 │
 └── ibex/
     ├── README.md                    IBEX usage notes
@@ -124,18 +124,20 @@ python scripts/05cc_combine.py
 pymol -cq scripts/08_render_surfaces.py
 python scripts/08_combine_electrostatic.py
 
-# Figures 6 and 7 — activity assays and biochemical characterisation
-python scripts/41_activity_panels.py
+# Figures 1 and 2, and Supp. Figure S1 — wet-lab assays
+Rscript scripts/51_activity_figures.R
+Rscript scripts/52_supp_controls.R
 ```
 
 PyMOL rendering should be performed with the open-source build used in the
 manuscript.
 
-The activity figures read the raw-data TSVs in `results/20_activity/`, which
-are tracked here. To regenerate those TSVs from the bench workbook:
+The activity figures read the raw-data TSVs in `results/21_activity_7strain/`,
+which are tracked here. To regenerate them from the bench workbook
+(`M23_New_Data.xlsx`, also tracked):
 
 ```bash
-python scripts/40_activity_export_raw.py path/to/data.xlsx
+Rscript scripts/50_activity_read.R
 ```
 
 The CwlT-free M23 phylogeny can be rebuilt from scratch with:

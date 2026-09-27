@@ -1,0 +1,86 @@
+figure	panel	strain	comparison	estimate	p	symbol
+1	a	Mammaliicoccus sciuri	treated vs untreated at 100 ug/mL	2.71613994415261	0.00274340678080873	**
+1	a	Staphylococcus aureus	treated vs untreated at 100 ug/mL	2.13524341769943	0.00476496623475024	**
+1	a	Staphylococcus aureus (MRSA)	treated vs untreated at 100 ug/mL	2.32765555356707	0.000521345270306241	***
+1	a	Staphylococcus aureus (MSSA)	treated vs untreated at 100 ug/mL	3.38121307842485	0.000443965658270188	***
+1	a	Streptococcus equi subsp. zooepidemicus	treated vs untreated at 100 ug/mL	2.51184827135084	0.000371203020524442	***
+1	a	Streptococcus pneumoniae	treated vs untreated at 100 ug/mL	1.92861269301664	0.0212724749788859	*
+1	a	Virgibacillus salarius	treated vs untreated at 100 ug/mL	3.77884863939834	0.00130760721457222	**
+1	b	Mammaliicoccus sciuri	dose_ug_mL lvl50 - lvl0	0.653074103555508	2.7266042836871e-05	****
+1	b	Mammaliicoccus sciuri	dose_ug_mL lvl100 - lvl0	2.59662373249481	7.04658553729587e-13	****
+1	b	Mammaliicoccus sciuri	dose_ug_mL lvl300 - lvl0	2.88943711776564	7.04658553729587e-13	****
+1	b	Staphylococcus aureus	dose_ug_mL lvl50 - lvl0	0.549643446876529	0.000345423517066124	***
+1	b	Staphylococcus aureus	dose_ug_mL lvl100 - lvl0	2.03668437798146	7.04658553729587e-13	****
+1	b	Staphylococcus aureus	dose_ug_mL lvl300 - lvl0	3.03492353342164	7.04658553729587e-13	****
+1	b	Staphylococcus aureus (MRSA)	dose_ug_mL lvl50 - lvl0	0.150561433824213	0.514563934084672	ns
+1	b	Staphylococcus aureus (MRSA)	dose_ug_mL lvl100 - lvl0	2.00538141328322	7.04658553729587e-13	****
+1	b	Staphylococcus aureus (MRSA)	dose_ug_mL lvl300 - lvl0	2.34409271045885	7.04658553729587e-13	****
+1	b	Staphylococcus aureus (MSSA)	dose_ug_mL lvl50 - lvl0	1.40348719705569	1.00264241353898e-12	****
+1	b	Staphylococcus aureus (MSSA)	dose_ug_mL lvl100 - lvl0	3.26096720456433	7.04658553729587e-13	****
+1	b	Staphylococcus aureus (MSSA)	dose_ug_mL lvl300 - lvl0	3.47250075042874	7.04658553729587e-13	****
+1	b	Streptococcus equi subsp. zooepidemicus	dose_ug_mL lvl50 - lvl0	0.543862900977133	0.000396558969905758	***
+1	b	Streptococcus equi subsp. zooepidemicus	dose_ug_mL lvl100 - lvl0	2.35305828499345	7.04658553729587e-13	****
+1	b	Streptococcus equi subsp. zooepidemicus	dose_ug_mL lvl300 - lvl0	2.91040848178024	7.04658553729587e-13	****
+1	b	Streptococcus pneumoniae	dose_ug_mL lvl50 - lvl0	0.719159794291187	5.13926524559061e-06	****
+1	b	Streptococcus pneumoniae	dose_ug_mL lvl100 - lvl0	2.0808699871448	7.04658553729587e-13	****
+1	b	Streptococcus pneumoniae	dose_ug_mL lvl300 - lvl0	2.80425062932562	7.04658553729587e-13	****
+1	b	Virgibacillus salarius	dose_ug_mL lvl50 - lvl0	1.77509323971396	7.05768776754212e-13	****
+1	b	Virgibacillus salarius	dose_ug_mL lvl100 - lvl0	3.97452990195067	7.04658553729587e-13	****
+1	b	Virgibacillus salarius	dose_ug_mL lvl300 - lvl0	5.08693319927212	7.04658553729587e-13	****
+1	c	Mammaliicoccus sciuri	time_min lvl30 - lvl0	2.13108301782212	5.50703926904816e-12	****
+1	c	Mammaliicoccus sciuri	time_min lvl60 - lvl0	2.6538709416605	5.47950573803746e-12	****
+1	c	Mammaliicoccus sciuri	time_min lvl120 - lvl0	2.94953687440364	5.47883960422269e-12	****
+1	c	Mammaliicoccus sciuri	time_min lvl180 - lvl0	2.98802914803645	5.47883960422269e-12	****
+1	c	Staphylococcus aureus	time_min lvl30 - lvl0	1.57746458660766	3.67723074212734e-10	****
+1	c	Staphylococcus aureus	time_min lvl60 - lvl0	2.11845885501267	5.50992584891219e-12	****
+1	c	Staphylococcus aureus	time_min lvl120 - lvl0	2.19912292380597	5.49416068196251e-12	****
+1	c	Staphylococcus aureus	time_min lvl180 - lvl0	2.47425453079902	5.48172618408671e-12	****
+1	c	Staphylococcus aureus (MRSA)	time_min lvl30 - lvl0	1.89474891583843	6.41675601542602e-12	****
+1	c	Staphylococcus aureus (MRSA)	time_min lvl60 - lvl0	2.46503865838368	5.48194822869164e-12	****
+1	c	Staphylococcus aureus (MRSA)	time_min lvl120 - lvl0	2.54859948100129	5.4811710725744e-12	****
+1	c	Staphylococcus aureus (MRSA)	time_min lvl180 - lvl0	2.72850056065055	5.479394715735e-12	****
+1	c	Staphylococcus aureus (MSSA)	time_min lvl30 - lvl0	2.69642719098399	5.47961676033992e-12	****
+1	c	Staphylococcus aureus (MSSA)	time_min lvl60 - lvl0	3.42252651046879	5.47872858192022e-12	****
+1	c	Staphylococcus aureus (MSSA)	time_min lvl120 - lvl0	3.71428813367487	5.47872858192022e-12	****
+1	c	Staphylococcus aureus (MSSA)	time_min lvl180 - lvl0	4.05660038992395	5.47872858192022e-12	****
+1	c	Streptococcus equi subsp. zooepidemicus	time_min lvl30 - lvl0	2.08556505145208	5.52380363672e-12	****
+1	c	Streptococcus equi subsp. zooepidemicus	time_min lvl60 - lvl0	2.54989140287363	5.48106005027194e-12	****
+1	c	Streptococcus equi subsp. zooepidemicus	time_min lvl120 - lvl0	2.64125419210862	5.47950573803746e-12	****
+1	c	Streptococcus equi subsp. zooepidemicus	time_min lvl180 - lvl0	2.64550458082629	5.47961676033992e-12	****
+1	c	Streptococcus pneumoniae	time_min lvl30 - lvl0	1.38986971050925	1.32136683816952e-08	****
+1	c	Streptococcus pneumoniae	time_min lvl60 - lvl0	1.74799716489787	1.97041272187448e-11	****
+1	c	Streptococcus pneumoniae	time_min lvl120 - lvl0	1.81890695500242	9.25548526709008e-12	****
+1	c	Streptococcus pneumoniae	time_min lvl180 - lvl0	2.10126053555158	5.51736434317718e-12	****
+1	c	Virgibacillus salarius	time_min lvl30 - lvl0	3.52728236704744	5.47872858192022e-12	****
+1	c	Virgibacillus salarius	time_min lvl60 - lvl0	4.26300609743679	5.47872858192022e-12	****
+1	c	Virgibacillus salarius	time_min lvl120 - lvl0	4.92657849643095	5.47872858192022e-12	****
+1	c	Virgibacillus salarius	time_min lvl180 - lvl0	4.78994215960291	5.47872858192022e-12	****
+2	a	Mammaliicoccus sciuri	PL25_M23 vs +EDTA	NA	0.000747929970264466	***
+2	a	Mammaliicoccus sciuri	+EDTA vs +EDTA+Zn	NA	0.00597179356948627	**
+2	a	Staphylococcus aureus	PL25_M23 vs +EDTA	NA	0.017151566038389	*
+2	a	Staphylococcus aureus	+EDTA vs +EDTA+Zn	NA	0.0124602172444309	*
+2	a	Staphylococcus aureus (MRSA)	PL25_M23 vs +EDTA	NA	0.0370016003138006	*
+2	a	Staphylococcus aureus (MRSA)	+EDTA vs +EDTA+Zn	NA	0.0362213036677827	*
+2	a	Staphylococcus aureus (MSSA)	PL25_M23 vs +EDTA	NA	0.00345896662992413	**
+2	a	Staphylococcus aureus (MSSA)	+EDTA vs +EDTA+Zn	NA	0.0620381989184197	ns
+2	a	Streptococcus equi subsp. zooepidemicus	PL25_M23 vs +EDTA	NA	0.000589515923295417	***
+2	a	Streptococcus equi subsp. zooepidemicus	+EDTA vs +EDTA+Zn	NA	0.00295116522131105	**
+2	a	Streptococcus pneumoniae	PL25_M23 vs +EDTA	NA	0.00688939445554642	**
+2	a	Streptococcus pneumoniae	+EDTA vs +EDTA+Zn	NA	0.00382260208974987	**
+2	a	Virgibacillus salarius	PL25_M23 vs +EDTA	NA	0.00280141996243581	**
+2	a	Virgibacillus salarius	+EDTA vs +EDTA+Zn	NA	0.00453068734236614	**
+2	b	Mammaliicoccus sciuri	0.25 M NaCl vs 0 M	5.58718399618806	0.865160383168555	ns
+2	b	Mammaliicoccus sciuri	0.5 M NaCl vs 0 M	5.71983066574541	0.0601369135627929	ns
+2	b	Mammaliicoccus sciuri	1 M NaCl vs 0 M	6.56632333477867	0.000785337027938145	***
+2	b	Staphylococcus aureus	0.25 M NaCl vs 0 M	6.00286672392064	0.744622193257121	ns
+2	b	Staphylococcus aureus	0.5 M NaCl vs 0 M	6.05789868217205	0.569505702014239	ns
+2	b	Staphylococcus aureus	1 M NaCl vs 0 M	6.43547500918356	0.175763089785581	ns
+2	b	Staphylococcus aureus (MRSA)	0.25 M NaCl vs 0 M	6.16993012382434	0.602879213793549	ns
+2	b	Staphylococcus aureus (MRSA)	0.5 M NaCl vs 0 M	6.10740643157798	0.151393486466956	ns
+2	b	Staphylococcus aureus (MRSA)	1 M NaCl vs 0 M	6.53338526149105	0.0209681670406944	*
+2	b	Staphylococcus aureus (MSSA)	0.25 M NaCl vs 0 M	4.66666666666667	0.191881501430028	ns
+2	b	Staphylococcus aureus (MSSA)	0.5 M NaCl vs 0 M	4.96985200974706	0.223292715463826	ns
+2	b	Staphylococcus aureus (MSSA)	1 M NaCl vs 0 M	6.57154801612403	0.00657835236097002	**
+2	b	Virgibacillus salarius	0.25 M NaCl vs 0 M	4.4194659346985	0.136506796686525	ns
+2	b	Virgibacillus salarius	0.5 M NaCl vs 0 M	4.68939528724872	0.0660780450467479	ns
+2	b	Virgibacillus salarius	1 M NaCl vs 0 M	4.97354833380226	0.00424805398419583	**
