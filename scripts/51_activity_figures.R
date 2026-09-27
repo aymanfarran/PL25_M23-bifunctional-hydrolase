@@ -91,6 +91,12 @@ stars <- function(p) ifelse(is.na(p), "",
 paired_p <- function(a, b) tryCatch(t.test(a, b, paired = TRUE)$p.value,
                                     error = function(e) NA_real_)
 
+# Every panel reports several tests at once, so p-values are Holm-adjusted
+# across all comparisons shown in that panel. Symbols on the figures and the
+# values in figure_stats.tsv are the adjusted ones; the raw p-values are kept
+# alongside them for transparency.
+holm <- function(p) p.adjust(p, method = "holm")
+
 stat_log <- list()
 note <- function(...) stat_log[[length(stat_log) + 1]] <<- tibble(...)
 
@@ -109,12 +115,12 @@ salt     <- read_tsv(file.path(dat, "salt_raw.tsv"),     show_col_types = FALSE)
 spec <- dlog(primary) |> mutate(strain = fct(strain))
 spec_stats <- spec |> group_by(strain) |>
   summarise(m = mean(red), sd = sd(red), top = max(red),
-            p = paired_p(log10_untreated, log10_treated), .groups = "drop") |>
-  mutate(sym = stars(p))
-pwalk(spec_stats, \(strain, m, sd, top, p, sym)
+            p_raw = paired_p(log10_untreated, log10_treated), .groups = "drop") |>
+  mutate(p = holm(p_raw), sym = stars(p))          # 7 tests in this panel
+pwalk(spec_stats, \(strain, m, sd, top, p_raw, p, sym)
       note(figure = "1", panel = "a", strain = strain,
            comparison = "treated vs untreated at 100 ug/mL",
-           estimate = m, p = p, symbol = sym))
+           estimate = m, p_raw = p_raw, p_holm = p, symbol = sym))
 
 # The dashed reference line marks a 3-log reduction, the conventional
 # bactericidal threshold, and is labelled in every panel that carries it.
@@ -161,12 +167,16 @@ level_panel <- function(df, xvar, xlab, breaks, fig, panel) {
   d <- dlog(df) |> mutate(strain = fct(strain), lvl = factor(.data[[xvar]]),
                           bio = factor(bio_rep))
   fit <- lm(red ~ strain * lvl + strain:bio, data = d)
+  # Contrasts are taken unadjusted, then Holm-corrected across every
+  # comparison in the panel rather than only within each strain.
   cmp <- emmeans(fit, ~ lvl | strain) |>
-    contrast("trt.vs.ctrl", ref = 1) |> summary(infer = TRUE) |> as_tibble()
-  pwalk(cmp, \(contrast, strain, estimate, p.value, ...)
+    contrast("trt.vs.ctrl", ref = 1, adjust = "none") |>
+    summary(infer = TRUE) |> as_tibble() |>
+    mutate(p_holm = holm(p.value))
+  pwalk(cmp, \(contrast, strain, estimate, p.value, p_holm, ...)
         note(figure = fig, panel = panel, strain = as.character(strain),
              comparison = paste(xvar, contrast), estimate = estimate,
-             p = p.value, symbol = stars(p.value)))
+             p_raw = p.value, p_holm = p_holm, symbol = stars(p_holm)))
 
   ggplot(d, aes(.data[[xvar]], red, shape = strain, fill = strain)) +
     three_log(x = max(breaks), size = 2.2) +
@@ -219,16 +229,20 @@ ed <- edta |>
 wide <- ed |> select(strain, bio_rep, condition, red) |>
   pivot_wider(names_from = condition, values_from = red)
 ed_stats <- wide |> group_by(strain) |>
-  summarise(p_edta = paired_p(`PL25_M23`, `PL25_M23 + EDTA`),
-            p_resc = paired_p(`PL25_M23 + EDTA`, `PL25_M23 + EDTA + Zn`),
+  summarise(raw_edta = paired_p(`PL25_M23`, `PL25_M23 + EDTA`),
+            raw_resc = paired_p(`PL25_M23 + EDTA`, `PL25_M23 + EDTA + Zn`),
             .groups = "drop")
-pwalk(ed_stats, \(strain, p_edta, p_resc) {
+# Holm across all 14 comparisons drawn in this panel, both contrasts together.
+adj <- holm(c(ed_stats$raw_edta, ed_stats$raw_resc))
+ed_stats <- ed_stats |>
+  mutate(p_edta = adj[seq_len(n())], p_resc = adj[n() + seq_len(n())])
+pwalk(ed_stats, \(strain, raw_edta, raw_resc, p_edta, p_resc) {
   note(figure = "2", panel = "a", strain = strain,
        comparison = "PL25_M23 vs +EDTA", estimate = NA_real_,
-       p = p_edta, symbol = stars(p_edta))
+       p_raw = raw_edta, p_holm = p_edta, symbol = stars(p_edta))
   note(figure = "2", panel = "a", strain = strain,
        comparison = "+EDTA vs +EDTA+Zn", estimate = NA_real_,
-       p = p_resc, symbol = stars(p_resc))
+       p_raw = raw_resc, p_holm = p_resc, symbol = stars(p_resc))
 })
 
 # Brackets carrying the two contrasts, drawn above each strain facet:
@@ -276,11 +290,12 @@ salt_ref <- salt_tr |> filter(NaCl_M == 0) |> select(strain, bio_rep, ref = log1
 salt_stats <- salt_tr |> filter(NaCl_M > 0) |>
   left_join(salt_ref, c("strain", "bio_rep")) |>
   group_by(strain, NaCl_M) |>
-  summarise(p = paired_p(log10_cfu, ref), m = mean(log10_cfu), .groups = "drop")
-pwalk(salt_stats, \(strain, NaCl_M, p, m)
+  summarise(p_raw = paired_p(log10_cfu, ref), m = mean(log10_cfu), .groups = "drop") |>
+  mutate(p = holm(p_raw))                          # 15 tests in this panel
+pwalk(salt_stats, \(strain, NaCl_M, p_raw, m, p)
       note(figure = "2", panel = "b", strain = strain,
            comparison = paste(NaCl_M, "M NaCl vs 0 M"), estimate = m,
-           p = p, symbol = stars(p)))
+           p_raw = p_raw, p_holm = p, symbol = stars(p)))
 
 p2b <- ggplot(salt_tr, aes(NaCl_M, log10_cfu, shape = strain, fill = strain)) +
   geom_point(size = 0.85, colour = "#9A9A9A", stroke = 0.25) +
