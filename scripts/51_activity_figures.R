@@ -283,7 +283,9 @@ p2a <- ggplot(ed, aes(condition, red)) +
 # Figure 2b — salt tolerance
 # ═════════════════════════════════════════════════════════════════════
 # Treated log10 CFU/mL, not a reduction: untreated controls were run only at
-# 0 and 1.0 M NaCl, so no matched control exists at 0.25 or 0.5 M.
+# 0 and 1.0 M NaCl, so a salt-matched reduction cannot be computed at 0.25 or
+# 0.5 M. Comparing treated viability across salt levels needs no untreated
+# control, so each level is still tested against 0 M NaCl.
 salt_tr <- salt |> filter(treated, strain %in% salt_strains) |>
   mutate(strain = fct(strain, salt_strains))
 salt_ref <- salt_tr |> filter(NaCl_M == 0) |> select(strain, bio_rep, ref = log10_cfu)
@@ -297,6 +299,11 @@ pwalk(salt_stats, \(strain, NaCl_M, p_raw, m, p)
            comparison = paste(NaCl_M, "M NaCl vs 0 M"), estimate = m,
            p_raw = p_raw, p_holm = p, symbol = stars(p)))
 
+# Only significant comparisons are marked. Fourteen of the fifteen are ns
+# after correction, and labelling them all would bury the one that is not;
+# the caption states that every unmarked comparison was ns.
+salt_marks <- salt_stats |> filter(stars(p) != "ns") |> mutate(sym = stars(p))
+
 p2b <- ggplot(salt_tr, aes(NaCl_M, log10_cfu, shape = strain, fill = strain)) +
   geom_point(size = 0.85, colour = "#9A9A9A", stroke = 0.25) +
   stat_summary(fun = mean, geom = "line", aes(group = strain),
@@ -304,6 +311,8 @@ p2b <- ggplot(salt_tr, aes(NaCl_M, log10_cfu, shape = strain, fill = strain)) +
   stat_summary(fun.data = mean_sdl, fun.args = list(mult = 1), geom = "errorbar",
                width = 0, linewidth = 0.3, colour = INK) +
   stat_summary(fun = mean, geom = "point", size = 2, colour = INK, stroke = 0.35) +
+  geom_text(data = salt_marks, aes(NaCl_M, m + 0.12, label = sym),
+            inherit.aes = FALSE, size = 3, fontface = "bold", colour = INK, vjust = 0) +
   scale_shape_manual(values = SHAPES[salt_strains], labels = lab_parse) +
   scale_fill_manual(values = FILLS[salt_strains], labels = lab_parse) +
   scale_x_continuous("NaCl (M)", breaks = c(0, 0.25, 0.5, 1.0)) +
