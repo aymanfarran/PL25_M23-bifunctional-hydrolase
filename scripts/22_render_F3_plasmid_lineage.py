@@ -7,16 +7,23 @@ Outputs:
   figures/F3_M23_plasmid_lineage.{pdf,svg,png}
 
 Pipeline upstream (produces the IQ-TREE input):
-  mafft --auto closed_M23_with_outgroup.faa > closed_M23_aln.fasta
+  python scripts/22_closed_genome_search.py
+  mafft --auto --thread 1 closed_M23_with_outgroup.faa > closed_M23_aln.fasta
   trimal -in closed_M23_aln.fasta -out closed_M23_aln_trim.fasta -gappyout
   iqtree3 -s closed_M23_aln_trim.fasta -m MFP -B 1000 -alrt 1000 \\
           -T 4 -pre closed_M23_iqtree
+
+MAFFT is run single-threaded on purpose: its multithreaded iterative refinement
+visits the guide tree in a nondeterministic order, and repeated --auto runs of
+these 16 sequences gave alignments of 1069, 1071 and 1072 columns. With
+--thread 1 the alignment, and so the tree, is identical on every run.
 
 Run:
   /usr/local/Caskroom/miniforge/base/envs/macsy/bin/python \\
       scripts/22_render_F3_plasmid_lineage.py
 """
 from pathlib import Path
+import csv
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -73,7 +80,7 @@ def tip_label(name: str) -> str:
     parts = name.split("|")
     raw = parts[0].replace("_", " "); words = raw.split()
     org = (words[0][0] + ". " + " ".join(words[1:])) if len(words) >= 2 else raw
-    ctx = parts[1].replace("plasmid_", "p").replace("chromosome", "chr")
+    ctx = parts[1].replace("plasmid_", "").replace("chromosome", "chr")
     if "PL25_M23" in name:    return "★ PL25_M23  (pPL25-M23, this study)"
     if "Lysostaphin" in name: return "Lysostaphin  [outgroup]"
     return f"{org}   [{ctx}]"
@@ -101,15 +108,18 @@ assign_x(tree.root, 0)
 # ──────────────────────────────────────────────────────────
 # Panel-b summary
 # ──────────────────────────────────────────────────────────
-hits = [
-    ("Lentibacillus","chromosome"), ("Virgibacillus","chromosome"),
-    ("Lentibacillus","chromosome"), ("Gracilibacillus","plasmid"),
-    ("Virgibacillus","plasmid"),    ("Cytobacillus","plasmid"),
-    ("Cytobacillus","plasmid"),     ("Cytobacillus","plasmid"),
-    ("Cytobacillus","plasmid"),     ("Cytobacillus","plasmid"),
-    ("Halobacillus","plasmid"),     ("Cytobacillus","plasmid"),
-    ("Cytobacillus","plasmid"),     ("Salinicoccus","plasmid"),
-]
+# Read from the census rather than restating it here, so the panel cannot drift
+# away from the table and the tree if the search is ever rerun.
+CENSUS = ROOT / "results/22_closed_genome_search/closed_M23_homologues.tsv"
+TRIMMED = ROOT / "results/22_closed_genome_search/closed_M23_aln_trim.fasta"
+with CENSUS.open() as fh:
+    rows = list(csv.DictReader(fh, delimiter="\t"))
+hits = [(r["host"].split()[0], r["replicon"]) for r in rows]
+
+# Alignment width quoted in the caption, measured rather than remembered.
+N_COLS = len("".join(
+    L.strip() for L in TRIMMED.read_text().split(">")[1].splitlines()[1:]))
+
 plasmid = Counter(); chrom = Counter()
 for g,r in hits: (plasmid if r=="plasmid" else chrom)[g] += 1
 genera = sorted(set(plasmid)|set(chrom), key=lambda g: -(plasmid[g]+chrom[g]))
@@ -131,7 +141,10 @@ for clade in tree.get_nonterminals():
                  f"{int(ub)}", fontsize=7.5, ha="right", va="center",
                  color="#222",
                  bbox=dict(boxstyle="round,pad=0.18", fc="white", ec="none", alpha=0.85))
-ax_tree.set_title("a   Focused phylogeny of PL25_M23 and 14 closed-genome\n     halotolerant Bacillaceae homologues",
+# Tip labels carry genus, species, strain and replicon, so the drawing area
+# needs room to the right of the deepest tip or they run into panel b.
+ax_tree.set_xlim(right=max(x_pos.values()) * 1.95)
+ax_tree.set_title(f"a   Focused phylogeny of PL25_M23 and {len(hits)} closed-genome\n     halotolerant Bacillaceae homologues",
                   loc="left", fontsize=12, fontweight="bold", pad=6)
 ax_tree.set_xlabel("Substitutions per site", fontsize=10); ax_tree.set_ylabel("")
 ax_tree.legend(handles=[
@@ -153,14 +166,16 @@ ax_bar.set_xlabel("Number of closed-genome homologues", fontsize=10)
 ax_bar.set_xlim(0, max(p+c for p,c in zip(plas_vals, chr_vals)) + 0.5)
 for i,(p,c) in enumerate(zip(plas_vals, chr_vals)):
     if p+c: ax_bar.text(p+c+0.1, i, f" {p+c}", va="center", fontsize=9, color="#222")
-ax_bar.set_title("b   Replicon context across genera\n     (11 of 14, 79% plasmid-encoded)",
+n_plasmid = sum(plasmid.values()); n_hits = len(hits)
+ax_bar.set_title(f"b   Replicon context across genera\n"
+                 f"     ({n_plasmid} of {n_hits}, {100*n_plasmid/n_hits:.0f}% plasmid-encoded)",
                  loc="left", fontsize=12, fontweight="bold", pad=6)
 ax_bar.legend(loc="lower right", fontsize=9, frameon=True, framealpha=0.95)
 ax_bar.spines["top"].set_visible(False); ax_bar.spines["right"].set_visible(False)
 ax_bar.grid(axis="x", alpha=0.3)
 
 fig.text(0.5, 0.01,
-    "(a) MAFFT v7.526 (--auto) → trimAl v1.5.rev1 (-gappyout, 332 cols) → "
+    f"(a) MAFFT v7.526 (--auto) → trimAl v1.5.rev1 (-gappyout, {N_COLS} cols) → "
     "IQ-TREE v3.1.1 (WAG+G4, 1000 UFBoot / 1000 SH-aLRT). Numbers at internal nodes are UFBoot values. "
     "(b) Closed (Complete Genome or Chromosome-level) NCBI assemblies carrying a PL25_M23 BLAST homologue, "
     "broken down by genus and replicon type.",

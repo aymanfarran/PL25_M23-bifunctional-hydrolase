@@ -1,0 +1,15 @@
+organism	host	assembly	replicon	plasmid	nucleotide	protein	pct_identity	evalue	nuccore_title
+Lentibacillus sp. CBA3610	Lentibacillus sp. CBA3610	GCF_013373365.1	chromosome	—	NZ_CP035925.1	WP_176447356.1	52.925	8.20e-128	Lentibacillus sp. CBA3610 chromosome, complete genome
+Virgibacillus ainsalahensis	Virgibacillus ainsalahensis JCM 30907	GCF_055380755.1	chromosome	—	NZ_AP043943.1	WP_461177648.1	52.958	6.94e-126	Virgibacillus ainsalahensis strain JCM 30907 chromosome, complete genome
+Lentibacillus amyloliquefaciens	Lentibacillus amyloliquefaciens LAM0015	GCF_001307805.1	chromosome	—	NZ_CP013862.1	WP_068441797.1	51.124	6.67e-123	Lentibacillus amyloliquefaciens strain LAM0015 chromosome, complete genome
+Gracilibacillus boraciitolerans	Gracilibacillus boraciitolerans JCM 21714	GCF_055385745.1	plasmid	pJCM21714	NZ_AP043914.1	WP_464380148.1	50.000	1.09e-106	Gracilibacillus boraciitolerans strain JCM 21714 plasmid pJCM21714, complete sequence
+Virgibacillus halodenitrificans	Virgibacillus halodenitrificans Bac324	GCF_003667805.1	plasmid	unnamed	NZ_CP033050.1	WP_121616750.1	48.432	3.84e-65	Virgibacillus halodenitrificans strain Bac324 plasmid unnamed, complete sequence
+Cytobacillus oceanisediminis 2691	Cytobacillus oceanisediminis 2691	GCF_000294775.2	plasmid	pBO1	NZ_CP015507.1	WP_019380455.1	44.828	4.70e-65	Cytobacillus oceanisediminis 2691 plasmid pBO1, complete sequence
+Cytobacillus firmus	Cytobacillus firmus M7	GCF_025732135.1	plasmid	p1	NZ_CP107028.1	WP_263600221.1	44.483	2.71e-64	Cytobacillus firmus strain M7 plasmid p1, complete sequence
+Cytobacillus firmus	Cytobacillus firmus CK19	GCF_023823815.1	plasmid	unnamed1	NZ_CP085391.1	WP_252222728.1	44.483	2.86e-64	Cytobacillus firmus strain CK19 plasmid unnamed1, complete sequence
+Cytobacillus oceanisediminis	Cytobacillus oceanisediminis CK22	GCF_023823835.1	plasmid	unnamed1	NZ_CP085393.1	WP_252246573.1	44.483	3.59e-64	Cytobacillus oceanisediminis strain CK22 plasmid unnamed1, complete sequence
+Cytobacillus pseudoceanisediminis	Cytobacillus pseudoceanisediminis BNO1	GCF_023516215.1	plasmid	unnamed	NZ_CP097350.1	WP_251264864.1	44.521	2.28e-63	Cytobacillus pseudoceanisediminis strain BNO1 plasmid unnamed, complete sequence
+Cytobacillus firmus	Cytobacillus firmus SGAir0285	GCF_043540845.1	plasmid	pSGAir0285_3	NZ_CP027985.1	WP_009335593.1	43.448	1.71e-61	Cytobacillus firmus strain SGAir0285 plasmid pSGAir0285_3
+Halobacillus litoralis	Halobacillus litoralis ERB 031	GCF_004101865.1	plasmid	pLDW-31	NZ_CP026119.1	WP_241656025.1	43.793	1.80e-61	Halobacillus litoralis strain ERB 031 plasmid pLDW-31, complete sequence
+Cytobacillus oceanisediminis	Cytobacillus oceanisediminis YPW-V2	GCF_014883935.1	plasmid	unnamed1	NZ_CP062791.1	WP_192909257.1	43.793	2.39e-61	Cytobacillus oceanisediminis strain YPW-V2 plasmid unnamed1, complete sequence
+Salinicoccus jeotgali	Salinicoccus jeotgali JCM 16981	GCF_055379195.1	plasmid	pJCM16981-2	NZ_AP043832.1	WP_344700570.1	35.013	6.73e-61	Salinicoccus jeotgali strain JCM 16981 plasmid pJCM16981-2, complete sequence

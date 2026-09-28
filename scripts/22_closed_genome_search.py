@@ -42,14 +42,20 @@ HALO_GENERA = {
 
 # ────────────────────────────────────────────────────────────────────────────
 def parse_blast(path: Path):
-    """Yield (protein_acc, pct_id, evalue, organism, genus) per hit."""
+    """Yield (protein_acc, pct_id, evalue, organism, genus) per hit.
+
+    Column layout of the -outfmt 6 table, 0-indexed: 1 sseqid, 2 pident,
+    10 evalue, 12 stitle, 13 staxid. The organism is the bracketed suffix of
+    the subject title, so it must be read from field 12; field 13 is the taxid
+    and matches no bracket, which would silently drop every hit.
+    """
     import re
     for line in path.read_text().splitlines():
         f = line.split("\t")
-        if len(f) < 14: continue
+        if len(f) < 13: continue
         acc = f[1].split("|")[1] if "|" in f[1] else f[1]
         pct, ev = f[2], f[10]
-        m = re.search(r"\[([^]]+)\]", f[13])
+        m = re.search(r"\[([^]]+)\]", f[12])
         org = m.group(1) if m else ""
         genus = org.split()[0] if org else ""
         yield acc, pct, ev, org, genus
@@ -99,6 +105,34 @@ def fetch_protein_fasta(acc: str) -> str:
     with urllib.request.urlopen(url, timeout=30) as r:
         return r.read().decode()
 
+def host_label(title: str, fallback: str) -> str:
+    """Organism plus strain, read off the nucleotide-record title.
+
+    RefSeq titles read '<organism> [strain <id>] <replicon>...'. The IPG organism
+    attribute often omits the strain, which would make sibling entries such as
+    the three closed Cytobacillus firmus plasmids indistinguishable, so the
+    title is the better source.
+    """
+    import re
+    head = re.split(r"\s+(?:plasmid|chromosome)\b", title, maxsplit=1)[0].strip()
+    if not head:
+        return fallback
+    return re.sub(r"\s+strain\s+", " ", head)
+
+
+def safe_label(host: str) -> str:
+    """FASTA/tree-safe form of a host label: Genus_species_STRAIN.
+
+    Periods are dropped and the strain's internal spaces are closed up, so
+    'Halobacillus litoralis ERB 031' becomes 'Halobacillus_litoralis_ERB031'
+    and the tip stays on one line in the phylogeny figure.
+    """
+    words = host.replace(".", "").split()
+    if len(words) <= 2:
+        return "_".join(words)
+    return "_".join(words[:2] + ["".join(words[2:])])
+
+
 def classify_replicon(title: str) -> tuple[str, str]:
     """Return (replicon_type, plasmid_name)."""
     t = title.lower()
@@ -140,16 +174,21 @@ def main() -> None:
             time.sleep(0.34)
             rep, pname = classify_replicon(title)
             closed.append(dict(
-                organism=asm_org, assembly=asm, replicon=rep, plasmid=pname,
+                organism=asm_org, host=host_label(title, asm_org),
+                assembly=asm, replicon=rep, plasmid=pname,
                 nucleotide=nuc, protein=acc, pct_identity=pct, evalue=ev,
+                nuccore_title=title,
             ))
             print(f"\n  ✓ {asm}  {rep:11s}  {asm_org}", file=sys.stderr)
         time.sleep(0.34)
     print(file=sys.stderr)
 
-    # Write TSV
+    # Write TSV. The nucleotide-record title is carried through because the
+    # replicon call is a substring match on it, and keeping it makes that call
+    # auditable without re-querying NCBI.
     tsv = OUTDIR / "closed_M23_homologues.tsv"
-    cols = ["organism","assembly","replicon","plasmid","nucleotide","protein","pct_identity","evalue"]
+    cols = ["organism","host","assembly","replicon","plasmid","nucleotide","protein",
+            "pct_identity","evalue","nuccore_title"]
     with tsv.open("w") as f:
         f.write("\t".join(cols) + "\n")
         for r in closed:
@@ -160,7 +199,7 @@ def main() -> None:
     faa = OUTDIR / "closed_M23_homologues.faa"
     with faa.open("w") as out:
         for r in closed:
-            org = r["organism"].replace(" ", "_")
+            org = safe_label(r["host"])
             ctx = ("plasmid_"+r["plasmid"]) if r["replicon"]=="plasmid" else "chromosome"
             seq = "".join(fetch_protein_fasta(r["protein"]).strip().split("\n")[1:])
             out.write(f">{org}|{ctx}|{r['protein']}\n{seq}\n")

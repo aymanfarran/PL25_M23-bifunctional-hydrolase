@@ -45,6 +45,7 @@ This repository contains the code, source data, intermediate files, structural m
 │   ├── 09_circular_plasmid_map.py          Figure 1a — circular plasmid map
 │   ├── 11_orit_motif_scan.py               oriT consensus-motif screen (Supp. Methods S4)
 │   ├── 22_closed_genome_search.py          Closed-genome M23 homologue census
+│   ├── 22b_format_homologue_table.py       Census → supplementary homologue table
 │   ├── 22_render_F3_plasmid_lineage.py     Supp. Figure 2 — plasmid-clade phylogeny
 │   ├── 39_compact_M23_targeted.py          Figure 2 — compact targeted M23 phylogeny
 │   ├── 50_activity_read.R                  Bench workbook → tidy raw-data TSVs
@@ -139,6 +140,26 @@ which are tracked here. To regenerate them from the bench workbook
 ```bash
 Rscript scripts/50_activity_read.R
 ```
+
+The closed-genome homologue census, its supplementary table and the focused
+phylogeny behind Supp. Figure 2 can be rebuilt from scratch with:
+
+```bash
+python scripts/22_closed_genome_search.py       # 250 BLASTp hits -> 44 -> 14
+python scripts/22b_format_homologue_table.py    # -> homologue table
+
+cd results/22_closed_genome_search
+mafft --auto --thread 1 closed_M23_with_outgroup.faa > closed_M23_aln.fasta
+trimal -in closed_M23_aln.fasta -out closed_M23_aln_trim.fasta -gappyout
+iqtree3 -s closed_M23_aln_trim.fasta -m MFP -B 1000 -alrt 1000 \
+        -T 4 -pre closed_M23_iqtree
+python ../../scripts/22_render_F3_plasmid_lineage.py
+```
+
+The census step queries NCBI E-utilities and takes roughly five minutes. MAFFT
+must be run single-threaded: its multithreaded iterative refinement is
+order-dependent, and repeated `--auto` runs of these sequences produced
+alignments of different widths.
 
 The CwlT-free M23 phylogeny can be rebuilt from scratch with:
 
