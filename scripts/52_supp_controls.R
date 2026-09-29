@@ -30,6 +30,12 @@ dir.create(figs, showWarnings = FALSE)
 
 INK <- "black"; GREY_GRID <- "#E8E8E8"
 
+# Colour, unlike the monochrome main figures, because this panel set is read on
+# screen rather than printed at figure size. Okabe-Ito hues, which stay
+# distinguishable under the common forms of colour-vision deficiency.
+COL_CTRL <- c("EDTA only" = "#0072B2", "Zn only"  = "#D55E00")
+COL_SALT <- c("0 M"       = "#4393C3", "1.0 M"    = "#D6604D")
+
 strain_levels <- c(
   "Streptococcus equi subsp. zooepidemicus", "Streptococcus pneumoniae",
   "Staphylococcus aureus (MRSA)", "Staphylococcus aureus (MSSA)",
@@ -81,22 +87,30 @@ ctrl <- edta |>
 # carrying them is built as a plotmath expression rather than literal text.
 ctrl_legend <- c(expression("1 mM EDTA only"), expression("1 mM ZnCl"[2]*" only"))
 
-pS1a <- ggplot(ctrl, aes(strain, red, shape = condition)) +
+# The legend sits above the panel rather than inside it: in the plot area it
+# collided with the y-axis labels. Limits are held just outside the observed
+# range so the spread near zero, which is the point of the panel, is readable.
+pS1a <- ggplot(ctrl, aes(strain, red, shape = condition,
+                         colour = condition, fill = condition)) +
   geom_hline(yintercept = 0, linewidth = 0.3, colour = "#888888") +
   stat_summary(fun = mean, geom = "errorbar",
-               aes(ymin = after_stat(y), ymax = after_stat(y)), width = 0.5,
-               linewidth = 0.4, colour = INK,
-               position = position_dodge(0.6)) +
-  geom_point(size = 1.7, fill = "white", colour = INK, stroke = 0.4,
+               aes(ymin = after_stat(y), ymax = after_stat(y)), width = 0.55,
+               linewidth = 0.5, position = position_dodge(0.6),
+               show.legend = FALSE) +
+  geom_point(size = 1.9, stroke = 0.4, alpha = 0.9,
              position = position_dodge(0.6)) +
   scale_shape_manual(values = c(21, 24), labels = ctrl_legend) +
+  scale_colour_manual(values = COL_CTRL, labels = ctrl_legend) +
+  scale_fill_manual(values = COL_CTRL, labels = ctrl_legend) +
   scale_x_discrete(labels = lab_parse) +
   scale_y_continuous(expression("Log"[10]~"CFU/mL reduction vs untreated"),
-                     limits = c(-0.8, 1.2)) +
+                     limits = c(-0.45, 0.8),
+                     breaks = seq(-0.4, 0.8, 0.2)) +
   theme_pub() +
   theme(axis.title.x = element_blank(),
         axis.text.x = element_text(angle = 25, hjust = 1),
-        legend.position = c(0.22, 0.92), legend.direction = "horizontal")
+        legend.position = "top", legend.direction = "horizontal",
+        legend.margin = margin(b = -4))
 
 # ── S1b  salt-assay exclusion ────────────────────────────────────────
 excl <- salt |> filter(!treated) |>
@@ -106,6 +120,10 @@ excl_drop <- excl |> group_by(strain) |>
             .groups = "drop") |>
   mutate(lab = ifelse(d > 1, sprintf("-%.1f log", d), ""))
 
+# Headroom above the tallest bar, so the drop annotations for the two excluded
+# strains sit clear of the bars instead of printing across them.
+SALT_TOP <- 10.4
+
 pS1b <- ggplot(excl, aes(strain, log10_cfu, fill = NaCl)) +
   stat_summary(fun = mean, geom = "col", position = position_dodge(0.72),
                width = 0.64, colour = INK, linewidth = 0.3) +
@@ -114,16 +132,19 @@ pS1b <- ggplot(excl, aes(strain, log10_cfu, fill = NaCl)) +
                linewidth = 0.3, colour = INK) +
   geom_point(position = position_dodge(0.72), shape = 21, size = 1.1,
              fill = "white", colour = INK, stroke = 0.35) +
-  geom_text(data = excl_drop, aes(strain, 1.1, label = lab), inherit.aes = FALSE,
-            size = 2.5, colour = INK, fontface = "bold") +
-  scale_fill_manual(values = c("0 M" = "#D9D9D9", "1.0 M" = "#4D4D4D")) +
+  geom_text(data = excl_drop, aes(strain, SALT_TOP - 0.55, label = lab),
+            inherit.aes = FALSE, size = 2.6, colour = COL_SALT[["1.0 M"]],
+            fontface = "bold") +
+  scale_fill_manual(values = COL_SALT) +
   scale_x_discrete(labels = lab_parse) +
   scale_y_continuous(expression("Untreated viability, log"[10]~"CFU/mL"),
-                     limits = c(0, 9.4), expand = expansion(0)) +
+                     limits = c(0, SALT_TOP), breaks = seq(0, 9, 3),
+                     expand = expansion(0)) +
   theme_pub() +
   theme(axis.title.x = element_blank(),
         axis.text.x = element_text(angle = 25, hjust = 1),
-        legend.position = c(0.62, 0.95), legend.direction = "horizontal")
+        legend.position = "top", legend.direction = "horizontal",
+        legend.margin = margin(b = -4))
 
 # ── S1c  full condition x strain summary ─────────────────────────────
 grid <- bind_rows(
@@ -165,10 +186,10 @@ cond_labels <- c(
 pS1c <- ggplot(grid, aes(cond, strain, fill = red)) +
   geom_tile(colour = "white", linewidth = 0.5) +
   geom_text(aes(label = sprintf("%.1f", red),
-                colour = red > 2.4), size = 2.2, show.legend = FALSE) +
-  scale_fill_gradient(low = "#FFFFFF", high = "#1A1A1A",
-                      name = expression("Log"[10]~"reduction"),
-                      limits = c(0, 5)) +
+                colour = red > 3.2), size = 2.2, show.legend = FALSE) +
+  scale_fill_viridis_c(option = "mako", direction = -1, begin = 0.08, end = 0.97,
+                       name = expression("Log"[10]~"reduction"),
+                       limits = c(0, 5)) +
   scale_colour_manual(values = c("FALSE" = INK, "TRUE" = "white")) +
   scale_x_discrete(labels = cond_labels) +
   scale_y_discrete(labels = lab_parse, limits = rev(strain_levels)) +
@@ -186,6 +207,8 @@ figS1 <- (pS1a | pS1b) / pS1c +
 ggsave(file.path(figs, "S1_activity_controls.pdf"), figS1, width = 10, height = 8)
 ggsave(file.path(figs, "S1_activity_controls.png"), figS1, width = 10, height = 8,
        dpi = 300, bg = "white")
+ggsave(file.path(figs, "S1_activity_controls.svg"), figS1, width = 10, height = 8,
+       bg = "white")
 
 # ── Supplementary Table S1 ───────────────────────────────────────────
 tbl <- bind_rows(
@@ -210,5 +233,5 @@ tbl <- bind_rows(
 write.table(tbl, file.path(dat, "TableS1_all_values.tsv"), sep = "\t",
             row.names = FALSE, quote = FALSE, na = "")
 
-cat("wrote figures/S1_activity_controls.{pdf,png}\n")
+cat("wrote figures/S1_activity_controls.{pdf,png,svg}\n")
 cat(sprintf("wrote results/21_activity_7strain/TableS1_all_values.tsv (%d rows)\n", nrow(tbl)))
