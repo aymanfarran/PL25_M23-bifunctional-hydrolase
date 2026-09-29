@@ -24,7 +24,7 @@ from pycirclize.parser import Genbank
 import numpy as np
 
 ROOT = Path("/Users/farrana/prophage-endolysin-pipeline/non_endolysin_paper")
-GBK  = ROOT/"results/14_synteny/PL25_contig11.gbk"
+GBK  = ROOT/"results/03_M23_ICE_locus/contig_11.gbk"
 OUT  = ROOT/"figures"
 
 # ── Parse GBK ─────────────────────────────────────────────
