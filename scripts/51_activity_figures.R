@@ -208,6 +208,8 @@ fig1 <- p1a / (p1b | p1c) +
 ggsave(file.path(figs, "F1_antibacterial_activity.pdf"), fig1, width = 8.2, height = 7.2)
 ggsave(file.path(figs, "F1_antibacterial_activity.png"), fig1, width = 8.2, height = 7.2,
        dpi = 300, bg = "white")
+ggsave(file.path(figs, "F1_antibacterial_activity.svg"), fig1, width = 8.2, height = 7.2,
+       bg = "white")
 
 # ═════════════════════════════════════════════════════════════════════
 # Figure 2a — metal dependence
@@ -326,6 +328,8 @@ fig2 <- (p2a | p2b) + plot_layout(widths = c(1.55, 1)) +
 ggsave(file.path(figs, "F2_metal_salt.pdf"), fig2, width = 10.4, height = 4.6)
 ggsave(file.path(figs, "F2_metal_salt.png"), fig2, width = 10.4, height = 4.6,
        dpi = 300, bg = "white")
+ggsave(file.path(figs, "F2_metal_salt.svg"), fig2, width = 10.4, height = 4.6,
+       bg = "white")
 
 all_stats <- bind_rows(stat_log) |> arrange(figure, panel, strain)
 write.table(all_stats, file.path(dat, "figure_stats.tsv"), sep = "\t",

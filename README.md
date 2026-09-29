@@ -66,12 +66,10 @@ This repository contains the code, source data, intermediate files, structural m
 │   ├── 07_M23_phylogeny/            MAFFT alignment, trimAl, IQ-TREE v4 tree (101 seqs)
 │   ├── 08_colabfold/                AlphaFold2 model of PL25_M23 (residues 38–370)
 │   ├── 09_gc_codon/                 GC / GC1 / GC2 / GC3 per contig
-│   ├── 10_ncbi_plasmids/            NCBI WGS GenBank records for synteny
 │   ├── 11_interproscan/             InterProScan v5.61-93.0 domain output
 │   ├── 12_signal_peptide/           SignalP 6.0h output
 │   ├── 13_M23_refs/                 Reference structures (PDB + AF2 models)
 │   ├── 14_cwlp_structure/           AlphaFold2 model of CwlP catalytic core
-│   ├── 14_synteny/                  clinker synteny analysis
 │   ├── 15_mob_suite/                MOB-suite v3.1.9 typing
 │   ├── 16_electrostatic/            pI / charge / charge-density JSON
 │   ├── 17_conjscan/                 MacSyFinder + CONJScan v2.1.0 output
@@ -194,7 +192,6 @@ The exact tool versions and parameters used in the analyses are listed in the ma
 | IQ-TREE | 3.1.1 |
 | ColabFold (AlphaFold2 ptm) | 1.5.5 |
 | PyMOL (Open-Source) | 3.1.6.1 |
-| clinker | 0.0.32 |
 | Biopython | 1.83 |
 | Python | 3.11 |
 
@@ -209,7 +206,6 @@ The exact tool versions and parameters used in the analyses are listed in the ma
 | UniProt Knowledgebase | accessions retrieved 2026-05-18 |
 | RCSB PDB | 4QPB, 4ZYB, 6S6E, 5KVP downloaded 2026-05-17 |
 | AlphaFold Protein Structure Database | AF-O05156-F1 v6 and AF-P96645-F1 v4 accessed 2026-05-22 |
-| NCBI WGS (synteny contigs) | NZ_LDPV02000047.1, NZ_JARSFA010000044.1, NZ_JBCITH010000002.1 accessed 2026-05-17 |
 | geNomad reference DB | v1.7 (used 2026-05-17) |
 
 ---
