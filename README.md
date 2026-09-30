@@ -30,6 +30,9 @@ This repository contains the code, source data, intermediate files, structural m
 ├── README.md                        This file
 ├── .gitignore
 │
+├── data/
+│   └── PL25.fasta                   Flye assembly of V. salarius PL25 (8 contigs)
+│
 ├── scripts/                         All analysis and plotting scripts
 │   ├── 04_realign_ALE1.pml                 PyMOL — ALE-1 M23 superposition
 │   ├── 04c_render_M23_panels.py            PyMOL — Figure 3b structure views
