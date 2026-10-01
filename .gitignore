@@ -38,6 +38,24 @@ results/14_cwlp_structure/*__env
 *.bam
 *.sam
 
+# Reference databases and third-party installs under the plasmid-database
+# search. These are multi-GB downloads, not results: scripts/27_plsdb_search.sh
+# documents the releases to fetch. The small outputs of that search — the
+# summary, the Mash and skani tables, the COPLA calls and the hit FASTAs — are
+# tracked and must stay visible, hence the un-ignore rules below.
+# NB: no blanket *.gz rule here, it would swallow the IQ-TREE .ckp.gz/.model.gz
+# checkpoints that are deliberately tracked.
+results/24_plasmid_db_search/plsdb_meta/
+results/24_plasmid_db_search/copla/
+results/24_plasmid_db_search/fig_data/
+results/24_plasmid_db_search/plsdb_fasta_split/
+*.tar.gz
+*.tgz
+*.bz2
+!results/24_plasmid_db_search/PLSDB_search_summary.md
+!results/24_plasmid_db_search/copla_outputs/
+!results/24_plasmid_db_search/hits_fasta/
+
 # oriTfinder input (regeneratable from the assembly)
 results/18_oriTfinder_INPUT_contig11.fna
 

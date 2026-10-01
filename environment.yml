@@ -1,0 +1,61 @@
+# Conda environment for the PL25_M23 analyses.
+#
+# Versions are pinned to those reported in the manuscript Methods and in the
+# README software table, not to whatever is newest, so the deposited scripts
+# reproduce the published numbers.
+#
+#   conda env create -f environment.yml
+#   conda activate pl25-m23
+#
+# Not installable from conda, and therefore not listed below:
+#   InterProScan 5.61-93.0   licensed download, run separately
+#   SignalP 6.0h             academic licence, run separately
+#   ColabFold 1.5.5          run on GPU nodes (see ibex/scripts/)
+#   PLSDB 2025 / COPLA RS84  reference databases, see scripts/27_plsdb_search.sh
+#
+# The wet-lab figures are built in R, not Python; their package versions are
+# listed under "R" at the bottom of this file as a record, since they come from
+# CRAN rather than conda.
+
+name: pl25-m23
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # core
+  - python=3.11
+  - biopython=1.83
+  - numpy
+  - pandas
+  - matplotlib
+  - pycirclize
+
+  # assembly and annotation
+  - flye=2.9.3
+  - prokka=1.15.6
+
+  # plasmid and mobile-element calling
+  - genomad=1.7.0
+  - mob_suite=3.1.9
+  - macsyfinder=2.1.6
+
+  # homology and domains
+  - hmmer=3.4
+  - blast=2.16.0
+
+  # phylogenetics
+  - mafft=7.526
+  - trimal=1.5.1
+  - iqtree=3.1.1
+
+  # plasmid-database search (scripts/27_plsdb_search.sh)
+  - mash=2.3
+  - skani=0.3.2
+
+  # structure rendering
+  - pymol-open-source=3.1.6
+
+# R 4.5.1, installed separately; used by scripts/5*.R
+#   readxl 1.4.5   readr 2.2.0    dplyr 1.2.1     tidyr 1.3.2
+#   purrr 1.2.2    tibble 3.3.1   stringr 1.6.0   emmeans 2.0.3
+#   ggplot2 4.0.3  patchwork 1.3.2  svglite

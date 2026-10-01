@@ -29,6 +29,7 @@ This repository contains the code, source data, intermediate files, structural m
 ├── LICENSE                          MIT license
 ├── README.md                        This file
 ├── .gitignore
+├── environment.yml                  Conda environment, pinned to the Methods versions
 │
 ├── scripts/                         All analysis and plotting scripts
 │   ├── 04_realign_ALE1.pml                 PyMOL — ALE-1 M23 superposition
@@ -46,6 +47,7 @@ This repository contains the code, source data, intermediate files, structural m
 │   ├── 11_orit_motif_scan.py               oriT consensus-motif screen (Supp. Methods S4)
 │   ├── 22_closed_genome_search.py          Closed-genome M23 homologue census
 │   ├── 22b_format_homologue_table.py       Census → supplementary homologue table
+│   ├── 27_plsdb_search.sh                  pPL25-1 vs PLSDB (Mash + skani)
 │   ├── 22_render_F3_plasmid_lineage.py     Supp. Figure 2 — plasmid-clade phylogeny
 │   ├── 39_compact_M23_targeted.py          Figure 2 — compact targeted M23 phylogeny
 │   ├── 50_activity_read.R                  Bench workbook → tidy raw-data TSVs
@@ -75,6 +77,7 @@ This repository contains the code, source data, intermediate files, structural m
 │   ├── 17_conjscan/                 MacSyFinder + CONJScan v2.1.0 output
 │   ├── 19_circularity/              FASTA-level circularity check (nucmer + oriT scan output)
 │   └── 21_activity_7strain/         Wet-lab assay raw data, stats and Table S1
+│   └── 24_plasmid_db_search/        PLSDB/COPLA search outputs (databases not deposited)
 │
 └── ibex/
     ├── README.md                    IBEX usage notes
@@ -208,6 +211,13 @@ The exact tool versions and parameters used in the analyses are listed in the ma
 | RCSB PDB | 4QPB, 4ZYB, 6S6E, 5KVP downloaded 2026-05-17 |
 | AlphaFold Protein Structure Database | AF-O05156-F1 v6 and AF-P96645-F1 v4 accessed 2026-05-22 |
 | geNomad reference DB | v1.7 (used 2026-05-17) |
+| PLSDB | 2025 release (Schmartz et al.), 72,556 closed plasmids; Mash sketch + per-plasmid FASTA, accessed 2026-06-18 |
+| COPLA reference graph | `Copla_RS84` (NCBI RefSeq release 84), 9,894 plasmids + precomputed sHSBM PTU graph, accessed 2026-06-18 |
+
+The PLSDB and COPLA reference sets are several GB and are redistributed by
+their own authors, so they are **not** deposited here. `scripts/27_plsdb_search.sh`
+records the release to download and where to unpack it; the small outputs of
+that search are tracked under `results/24_plasmid_db_search/`.
 
 ---
 
